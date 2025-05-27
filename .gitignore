@@ -10,7 +10,6 @@ bin/Debug/net8.0/works.deps.json
 bin/Debug/net8.0/works.dll
 bin/Debug/net8.0/works.pdb
 bin/Debug/net8.0/works.runtimeconfig.json
-Controllers/HelloWorld.cs
 obj/project.assets.json
 obj/project.nuget.cache
 obj/works.csproj.nuget.dgspec.json
