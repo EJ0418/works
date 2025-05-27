@@ -38,3 +38,10 @@ obj/Debug/net8.0/refint/works.dll
 obj/Debug/net8.0/staticwebassets/msbuild.build.works.props
 obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.works.props
 obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.works.props
+bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
+bin/Debug/net8.0/works.staticwebassets.runtime.json
+obj/Debug/net8.0/staticwebassets.development.json
+obj/Debug/net8.0/staticwebassets.pack.json
+obj/Debug/net8.0/works.sourcelink.json
+obj/Debug/net8.0/staticwebassets/msbuild.works.Microsoft.AspNetCore.StaticWebAssets.props
+.DS_Store
