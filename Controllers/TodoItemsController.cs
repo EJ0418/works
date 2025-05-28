@@ -27,7 +27,7 @@ namespace works.Controllers
         [HttpGet]
         [SwaggerOperation(
             Summary = "取得所有待辦事項",
-            Description = "取得所有待辦事項.")]
+            Description = "撈取memory中所有待辦事項.")]
         [SwaggerResponse(200, "成功取得待辦事項列表", typeof(IEnumerable<TodoItem>))]
         [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
@@ -35,8 +35,12 @@ namespace works.Controllers
             return await _context.TodoItems.ToListAsync();
         }
 
-        // GET: api/TodoItems/5
         [HttpGet("{id}")]
+        [SwaggerOperation(
+            Summary = "取得待辦事項（單一）",
+            Description = "依據ID撈取單一待辦事項.")]
+        [SwaggerResponse(200, "成功取得待辦事項", typeof(IEnumerable<TodoItem>))]
+        [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
@@ -49,9 +53,12 @@ namespace works.Controllers
             return todoItem;
         }
 
-        // PUT: api/TodoItems/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [SwaggerOperation(
+            Summary = "新增待辦事項",
+            Description = "新增待辦事項到memory中.")]
+        [SwaggerResponse(200, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
+        [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
         {
             if (id != todoItem.Id)
