@@ -1019,3 +1019,5 @@ works.NUnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.r
 works.NUnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 works.NUnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 works.NUnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+works.NUnitTests/bin/Debug/net8.0/Castle.Core.dll
+works.NUnitTests/bin/Debug/net8.0/Moq.dll
