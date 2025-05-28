@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Annotations;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using TodoApi.Models;
 
 namespace works.Controllers
@@ -30,7 +33,6 @@ namespace works.Controllers
             Summary = "取得所有待辦事項",
             Description = "撈取memory中所有待辦事項.")]
         [SwaggerResponse(200, "成功取得待辦事項列表", typeof(IEnumerable<TodoItem>))]
-        [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
         {
             return await _context.TodoItems.ToListAsync();
@@ -40,9 +42,10 @@ namespace works.Controllers
         [SwaggerOperation(
             Summary = "取得待辦事項（單一）",
             Description = "依據ID撈取單一待辦事項.")]
+
         [SwaggerResponse(200, "成功取得待辦事項", typeof(IEnumerable<TodoItem>))]
-        [SwaggerResponse(500, "伺服器錯誤")]
-        public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+        [SwaggerResponse(404, "找不到指定id的待辦事項")]
+        public async Task<ActionResult<TodoItem>> GetTodoItem([SwaggerParameter("待辦事項ID")] long id)
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
 
@@ -59,8 +62,9 @@ namespace works.Controllers
             Summary = "更新待辦事項",
             Description = "依據id更新待辦事項.")]
         [SwaggerResponse(200, "成功更新待辦事項", typeof(IEnumerable<TodoItem>))]
-        [SwaggerResponse(500, "伺服器錯誤")]
-        public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
+        [SwaggerResponse(400, "欄位的id與待輸入的json id不符")]
+        [SwaggerResponse(404, "找不到指定id的待辦事項")]
+        public async Task<IActionResult> PutTodoItem([SwaggerParameter("待辦事項ID")] long id, [SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
             if (id != todoItem.Id)
             {
@@ -95,8 +99,7 @@ namespace works.Controllers
             Summary = "新增待辦事項",
             Description = "新增一個待辦事項.")]
         [SwaggerResponse(200, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
-        [SwaggerResponse(500, "伺服器錯誤")]
-        public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
+        public async Task<ActionResult<TodoItem>> PostTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
@@ -110,8 +113,8 @@ namespace works.Controllers
             Summary = "刪除待辦事項",
             Description = "依據id刪除待辦事項.")]
         [SwaggerResponse(200, "成功刪除待辦事項", typeof(IEnumerable<TodoItem>))]
-        [SwaggerResponse(500, "伺服器錯誤")]
-        public async Task<IActionResult> DeleteTodoItem(long id)
+        [SwaggerResponse(404, "找不到指定id的待辦事項")]
+        public async Task<IActionResult> DeleteTodoItem([SwaggerParameter("待辦事項ID")]long id)
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
             if (todoItem == null)
