@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -8,6 +9,27 @@ namespace SigninAPI.Controller
 {
     public class SigninController : ControllerBase
     {
+        [HttpGet("public")]
+        [SwaggerOperation(
+            Summary = "public resource",
+            Description = "不需登入即可查看")]
+        [SwaggerResponse(200, "成功查看")]
+        public IActionResult Public()
+        {
+            return Ok("This is public resource.");
+        }
+
+        [Authorize]
+        [HttpGet("private")]
+        [SwaggerOperation(
+            Summary = "private resource",
+            Description = "需要登入才可查看")]
+        [SwaggerResponse(200, "成功查看")]
+        public IActionResult Private()
+        {
+            return Ok("This is private resource.");
+        }
+
         [HttpPost("signin")]
         [SwaggerOperation(
             Summary = "登入",
