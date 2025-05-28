@@ -6,6 +6,14 @@ using TodoApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
+builder.Services.AddAuthentication("CookieAuth")
+.AddCookie("CookieAuth", config =>
+{
+    config.Cookie.Name = "CRUD_API.Cookie";
+    config.LoginPath = "/signin";
+    config.LogoutPath = "/signout";
+});
+
 builder.Services.AddDbContext<TodoContext>(options =>
     options.UseInMemoryDatabase("TodoList"));
 
@@ -35,10 +43,18 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
 app.UseHttpsRedirection();
 
 app.Urls.Add("http://localhost:4000");
 
-app.MapControllers();
+// app.MapControllers();
 
 app.Run();
