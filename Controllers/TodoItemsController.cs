@@ -10,16 +10,17 @@ using TodoApi.Models;
 
 namespace works.Controllers
 {
-    
+
     [Route("api/[controller]")]
     [ApiController]
+
     public class TodoItemsController : ControllerBase
     {
         private readonly TodoContext _context;
 
         public TodoItemsController(TodoContext context)
         {
-            _context = context; 
+            _context = context;
         }
 
 
@@ -55,9 +56,9 @@ namespace works.Controllers
 
         [HttpPut("{id}")]
         [SwaggerOperation(
-            Summary = "新增待辦事項",
-            Description = "新增待辦事項到memory中.")]
-        [SwaggerResponse(200, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
+            Summary = "更新待辦事項",
+            Description = "依據id更新待辦事項.")]
+        [SwaggerResponse(200, "成功更新待辦事項", typeof(IEnumerable<TodoItem>))]
         [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
         {
@@ -90,6 +91,11 @@ namespace works.Controllers
         // POST: api/TodoItems
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [SwaggerOperation(
+            Summary = "新增待辦事項",
+            Description = "新增一個待辦事項.")]
+        [SwaggerResponse(200, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
+        [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
         {
             _context.TodoItems.Add(todoItem);
@@ -100,6 +106,11 @@ namespace works.Controllers
 
         // DELETE: api/TodoItems/5
         [HttpDelete("{id}")]
+        [SwaggerOperation(
+            Summary = "刪除待辦事項",
+            Description = "依據id刪除待辦事項.")]
+        [SwaggerResponse(200, "成功刪除待辦事項", typeof(IEnumerable<TodoItem>))]
+        [SwaggerResponse(500, "伺服器錯誤")]
         public async Task<IActionResult> DeleteTodoItem(long id)
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
