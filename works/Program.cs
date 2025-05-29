@@ -29,10 +29,6 @@ builder.Services.AddAuthentication("CookieAuth")
         }
     };
 });
-
-builder.Services.AddDbContext<TodoContext>(options =>
-    options.UseInMemoryDatabase("TodoList"));
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -40,6 +36,8 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.EnableAnnotations();
 });
+
+builder.Services.AddSingleton<RedisService>();
 
 var app = builder.Build();
 
