@@ -12,6 +12,22 @@ builder.Services.AddAuthentication("CookieAuth")
     config.Cookie.Name = "CRUD_API.Cookie";
     config.LoginPath = "/signin";
     config.LogoutPath = "/signout";
+
+    config.Events = new Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents
+    {
+        OnRedirectToLogin = context =>
+        {
+            if (context.Request.Path.StartsWithSegments("/api") ||
+                context.Request.Headers["Accept"].ToString().Contains("application/json"))
+            {
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                return Task.CompletedTask;
+            }
+
+            context.Response.Redirect(context.RedirectUri);
+            return Task.CompletedTask;
+        }
+    };
 });
 
 builder.Services.AddDbContext<TodoContext>(options =>

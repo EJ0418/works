@@ -64,13 +64,8 @@ namespace works.Controllers
         [SwaggerResponse(200, "成功更新待辦事項", typeof(IEnumerable<TodoItem>))]
         [SwaggerResponse(400, "欄位的id與待輸入的json id不符")]
         [SwaggerResponse(404, "找不到指定id的待辦事項")]
-        public async Task<IActionResult> PutTodoItem([SwaggerParameter("待辦事項ID")] long id, [SwaggerParameter("待辦事項內容")] TodoItem todoItem)
+        public async Task<IActionResult> PutTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
-            if (id != todoItem.Id)
-            {
-                return BadRequest();
-            }
-
             _context.Entry(todoItem).State = EntityState.Modified;
 
             try
@@ -79,7 +74,7 @@ namespace works.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!TodoItemExists(id))
+                if (!TodoItemExists(todoItem.Id))
                 {
                     return NotFound();
                 }

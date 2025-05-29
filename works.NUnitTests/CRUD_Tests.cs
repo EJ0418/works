@@ -67,32 +67,22 @@ namespace works.Controllers
         }
 
         [Test, Order(5)]
-        public async Task PutTodoItem_ReturnsBadRequest_WhenIdMismatch()
-        {
-            var context = GetDbContextWithData();
-            var controller = new TodoItemsController(context);
-            var todoItem = new TodoItem { Id = 2, Name = "Test", IsComplete = false };
-            var result = await controller.PutTodoItem(1, todoItem);
-            Assert.IsInstanceOf<BadRequestResult>(result);
-        }
-
-        [Test, Order(6)]
         public async Task PutTodoItem_ReturnsNotFound_WhenItemDoesNotExist()
         {
             var context = GetDbContextWithData();
             var controller = new TodoItemsController(context);
             var todoItem = new TodoItem { Id = 999, Name = "Test", IsComplete = false };
-            var result = await controller.PutTodoItem(999, todoItem);
+            var result = await controller.PutTodoItem(todoItem);
             Assert.IsInstanceOf<NotFoundResult>(result);
         }
 
-        [Test, Order(7)]
+        [Test, Order(6)]
         public async Task PutTodoItem_UpdatesItem_WhenValid()
         {
             var context = GetDbContextWithData();
             var controller = new TodoItemsController(context);
             var todoItem = new TodoItem { Id = 1, Name = "Updated", IsComplete = true };
-            var result = await controller.PutTodoItem(1, todoItem);
+            var result = await controller.PutTodoItem(todoItem);
             Assert.IsInstanceOf<NoContentResult>(result);
             var updated = await context.TodoItems.FindAsync(1L);
             Assert.AreEqual("Updated", updated.Name);
@@ -113,7 +103,7 @@ namespace works.Controllers
             Assert.AreEqual("New Item", created.Name);
         }
 
-        [Test, Order(8)]
+        [Test, Order(7)]
         public async Task DeleteTodoItem_RemovesItem_WhenExists()
         {
             var context = GetDbContextWithData();
@@ -123,7 +113,7 @@ namespace works.Controllers
             Assert.IsNull(await context.TodoItems.FindAsync(1L));
         }
 
-        [Test, Order(9)]
+        [Test, Order(8)]
         public async Task DeleteTodoItem_ReturnsNotFound_WhenNotExists()
         {
             var context = GetDbContextWithData();

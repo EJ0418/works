@@ -27,6 +27,10 @@ namespace AuthAPI.Controller
         [SwaggerResponse(200, "成功查看")]
         public IActionResult Private()
         {
+            if(!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized("使用者未登入");
+            }
             return Ok("This is private resource.");
         }
 
