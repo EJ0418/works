@@ -69,7 +69,7 @@ app.UseEndpoints(endpoints =>
 
 app.UseHttpsRedirection();
 
-app.Urls.Add("http://localhost:4000");
+// app.Urls.Add("http://localhost:4000");
 
 // app.MapControllers();
 
