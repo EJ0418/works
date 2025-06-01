@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 # 把本機的.csproj 檔案複製到工作目錄
 COPY works/*.csproj ./works/
-# 還原NuGet 套件
+# 根據.csproj列出的NuGet 套件下載/還原套件
 RUN dotnet restore "works/works.csproj"
 
 # 整個專案資料夾的內容複製進來
