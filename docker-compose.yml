@@ -9,7 +9,7 @@ services:
       - 6379:6379
     volumes:
       - ./redis.conf:/usr/local/etc/redis/redis.conf
-    command: redis-server /usr/local/etc/redis/redis.conf
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
 
   web:
     build: .
@@ -19,8 +19,10 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:5500
+      # Redis 服務所在的主機名稱(container 名稱)
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+      - REDIS_USER=ej
       - REDIS_PASSWORD=redis_pw
     depends_on:
       - redis

@@ -17,7 +17,7 @@ namespace works.Controllers
         {
             var inMemrySettings = new Dictionary<string, string>
             {
-                { "REDIS_PASSWORD", "test0000" },
+                { "REDIS_PASSWORD", "redis_pw" },
                 { "REDIS_HOST", "localhost" },
                 { "REDIS_PORT", "6379" }
             };
