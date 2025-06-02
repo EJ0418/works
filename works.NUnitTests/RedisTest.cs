@@ -2,7 +2,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using works.Controllers;
-using TodoApi.Models;
 using NUnit.Framework;
 using Microsoft.Extensions.Configuration;
 
@@ -32,21 +31,19 @@ namespace works.Controllers
         [Test, Order(1)]
         public async Task Set_ReturnsOk()
         {
-            var item = new TodoItem { Id = 1, Name = "Test" };
-            await _redisSerivice.SetAsync(item.Id.ToString(), item.Name);
-            var result = _redisSerivice.GetAsync(item.Id.ToString());
+            await _redisSerivice.SetAsync("1", "Test");
+            var result = _redisSerivice.GetAsync("1");
             Assert.IsNotNull(result);
-            Assert.AreEqual(item.Name, result.Result);
+            Assert.AreEqual("Test", result.Result);
         }
 
         [Test, Order(2)]
         public async Task Set_UpdateItem()
         {
-            var item = new TodoItem { Id = 1, Name = "update" };
-            await _redisSerivice.SetAsync(item.Id.ToString(), item.Name);
-            var result = _redisSerivice.GetAsync(item.Id.ToString());
+            await _redisSerivice.SetAsync("1", "Update");
+            var result = _redisSerivice.GetAsync("1");
             Assert.IsNotNull(result);
-            Assert.AreEqual(item.Name, result.Result);
+            Assert.AreEqual("Update", result.Result);
         }
 
         [Test, Order(3)]

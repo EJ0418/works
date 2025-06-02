@@ -1,7 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using TodoApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -66,9 +65,5 @@ app.UseEndpoints(endpoints =>
 });
 
 app.UseHttpsRedirection();
-
-// app.Urls.Add("http://localhost:4000");
-
-// app.MapControllers();
 
 app.Run();
