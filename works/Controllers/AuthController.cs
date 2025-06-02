@@ -25,9 +25,10 @@ namespace AuthAPI.Controller
             Summary = "private resource",
             Description = "需要登入才可查看")]
         [SwaggerResponse(200, "成功查看")]
+        [SwaggerResponse(401, "未授權")]
         public IActionResult Private()
         {
-            if(!User.Identity.IsAuthenticated)
+            if (!User.Identity.IsAuthenticated)
             {
                 return Unauthorized("使用者未登入");
             }

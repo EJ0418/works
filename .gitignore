@@ -1021,3 +1021,8 @@ works.NUnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Co
 works.NUnitTests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 works.NUnitTests/bin/Debug/net8.0/Castle.Core.dll
 works.NUnitTests/bin/Debug/net8.0/Moq.dll
+works/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
+works/bin/Debug/net8.0/StackExchange.Redis.dll
+.gitignore
+works.NUnitTests/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
+works.NUnitTests/bin/Debug/net8.0/StackExchange.Redis.dll
