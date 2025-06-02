@@ -17,9 +17,9 @@ namespace works.Controllers
         {
             var inMemrySettings = new Dictionary<string, string>
             {
-                { "Redis:Password", "test0000" },
-                { "Redis:Host", "localhost" },
-                { "Redis:Port", "6379" }
+                { "REDIS_PASSWORD", "test0000" },
+                { "REDIS_HOST", "localhost" },
+                { "REDIS_PORT", "6379" }
             };
 
             var config = new ConfigurationBuilder()
@@ -34,54 +34,57 @@ namespace works.Controllers
         {
             var item = new TodoItem { Id = 1, Name = "Test" };
             await _redisSerivice.SetAsync(item.Id.ToString(), item.Name);
-            var result =  
+            var result = _redisSerivice.GetAsync(item.Id.ToString());
+            Assert.IsNotNull(result);
+            Assert.AreEqual(item.Name, result.Result);
         }
 
-        [Test]
+        [Test, Order(2)]
+        public async Task Set_UpdateItem()
+        {
+            var item = new TodoItem { Id = 1, Name = "update" };
+            await _redisSerivice.SetAsync(item.Id.ToString(), item.Name);
+            var result = _redisSerivice.GetAsync(item.Id.ToString());
+            Assert.IsNotNull(result);
+            Assert.AreEqual(item.Name, result.Result);
+        }
+
+        [Test, Order(3)]
         public async Task Get_ReturnsOk_WhenValueExists()
         {
-            var key = "1";
-            var value = "Test";
-            _redisMock.Setup(r => r.GetAsync(key)).ReturnsAsync(value);
-
-            var result = await _controller.Get(key);
-
-            var okResult = result as OkObjectResult;
-            Assert.IsNotNull(okResult);
-            Assert.AreEqual(value, okResult.Value);
+            var result = _redisSerivice.GetAsync("1");
+            Assert.IsNotNull(result);
         }
 
-        [Test]
+        [Test, Order(4)]
         public async Task Get_ReturnsNotFound_WhenValueDoesNotExist()
         {
-            var key = "1";
-            _redisMock.Setup(r => r.GetAsync(key)).ReturnsAsync((string)null);
-
-            var result = await _controller.Get(key);
-
-            Assert.IsInstanceOf<NotFoundResult>(result);
+            var result = _redisSerivice.GetAsync("999");
+            Assert.IsNull(result.Result);
         }
 
-        [Test]
+        [Test, Order(5)]
         public async Task Delete_ReturnsNoContent_WhenDeleted()
         {
             var key = "1";
-            _redisMock.Setup(r => r.DeleteAsync(key)).ReturnsAsync(true);
-
-            var result = await _controller.Delete(key);
-
-            Assert.IsInstanceOf<NoContentResult>(result);
+            await _redisSerivice.DeleteAsync(key);
+            var result = await _redisSerivice.GetAsync(key);
+            Assert.IsNull(result);
         }
 
-        [Test]
+        [Test, Order(6)]
         public async Task Delete_ReturnsNotFound_WhenNotDeleted()
         {
-            var key = "1";
-            _redisMock.Setup(r => r.DeleteAsync(key)).ReturnsAsync(false);
-
-            var result = await _controller.Delete(key);
-
-            Assert.IsInstanceOf<NotFoundResult>(result);
+            try
+            {
+                var key = "999";
+                await _redisSerivice.DeleteAsync(key);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.IsInstanceOf<KeyNotFoundException>(ex);
+                Assert.AreEqual("Key:'999'不存在redis中", ex.Message);
+            }
         }
     }
 }

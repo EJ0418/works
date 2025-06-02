@@ -7,16 +7,20 @@ services:
     restart: always
     ports:
       - 6379:6379
-    command: redis-server --requirepass test0000
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
 
-  webapp:
+  web:
     build: .
+    container_name: web
     ports:
-      - "4000:5000"
+      - "4000:5500"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5500
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - REDIS_PASSWORD=test0000
+      - REDIS_PASSWORD=redis_pw
     depends_on:
       - redis
