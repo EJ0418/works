@@ -2,8 +2,12 @@ version: '3.8'
 
 services:
   web:
+    # 由專案根目錄的 Dockerfile 建立image
+    # 這裡的 . 代表當前目錄，Dockerfile 應該在同一目錄下
     build: .
     ports:
-      - "4000:4000"
+    # 本機：container
+      - "4000:5500"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5500

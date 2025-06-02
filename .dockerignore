@@ -1,5 +1,7 @@
-bin/
-obj/
+works/bin/
+works/obj/
+works.NUnitTests/obj/
+works.NUnitTests/bin/
 .vscode/
 *.user
 .git
