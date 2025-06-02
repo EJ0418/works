@@ -4,3 +4,4 @@ works/bin/
 .gitignore
 works.NUnitTests/obj/
 works.NUnitTests/bin/
+.vscode/launch.json

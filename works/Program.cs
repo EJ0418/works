@@ -4,7 +4,6 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
-
 builder.Services.AddAuthentication("CookieAuth")
 .AddCookie("CookieAuth", config =>
 {
@@ -55,7 +54,6 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = "doc";
     });
 }
-
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
@@ -64,6 +62,6 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
-app.UseHttpsRedirection();
+// app.Urls.Add("http://localhost:4000");
 
 app.Run();

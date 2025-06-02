@@ -29,7 +29,7 @@ namespace works.Controllers
         }
 
         [Test, Order(1)]
-        public async Task Set_ReturnsOk()
+        public async Task Set_CreateItem()
         {
             await _redisSerivice.SetAsync("1", "Test");
             var result = _redisSerivice.GetAsync("1");
@@ -47,21 +47,21 @@ namespace works.Controllers
         }
 
         [Test, Order(3)]
-        public async Task Get_ReturnsOk_WhenValueExists()
+        public async Task Get_WhenValueExists()
         {
             var result = _redisSerivice.GetAsync("1");
             Assert.IsNotNull(result);
         }
 
         [Test, Order(4)]
-        public async Task Get_ReturnsNotFound_WhenValueDoesNotExist()
+        public async Task Get_WhenValueDoesNotExist()
         {
             var result = _redisSerivice.GetAsync("999");
             Assert.IsNull(result.Result);
         }
 
         [Test, Order(5)]
-        public async Task Delete_ReturnsNoContent_WhenDeleted()
+        public async Task Delete_WhenValueExists()
         {
             var key = "1";
             await _redisSerivice.DeleteAsync(key);
@@ -70,7 +70,7 @@ namespace works.Controllers
         }
 
         [Test, Order(6)]
-        public async Task Delete_ReturnsNotFound_WhenNotDeleted()
+        public async Task Delete_WhenValueDoesNotExist()
         {
             try
             {
