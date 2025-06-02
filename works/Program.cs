@@ -30,8 +30,12 @@ builder.Services.AddAuthentication("CookieAuth")
     };
 });
 
+var connStr = builder.Configuration.GetConnectionString("TodoListContext")
+.Replace("{DB_USER}", Environment.GetEnvironmentVariable("DB_USER"))
+.Replace("{DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD"));
+
 builder.Services.AddDbContext<TodoContext>(options =>
-    options.UseInMemoryDatabase("TodoList"));
+    options.UseMySql(connStr, ServerVersion.AutoDetect(connStr)));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,13 +1,19 @@
 version: '3.8'
 
 services:
-  web:
-    # 由專案根目錄的 Dockerfile 建立image
-    # 這裡的 . 代表當前目錄，Dockerfile 應該在同一目錄下
-    build: .
-    ports:
-    # 本機：container
-      - "4000:5500"
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:5500
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: tododb
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
+    driver: local
