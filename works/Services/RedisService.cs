@@ -21,7 +21,9 @@ public class RedisService
             EndPoints = { $"{host}:{port}" },
             User = user,
             Password = pw,
-            AbortOnConnectFail = false
+            AbortOnConnectFail = false,
+            ConnectRetry = 3,
+            ReconnectRetryPolicy = new LinearRetry(3)
         };
         var connection = ConnectionMultiplexer.Connect(opt);
         _db = connection.GetDatabase();
