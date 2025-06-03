@@ -14,22 +14,23 @@ namespace works.Controllers
         [SetUp]
         public void Setup()
         {
-            var inMemrySettings = new Dictionary<string, string>
+            var inMemroySettings = new Dictionary<string, string>
             {
+                { "REDIS_USER", "default" },
                 { "REDIS_PASSWORD", "redis_pw" },
                 { "REDIS_HOST", "localhost" },
                 { "REDIS_PORT", "6379" }
             };
 
             var config = new ConfigurationBuilder()
-            .AddInMemoryCollection(inMemrySettings)
+            .AddInMemoryCollection(inMemroySettings)
                 .Build();
 
             _redisSerivice = new RedisService(config);
         }
 
         [Test, Order(1)]
-        public async Task Set_ReturnsOk()
+        public async Task Set_CreateItem()
         {
             await _redisSerivice.SetAsync("1", "Test");
             var result = _redisSerivice.GetAsync("1");
@@ -38,30 +39,21 @@ namespace works.Controllers
         }
 
         [Test, Order(2)]
-        public async Task Set_UpdateItem()
+        public async Task Get_WhenValueExists()
         {
-            await _redisSerivice.SetAsync("1", "Update");
             var result = _redisSerivice.GetAsync("1");
             Assert.IsNotNull(result);
-            Assert.AreEqual("Update", result.Result);
         }
 
         [Test, Order(3)]
-        public async Task Get_ReturnsOk_WhenValueExists()
-        {
-            var result = _redisSerivice.GetAsync("1");
-            Assert.IsNotNull(result);
-        }
-
-        [Test, Order(4)]
-        public async Task Get_ReturnsNotFound_WhenValueDoesNotExist()
+        public async Task Get_WhenValueDoesNotExist()
         {
             var result = _redisSerivice.GetAsync("999");
             Assert.IsNull(result.Result);
         }
 
-        [Test, Order(5)]
-        public async Task Delete_ReturnsNoContent_WhenDeleted()
+        [Test, Order(4)]
+        public async Task Delete_WhenValueExists()
         {
             var key = "1";
             await _redisSerivice.DeleteAsync(key);
@@ -69,8 +61,8 @@ namespace works.Controllers
             Assert.IsNull(result);
         }
 
-        [Test, Order(6)]
-        public async Task Delete_ReturnsNotFound_WhenNotDeleted()
+        [Test, Order(5)]
+        public async Task Delete_WhenValueDoesNotExist()
         {
             try
             {

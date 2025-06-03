@@ -51,7 +51,7 @@ if (app.Environment.IsDevelopment())
     );
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"CRUD API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"Redis API");
         c.RoutePrefix = "doc";
     });
 }
@@ -64,6 +64,6 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
-app.UseHttpsRedirection();
+// app.Urls.Add("http://localhost:4000");
 
 app.Run();
