@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Razor.Language;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Annotations;
@@ -26,14 +27,12 @@ namespace works.Controllers
             _context = context;
         }
 
-
-
         [HttpGet]
         [SwaggerOperation(
             Summary = "取得所有待辦事項",
             Description = "撈取memory中所有待辦事項.")]
         [SwaggerResponse(200, "成功取得待辦事項列表", typeof(IEnumerable<TodoItem>))]
-        public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
+        public async Task<ActionResult<IEnumerable<TodoItem>>> GetAll()
         {
             return await _context.TodoItems.ToListAsync();
         }
@@ -45,10 +44,9 @@ namespace works.Controllers
 
         [SwaggerResponse(200, "成功取得待辦事項", typeof(IEnumerable<TodoItem>))]
         [SwaggerResponse(404, "找不到指定id的待辦事項")]
-        public async Task<ActionResult<TodoItem>> GetTodoItem([SwaggerParameter("待辦事項ID")] long id)
+        public async Task<ActionResult<TodoItem>> GetTodoItem([SwaggerParameter("待辦事項ID")] int id)
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
-
             if (todoItem == null)
             {
                 return NotFound();
@@ -57,59 +55,42 @@ namespace works.Controllers
             return todoItem;
         }
 
-        [HttpPut("{id}")]
+        [HttpPut()]
         [SwaggerOperation(
             Summary = "更新待辦事項",
             Description = "依據id更新待辦事項.")]
         [SwaggerResponse(200, "成功更新待辦事項", typeof(IEnumerable<TodoItem>))]
         [SwaggerResponse(400, "欄位的id與待輸入的json id不符")]
         [SwaggerResponse(404, "找不到指定id的待辦事項")]
-        public async Task<IActionResult> PutTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
+        public async Task<IActionResult> UpdateTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
             _context.Entry(todoItem).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TodoItemExists(todoItem.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _context.SaveChangesAsync();
             return NoContent();
         }
 
-        // POST: api/TodoItems
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         [SwaggerOperation(
             Summary = "新增待辦事項",
             Description = "新增一個待辦事項.")]
         [SwaggerResponse(200, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
-        public async Task<ActionResult<TodoItem>> PostTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
+        public async Task<ActionResult<TodoItem>> CreateTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
+            
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
+            return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.Id }, todoItem);
         }
 
-        // DELETE: api/TodoItems/5
+
         [HttpDelete("{id}")]
         [SwaggerOperation(
             Summary = "刪除待辦事項",
             Description = "依據id刪除待辦事項.")]
         [SwaggerResponse(200, "成功刪除待辦事項", typeof(IEnumerable<TodoItem>))]
         [SwaggerResponse(404, "找不到指定id的待辦事項")]
-        public async Task<IActionResult> DeleteTodoItem([SwaggerParameter("待辦事項ID")]long id)
+        public async Task<IActionResult> DeleteTodoItem([SwaggerParameter("待辦事項ID")]int id)
         {
             var todoItem = await _context.TodoItems.FindAsync(id);
             if (todoItem == null)
@@ -121,11 +102,6 @@ namespace works.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
-
-        private bool TodoItemExists(long id)
-        {
-            return _context.TodoItems.Any(e => e.Id == id);
         }
     }
 }

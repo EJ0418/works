@@ -6,12 +6,12 @@ namespace TodoApi.Models
     public class TodoItem
     {
         [SwaggerSchema("待辦事項ID", ReadOnly = false)]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [SwaggerSchema("待辦事項名稱", ReadOnly = false, Nullable = true)]
-        public string? Name { get; set; }
+        public string? Title { get; set; }
 
         [SwaggerSchema("待辦事項是否完成", ReadOnly = false)]
-        public bool IsComplete { get; set; }
+        public bool IsDone { get; set; }
     }
 }

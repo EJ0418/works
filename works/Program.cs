@@ -1,7 +1,4 @@
-using System.Reflection;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using TodoApi.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -30,13 +27,6 @@ builder.Services.AddAuthentication("CookieAuth")
     };
 });
 
-var connStr = builder.Configuration.GetConnectionString("TodoListContext")
-.Replace("{DB_USER}", Environment.GetEnvironmentVariable("DB_USER"))
-.Replace("{DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD"));
-
-builder.Services.AddDbContext<TodoContext>(options =>
-    options.UseMySql(connStr, ServerVersion.AutoDetect(connStr)));
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -58,7 +48,7 @@ if (app.Environment.IsDevelopment())
     );
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"CRUD API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"SQL API");
         c.RoutePrefix = "doc";
     });
 }
