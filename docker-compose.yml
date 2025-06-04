@@ -1,6 +1,6 @@
 services:
-  web:
-    image: work_sql:1.0.0
+  work:
+    image: work_sql:1.0.7
     ports:
       - "4000:5500"
     environment:
@@ -10,10 +10,10 @@ services:
       # 這行刪掉會不能跑
       - ASPNETCORE_URLS=http://+:5500 
       # Redis 服務所在的主機名稱(container 名稱)
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-      - REDIS_USER=
-      - REDIS_PASSWORD=redis_pw
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_USER=${REDIS_USER}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
     depends_on:
       redis:
         condition: service_healthy
@@ -22,11 +22,6 @@ services:
   mariadb:
     image: mariadb:latest
     container_name: mariadb
-    environment:
-      MYSQL_ROOT_PASSWORD: root_pw
-      MYSQL_DATABASE: tododb
-      MYSQL_USER: ej
-      MYSQL_PASSWORD: ej_pw
     ports:
       - "3306:3306"
 

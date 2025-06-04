@@ -10,12 +10,11 @@ public class RedisService
 
     public RedisService(IConfiguration config)
     {
-        DotNetEnv.Env.Load();
 
-        var user = Environment.GetEnvironmentVariable("REDIS_USER");
-        var pw = Environment.GetEnvironmentVariable("REDIS_PASSWORD");
-        var host = Environment.GetEnvironmentVariable("REDIS_HOST");
-        var port = Environment.GetEnvironmentVariable("REDIS_PORT");
+        var user = config["REDIS_USER"] ?? Environment.GetEnvironmentVariable("REDIS_USER");
+        var pw = config["REDIS_PASSWORD"] ?? Environment.GetEnvironmentVariable("REDIS_PASSWORD");
+        var host = config["REDIS_HOST"] ?? Environment.GetEnvironmentVariable("REDIS_HOST");
+        var port = config["REDIS_PORT"] ?? Environment.GetEnvironmentVariable("REDIS_PORT");
 
         var opt = new ConfigurationOptions
         {

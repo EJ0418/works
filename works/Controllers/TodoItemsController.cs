@@ -64,7 +64,13 @@ namespace works.Controllers
         [SwaggerResponse(404, "找不到指定id的待辦事項")]
         public async Task<IActionResult> UpdateTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
-            _context.Entry(todoItem).State = EntityState.Modified;
+            var varifyItem = await _context.TodoItems.FindAsync(todoItem.Id);
+            if (varifyItem == null)
+            {
+                return NotFound();
+            }
+            // Update the properties of the tracked entity
+            _context.Entry(varifyItem).CurrentValues.SetValues(todoItem);
             await _context.SaveChangesAsync();
             return NoContent();
         }
@@ -78,8 +84,8 @@ namespace works.Controllers
         {
             
             _context.TodoItems.Add(todoItem);
-            await _context.SaveChangesAsync();
-
+            int id = await _context.SaveChangesAsync();
+            todoItem.Id = id;
             return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.Id }, todoItem);
         }
 

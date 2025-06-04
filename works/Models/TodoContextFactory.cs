@@ -10,9 +10,13 @@ public class TodoContextFactory : IDesignTimeDbContextFactory<TodoContext>
     /// <returns>A new TodoContext instance.</returns>
     public TodoContext CreateDbContext(string[] args)
     {
+        var server = Environment.GetEnvironmentVariable("DB_SERVER");
+        var db = Environment.GetEnvironmentVariable("DB_DB");
+        var user = Environment.GetEnvironmentVariable("DB_USER");
+        var pw = Environment.GetEnvironmentVariable("DB_PASSWORD");
         var optionsBuilder = new DbContextOptionsBuilder<TodoContext>();
         optionsBuilder.UseMySql(
-            "Server=localhost;Database=tododb;User=ej;Password=ej_pw;",
+            $"Server={server};Database={db};User={user};Password={pw};",
             new MySqlServerVersion(new Version(10, 5, 8))
         );
 

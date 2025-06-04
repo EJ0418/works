@@ -79,4 +79,6 @@ app.UseHttpsRedirection();
 
 // app.MapControllers();
 
+DotNetEnv.Env.Load();
+
 app.Run();
