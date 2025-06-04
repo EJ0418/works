@@ -1,23 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
-using System.IO;
 
 public class TodoContextFactory : IDesignTimeDbContextFactory<TodoContext>
 {
+    /// <summary>
+    /// Creates a new instance of the TodoContext for design-time usage.
+    /// </summary>
+    /// <param name="args">Command line arguments.</param>
+    /// <returns>A new TodoContext instance.</returns>
     public TodoContext CreateDbContext(string[] args)
     {
-        var config = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json")
-            .Build();
-
-        var connStr = config.GetConnectionString("DefaultConnection")
-        .Replace("{DB_USER}", Environment.GetEnvironmentVariable("DB_USER"))
-        .Replace("{DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD"));
-
         var optionsBuilder = new DbContextOptionsBuilder<TodoContext>();
-        optionsBuilder.UseOracle(connStr);
+        optionsBuilder.UseMySql(
+            "Server=localhost;Database=tododb;User=ej;Password=ej_pw;",
+            new MySqlServerVersion(new Version(10, 5, 8))
+        );
 
         return new TodoContext(optionsBuilder.Options);
     }

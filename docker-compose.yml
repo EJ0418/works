@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    image: web:latest
+    image: sql:latest
     environment:
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
@@ -12,15 +12,19 @@ services:
       - mariadb
 
 
-  oracle:
-    image: container-registry.oracle.com/database/xe:21.3.0
-    container_name: oracle-xe
-    ports:
-      - "1521:1521"
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
     environment:
-      - ORACLE_PWD=ej_pw
+      MYSQL_ROOT_PASSWORD: root_pw
+      MYSQL_DATABASE: tododb
+      MYSQL_USER: ej
+      MYSQL_PASSWORD: ej_pw
+    ports:
+      - "3306:3306"
+
     volumes:
-      - oracle_data:/opt/oracle/oradata
+      - mariadb_data:/var/lib/mysql
 
 volumes:
-  oracle_data:
+  mariadb_data:

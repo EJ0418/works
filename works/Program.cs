@@ -1,5 +1,7 @@
 
 
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
@@ -27,6 +29,13 @@ builder.Services.AddAuthentication("CookieAuth")
     };
 });
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    .Replace("${DB_USER}", Environment.GetEnvironmentVariable("DB_USER") ?? "root")
+    .Replace("${DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "root");
+
+builder.Services.AddDbContext<TodoContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -34,6 +43,8 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.EnableAnnotations();
 });
+
+
 
 var app = builder.Build();
 
