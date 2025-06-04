@@ -19,7 +19,7 @@ services:
       start_period: 10s
 
   web:
-    image: web:1.0.0
+    image: web:latest
     container_name: web
     ports:
       - "4000:5500"

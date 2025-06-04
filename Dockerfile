@@ -10,7 +10,7 @@ RUN dotnet publish "works/works.csproj" -c Release -o /app/publish
 
 ## [ 執行階段 ]
 # 使用只包含 .NET Runtime 的更小image，不含 SDK
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine
 # 設定工作目錄
 WORKDIR /app
 # 從建立階段複製已發佈的檔案到執行階段image
