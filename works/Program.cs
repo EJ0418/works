@@ -28,6 +28,7 @@ builder.Services.AddAuthentication("CookieAuth")
         }
     };
 });
+builder.Services.AddScoped<RedisService>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     .Replace("${DB_USER}", Environment.GetEnvironmentVariable("DB_USER") ?? "root")
