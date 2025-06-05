@@ -26,7 +26,7 @@ services:
       - "3306:3306"
 
     volumes:
-      - mariadb_data:/var/lib/mysql
+      - mariadb_data:/var/lib/mariadb
 
   redis:
     image: redis:latest
@@ -43,7 +43,9 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+      ##容器啟動後的前 10 秒屬於寬限期，這段期間內的檢查失敗不會計入失敗次數。
       start_period: 10s
 
 volumes:
   mariadb_data:
+    driver: local

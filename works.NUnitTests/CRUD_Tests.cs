@@ -17,7 +17,7 @@ namespace works.Controllers
     public class CRUD_Test
     {
         private TodoContext _context;
-        private int _testId = 19;
+        private int _testId =33;
 
         [SetUp]
         public void SetUp()
@@ -30,7 +30,7 @@ namespace works.Controllers
             var options = new DbContextOptionsBuilder<TodoContext>()
                 .UseMySql(
                     $"server=127.0.0.1;database=tododb;user=ej;password=ej_pw;",
-                    new MySqlServerVersion(new Version(10, 5, 0)))
+                    new MySqlServerVersion(new Version(11,7,2)))
                 .Options;
             _context = new TodoContext(options);
         }
@@ -83,7 +83,7 @@ namespace works.Controllers
             var result = await controller.GetTodoItem(_testId);
             var item = result.Value;
             Assert.IsNotNull(item);
-            Assert.AreEqual(_testId, item.Id);
+            Assert.That(item.Id, Is.EqualTo(_testId));
         }
 
         [Test, Order(6)]
@@ -114,6 +114,7 @@ namespace works.Controllers
 
         }
 
+        //每個test執行完之後，會自動執行的清理（測試後置作業）。
         [TearDown]
         public void TearDown()
         {

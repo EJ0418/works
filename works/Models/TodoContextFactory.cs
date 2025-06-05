@@ -17,7 +17,7 @@ public class TodoContextFactory : IDesignTimeDbContextFactory<TodoContext>
         var optionsBuilder = new DbContextOptionsBuilder<TodoContext>();
         optionsBuilder.UseMySql(
             $"Server={server};Database={db};User={user};Password={pw};",
-            new MySqlServerVersion(new Version(10, 5, 8))
+            new MySqlServerVersion(new Version(11,7,2))
         );
 
         return new TodoContext(optionsBuilder.Options);

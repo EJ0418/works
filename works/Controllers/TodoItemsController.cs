@@ -30,7 +30,7 @@ namespace works.Controllers
         [HttpGet]
         [SwaggerOperation(
             Summary = "取得所有待辦事項",
-            Description = "撈取memory中所有待辦事項.")]
+            Description = "撈取資料庫中所有待辦事項.")]
         [SwaggerResponse(200, "成功取得待辦事項列表", typeof(IEnumerable<TodoItem>))]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetAll()
         {
@@ -69,7 +69,7 @@ namespace works.Controllers
             {
                 return NotFound();
             }
-            // Update the properties of the tracked entity
+            
             _context.Entry(varifyItem).CurrentValues.SetValues(todoItem);
             await _context.SaveChangesAsync();
             return NoContent();
