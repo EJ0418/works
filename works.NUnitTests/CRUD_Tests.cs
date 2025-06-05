@@ -3,9 +3,11 @@ using System.Formats.Asn1;
 using System.Linq;
 using System.Threading.Tasks;
 using Humanizer;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.InMemory;
+using NuGet.Common;
 using NuGet.ContentModel;
 using NUnit.Framework;
 using TodoApi.Models;
@@ -29,7 +31,7 @@ namespace works.Controllers
             // var pw = Environment.GetEnvironmentVariable("DB_PASSWORD");
             var options = new DbContextOptionsBuilder<TodoContext>()
                 .UseMySql(
-                    $"server=127.0.0.1;database=tododb;user=ej;password=ej_pw;",
+                    $"server=localhost;database=tododb;user=ej;password=ej_pw;",
                     new MySqlServerVersion(new Version(11,7,2)))
                 .Options;
             _context = new TodoContext(options);
@@ -49,9 +51,9 @@ namespace works.Controllers
         public async Task Update_WhenIdExists()
         {
             var controller = new TodoItemsController(_context);
-            await controller.UpdateTodoItem(new TodoItem() { Id = 1, Title = "testCase_update_" + _testId.ToString(), IsDone = true });
+            await controller.UpdateTodoItem(new TodoItem() { Id = 3, Title = "testCase_update_" + _testId.ToString(), IsDone = true , UpdateTime = DateTime.Now});
 
-            var getResult = await controller.GetTodoItem(1);
+            var getResult = await controller.GetTodoItem(3);
 
             Assert.AreEqual(getResult.Value.Title, "testCase_update_" + _testId.ToString());
         }
@@ -62,7 +64,7 @@ namespace works.Controllers
             var controller = new TodoItemsController(_context);
             var result = await controller.UpdateTodoItem(new TodoItem() { Id = 999, Title = "testCase_update", IsDone = true });
 
-            Assert.IsInstanceOf<NotFoundResult>(result);
+            Assert.IsInstanceOf<NotFoundObjectResult>(result);
 
         }
 
@@ -91,7 +93,7 @@ namespace works.Controllers
         {
             var controller = new TodoItemsController(_context);
             var result = await controller.GetTodoItem(999);
-            Assert.IsInstanceOf<NotFoundResult>(result.Result);
+            Assert.IsInstanceOf<NotFoundObjectResult>(result.Result);
         }
 
 
@@ -101,7 +103,7 @@ namespace works.Controllers
         {
             var controller = new TodoItemsController(_context);
             var result = await controller.DeleteTodoItem(_testId);
-            Assert.IsInstanceOf<NoContentResult>(result);
+            Assert.IsInstanceOf<OkObjectResult>(result);
             Assert.IsNull(await _context.TodoItems.FindAsync(_testId));
         }
 
@@ -110,7 +112,7 @@ namespace works.Controllers
         {
             var controller = new TodoItemsController(_context);
             var result = await controller.DeleteTodoItem(999);
-            Assert.IsInstanceOf<NotFoundResult>(result);
+            Assert.IsInstanceOf<NotFoundObjectResult>(result);
 
         }
 

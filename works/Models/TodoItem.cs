@@ -18,8 +18,8 @@ namespace TodoApi.Models
         [SwaggerSchema("待辦事項是否完成", ReadOnly = false)]
         public bool IsDone { get; set; }
 
-        // [SwaggerSchema("待辦事項內容")]
-        // public string? Comment { get; set; }
+        [SwaggerSchema("待辦事項內容")]
+        public string? Comment { get; set; }
 
         [SwaggerSchema("新增時間")]
         public DateTime CreatedTime { get; set; }
