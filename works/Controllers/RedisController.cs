@@ -33,7 +33,7 @@ namespace works.Controllers
         public async Task<IActionResult> Set([SwaggerParameter("新增ID", Required =true)] string id, [SwaggerParameter("新增名稱", Required =true)] string name)
         {
             await _redis.SetAsync(id, name);
-            return Ok();
+            return Ok("新增成功");
         }
 
         [HttpGet("get")]
@@ -47,7 +47,7 @@ namespace works.Controllers
             var value = await _redis.GetAsync(id);
             if (value == null)
             {
-                return NotFound();
+                return NotFound("查詢失敗");
             }
             return Ok(value);
         }
@@ -57,7 +57,7 @@ namespace works.Controllers
         [SwaggerOperation(
             Summary = "刪除",
             Description = "刪除指定的 key 在 Redis 中的值。")]
-        [SwaggerResponse(204, "刪除成功", typeof(void))]
+        [SwaggerResponse(200, "刪除成功", typeof(void))]
         [SwaggerResponse(400, "尚未輸入ID", typeof(void))]
         [SwaggerResponse(404, "刪除失敗", typeof(void))]
         public async Task<IActionResult> Delete([SwaggerParameter("刪除ID", Required =true)] string id)
@@ -69,9 +69,9 @@ namespace works.Controllers
             var deleted = await _redis.DeleteAsync(id);
             if (!deleted)
             {
-                return NotFound();
+                return NotFound("刪除失敗");
             }
-            return NoContent();
+            return Ok("刪除成功");
         }
     }
 }

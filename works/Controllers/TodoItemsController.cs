@@ -29,12 +29,22 @@ namespace works.Controllers
 
         [HttpGet]
         [SwaggerOperation(
-            Summary = "取得所有待辦事項",
-            Description = "撈取資料庫中所有待辦事項.")]
+            Summary = "取得所有待辦事項（分頁）",
+            Description = "撈取資料庫中所有待辦事項，支援分頁查詢.")]
         [SwaggerResponse(200, "成功取得待辦事項列表", typeof(IEnumerable<TodoItem>))]
-        public async Task<ActionResult<IEnumerable<TodoItem>>> GetAll()
+        public async Task<ActionResult<IEnumerable<TodoItem>>> GetAll(
+            [FromQuery][SwaggerParameter("頁碼（從1開始）")] int page = 1,
+            [FromQuery][SwaggerParameter("每頁筆數")] int pageSize = 15)
         {
-            return await _context.TodoItems.ToListAsync();
+            if (page < 1) page = 1;
+            if (pageSize < 1) pageSize = 15;
+
+            var items = await _context.TodoItems
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+
+            return items;
         }
 
         [HttpGet("{id}")]
@@ -49,7 +59,7 @@ namespace works.Controllers
             var todoItem = await _context.TodoItems.FindAsync(id);
             if (todoItem == null)
             {
-                return NotFound();
+                return NotFound("找不到指定id的待辦事項");
             }
 
             return todoItem;
@@ -60,26 +70,25 @@ namespace works.Controllers
             Summary = "更新待辦事項",
             Description = "依據id更新待辦事項.")]
         [SwaggerResponse(200, "成功更新待辦事項", typeof(IEnumerable<TodoItem>))]
-        [SwaggerResponse(400, "欄位的id與待輸入的json id不符")]
         [SwaggerResponse(404, "找不到指定id的待辦事項")]
         public async Task<IActionResult> UpdateTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
             var varifyItem = await _context.TodoItems.FindAsync(todoItem.Id);
             if (varifyItem == null)
             {
-                return NotFound();
+                return NotFound("找不到指定id的待辦事項");
             }
             
             _context.Entry(varifyItem).CurrentValues.SetValues(todoItem);
             await _context.SaveChangesAsync();
-            return NoContent();
+             return Ok("成功更新待辦事項");
         }
 
         [HttpPost]
         [SwaggerOperation(
             Summary = "新增待辦事項",
             Description = "新增一個待辦事項.")]
-        [SwaggerResponse(200, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
+        [SwaggerResponse(201, "成功新增待辦事項", typeof(IEnumerable<TodoItem>))]
         public async Task<ActionResult<TodoItem>> CreateTodoItem([SwaggerParameter("待辦事項內容")] TodoItem todoItem)
         {
             
@@ -101,13 +110,13 @@ namespace works.Controllers
             var todoItem = await _context.TodoItems.FindAsync(id);
             if (todoItem == null)
             {
-                return NotFound();
+                return NotFound("找不到指定id的待辦事項");
             }
 
             _context.TodoItems.Remove(todoItem);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok("成功刪除待辦事項");
         }
     }
 }

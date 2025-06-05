@@ -30,12 +30,18 @@ builder.Services.AddAuthentication("CookieAuth")
 });
 builder.Services.AddScoped<RedisService>();
 
+DotNetEnv.Env.Load();
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-    .Replace("${DB_USER}", Environment.GetEnvironmentVariable("DB_USER") ?? "root")
-    .Replace("${DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "root");
+.Replace("${DB_SERVER}", Environment.GetEnvironmentVariable("DB_SERVER"))
+.Replace("${DB_PORT}", Environment.GetEnvironmentVariable("DB_PORT"))
+.Replace("${DB_DB}", Environment.GetEnvironmentVariable("DB_DB"))
+    .Replace("${DB_USER}", "root")//Environment.GetEnvironmentVariable("DB_USER"))
+    .Replace("${DB_PASSWORD}", "root_pw");//, Environment.GetEnvironmentVariable("DB_PASSWORD"));
 
 builder.Services.AddDbContext<TodoContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+Console.WriteLine(connectionString);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -79,6 +85,6 @@ app.UseHttpsRedirection();
 
 // app.MapControllers();
 
-DotNetEnv.Env.Load();
+app.MapGet("/health", () => Results.Ok("後端服務Healthy"));
 
 app.Run();
