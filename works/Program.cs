@@ -50,7 +50,7 @@ if (app.Environment.IsDevelopment())
     );
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"CRUD API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"Redis API");
         c.RoutePrefix = "doc";
     });
 }

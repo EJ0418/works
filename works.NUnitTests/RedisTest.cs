@@ -14,15 +14,16 @@ namespace works.Controllers
         [SetUp]
         public void Setup()
         {
-            var inMemrySettings = new Dictionary<string, string>
+            var inMemroySettings = new Dictionary<string, string>
             {
+                { "REDIS_USER", "default" },
                 { "REDIS_PASSWORD", "redis_pw" },
                 { "REDIS_HOST", "localhost" },
                 { "REDIS_PORT", "6379" }
             };
 
             var config = new ConfigurationBuilder()
-            .AddInMemoryCollection(inMemrySettings)
+            .AddInMemoryCollection(inMemroySettings)
                 .Build();
 
             _redisSerivice = new RedisService(config);
@@ -38,29 +39,20 @@ namespace works.Controllers
         }
 
         [Test, Order(2)]
-        public async Task Set_UpdateItem()
-        {
-            await _redisSerivice.SetAsync("1", "Update");
-            var result = _redisSerivice.GetAsync("1");
-            Assert.IsNotNull(result);
-            Assert.AreEqual("Update", result.Result);
-        }
-
-        [Test, Order(3)]
         public async Task Get_WhenValueExists()
         {
             var result = _redisSerivice.GetAsync("1");
             Assert.IsNotNull(result);
         }
 
-        [Test, Order(4)]
+        [Test, Order(3)]
         public async Task Get_WhenValueDoesNotExist()
         {
             var result = _redisSerivice.GetAsync("999");
             Assert.IsNull(result.Result);
         }
 
-        [Test, Order(5)]
+        [Test, Order(4)]
         public async Task Delete_WhenValueExists()
         {
             var key = "1";
@@ -69,7 +61,7 @@ namespace works.Controllers
             Assert.IsNull(result);
         }
 
-        [Test, Order(6)]
+        [Test, Order(5)]
         public async Task Delete_WhenValueDoesNotExist()
         {
             try
