@@ -36,7 +36,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - mariadb_data:/var/lib/mysql
+      - ./mariadb_data:/var/lib/mysql
     environment: 
       - MARIADB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
     healthcheck:
