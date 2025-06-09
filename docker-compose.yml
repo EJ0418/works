@@ -1,6 +1,6 @@
 services:
   work:
-    image: work_websocket:1.0.5
+    image: work_mqtt:1.0.1
     container_name: work
     restart: always
     ports:
@@ -64,7 +64,16 @@ services:
       ##容器啟動後的前 10 秒屬於寬限期，這段期間內的檢查失敗不會計入失敗次數。
       start_period: 10s
 
-      
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: mqtt-broker
+    ports:
+      - "1883:1883"   # MQTT 通訊埠
+      - "9001:9001"   # WebSocket（非必需）
+    volumes:
+      - ./configs:/mosquitto/configs
+      - ./datas:/mosquitto/data
+      - ./logs:/mosquitto/log
 
 volumes:
   mariadb_data:
