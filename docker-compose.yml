@@ -1,6 +1,6 @@
 services:
   work:
-    image: work_sql:1.1.4
+    image: work_websocket:1.0.4
     container_name: work
     restart: always
     ports:

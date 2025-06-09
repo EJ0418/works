@@ -51,20 +51,11 @@ builder.Services.AddSwaggerGen(options =>
     options.EnableAnnotations();
 });
 
-// 添加 SignalR 服務
+var redis_host = Environment.GetEnvironmentVariable("REDIS_HOST");
+var redis_port = Environment.GetEnvironmentVariable("REDIS_PORT");
+var redis_pw = Environment.GetEnvironmentVariable("REDIS_PASSWORD");
 builder.Services.AddSignalR()
-    .AddStackExchangeRedis(builder.Configuration.GetConnectionString("Redis"));
-
-// 添加 CORS 支援 (SignalR 需要特殊設定)
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
-});
+    .AddStackExchangeRedis($"{redis_host}:{redis_port},password={redis_pw}");
 
 var app = builder.Build();
 
