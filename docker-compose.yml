@@ -1,6 +1,6 @@
 services:
   work:
-    image: work_websocket:1.0.4
+    image: work_websocket:1.0.5
     container_name: work
     restart: always
     ports:
@@ -63,6 +63,8 @@ services:
       retries: 3
       ##容器啟動後的前 10 秒屬於寬限期，這段期間內的檢查失敗不會計入失敗次數。
       start_period: 10s
+
+      
 
 volumes:
   mariadb_data:
