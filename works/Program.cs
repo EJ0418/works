@@ -1,6 +1,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using works.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -50,7 +51,20 @@ builder.Services.AddSwaggerGen(options =>
     options.EnableAnnotations();
 });
 
+// 添加 SignalR 服務
+builder.Services.AddSignalR()
+    .AddStackExchangeRedis(builder.Configuration.GetConnectionString("Redis"));
 
+// 添加 CORS 支援 (SignalR 需要特殊設定)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
@@ -65,10 +79,14 @@ if (app.Environment.IsDevelopment())
     );
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"SQL API");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", $"WebSocket API");
         c.RoutePrefix = "doc";
     });
 }
+
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthentication();
@@ -80,9 +98,11 @@ app.UseEndpoints(endpoints =>
 
 app.UseHttpsRedirection();
 
-// app.Urls.Add("http://localhost:4000");
-
-// app.MapControllers();
+app.MapHub<ChatHub>("/chathub", options =>
+{
+    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets | 
+                        Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling;
+});
 
 app.MapGet("/health", () => Results.Ok("後端服務Healthy"));
 
