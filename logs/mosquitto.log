@@ -1,0 +1,315 @@
+1749522515: mosquitto version 2.0.21 starting
+1749522515: Config loaded from /mosquitto/config/mosquitto.conf.
+1749522515: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749522515: Opening ipv4 listen socket on port 1883.
+1749522515: Opening ipv6 listen socket on port 1883.
+1749522515: mosquitto version 2.0.21 running
+1749522553: New connection from 192.168.65.1:48507 on port 1883.
+1749522553: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522554: New connection from 192.168.65.1:50669 on port 1883.
+1749522554: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522554: New connection from 192.168.65.1:41343 on port 1883.
+1749522554: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522554: New connection from 192.168.65.1:63909 on port 1883.
+1749522554: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522555: New connection from 192.168.65.1:19859 on port 1883.
+1749522555: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522555: New connection from 192.168.65.1:16690 on port 1883.
+1749522555: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522556: New connection from 192.168.65.1:31921 on port 1883.
+1749522556: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522557: New connection from 192.168.65.1:36302 on port 1883.
+1749522557: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522557: New connection from 192.168.65.1:36612 on port 1883.
+1749522557: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522558: New connection from 192.168.65.1:43837 on port 1883.
+1749522558: Client mqtt-explorer-50de54f6 disconnected, not authorised.
+1749522808: mosquitto version 2.0.21 terminating
+1749522808: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749522820: mosquitto version 2.0.21 starting
+1749522820: Config loaded from /mosquitto/config/mosquitto.conf.
+1749522820: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749522820: Opening ipv4 listen socket on port 1883.
+1749522820: Opening ipv6 listen socket on port 1883.
+1749522820: mosquitto version 2.0.21 running
+1749522848: New connection from 192.168.65.1:58043 on port 1883.
+1749522848: Client mqtt-explorer-6daadf15 disconnected, not authorised.
+1749522876: New connection from 192.168.65.1:20085 on port 1883.
+1749522876: Client mqtt-explorer-6daadf15 disconnected, not authorised.
+1749522880: New connection from 192.168.65.1:38526 on port 1883.
+1749522880: Client mqtt-explorer-6daadf15 disconnected, not authorised.
+1749522940: New connection from 192.168.65.1:62532 on port 1883.
+1749522940: New client connected from 192.168.65.1:62532 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749522945: Client mqtt-explorer-6daadf15 disconnected.
+1749522948: New connection from 192.168.65.1:19817 on port 1883.
+1749522948: New client connected from 192.168.65.1:19817 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749522956: Client mqtt-explorer-6daadf15 disconnected.
+1749522965: New connection from 192.168.65.1:45238 on port 1883.
+1749522965: New client connected from 192.168.65.1:45238 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749523146: Client mqtt-explorer-6daadf15 disconnected.
+1749523160: New connection from 192.168.65.1:50779 on port 1883.
+1749523160: New client connected from 192.168.65.1:50779 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749523331: Client mqtt-explorer-6daadf15 disconnected.
+1749523342: New connection from 192.168.65.1:53628 on port 1883.
+1749523342: New client connected from 192.168.65.1:53628 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749523345: Client mqtt-explorer-6daadf15 disconnected.
+1749523355: New connection from 192.168.65.1:28902 on port 1883.
+1749523355: New client connected from 192.168.65.1:28902 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749524621: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749526422: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749528223: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749528582: New connection from 192.168.65.1:65346 on port 1883.
+1749528582: New client connected from 192.168.65.1:65346 as mqttx_502fbe51 (p5, c1, k60, u'ej').
+1749528648: Client mqttx_502fbe51 disconnected.
+1749528653: Client mqtt-explorer-6daadf15 disconnected.
+1749528677: mosquitto version 2.0.21 terminating
+1749528677: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749529649: mosquitto version 2.0.21 starting
+1749529649: Config loaded from /mosquitto/config/mosquitto.conf.
+1749529649: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749529649: Opening ipv4 listen socket on port 1883.
+1749529649: Opening ipv6 listen socket on port 1883.
+1749529649: mosquitto version 2.0.21 running
+1749529654: New connection from ::1:48308 on port 1883.
+1749529654: Client auto-088AC956-329D-ECA2-AC13-8FCDCEE38D1E disconnected, not authorised.
+1749529659: New connection from ::1:48322 on port 1883.
+1749529659: Client auto-57E0B5BC-6FA6-4B13-7EEC-7AED8232E69E disconnected, not authorised.
+1749529663: New connection from 192.168.65.1:31918 on port 1883.
+1749529663: New client connected from 192.168.65.1:31918 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749529689: New connection from ::1:41998 on port 1883.
+1749529689: Client auto-F016764A-3C8D-7076-3530-3BBA7C6E9B40 disconnected, not authorised.
+1749529719: New connection from ::1:55916 on port 1883.
+1749529719: Client auto-B940068C-E7AE-F854-5E4A-035825A066A0 disconnected, not authorised.
+1749529733: mosquitto version 2.0.21 terminating
+1749529733: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749533317: mosquitto version 2.0.21 starting
+1749533317: Config loaded from /mosquitto/config/mosquitto.conf.
+1749533317: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749533317: Opening ipv4 listen socket on port 1883.
+1749533317: Opening ipv6 listen socket on port 1883.
+1749533317: mosquitto version 2.0.21 running
+1749533317: New connection from 192.168.65.1:53049 on port 1883.
+1749533317: New client connected from 192.168.65.1:53049 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749533322: New connection from ::1:54172 on port 1883.
+1749533322: Client auto-C6EA5F34-FA33-2965-15AA-3AD11332AF6D disconnected, not authorised.
+1749533327: New connection from ::1:39216 on port 1883.
+1749533327: Client auto-733AD9E0-3975-D84B-711C-1C236D606B40 disconnected, not authorised.
+1749533336: mosquitto version 2.0.21 terminating
+1749533336: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749533349: mosquitto version 2.0.21 starting
+1749533349: Config loaded from /mosquitto/config/mosquitto.conf.
+1749533349: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749533349: Opening ipv4 listen socket on port 1883.
+1749533349: Opening ipv6 listen socket on port 1883.
+1749533349: mosquitto version 2.0.21 running
+1749533350: New connection from 192.168.65.1:24351 on port 1883.
+1749533350: Client <unknown> closed its connection.
+1749533350: New connection from 192.168.65.1:62004 on port 1883.
+1749533350: New client connected from 192.168.65.1:62004 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749533355: New connection from ::1:49022 on port 1883.
+1749533355: Client auto-31D22FFD-7C24-CCEE-0C57-8E8161C733E0 disconnected, not authorised.
+1749533360: New connection from ::1:49032 on port 1883.
+1749533360: Client auto-BCE4BC34-C545-E6B1-8B43-2633EFE1922F disconnected, not authorised.
+1749533390: New connection from ::1:46984 on port 1883.
+1749533390: Client auto-EF84E54D-AE02-F4FF-B206-9BB313546519 disconnected, not authorised.
+1749533420: New connection from ::1:57032 on port 1883.
+1749533420: Client auto-FE7EAFEE-95F9-F4DF-7518-E548F7444249 disconnected, not authorised.
+1749533450: New connection from ::1:51456 on port 1883.
+1749533450: Client auto-351051F0-AE7C-7C67-1642-5968C93FF58E disconnected, not authorised.
+1749533480: New connection from ::1:43544 on port 1883.
+1749533480: Client auto-47AD2253-4CD1-C6F1-1E2B-EB0FA8CE37CF disconnected, not authorised.
+1749533480: mosquitto version 2.0.21 terminating
+1749533480: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749533487: mosquitto version 2.0.21 starting
+1749533487: Config loaded from /mosquitto/config/mosquitto.conf.
+1749533487: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749533487: Opening ipv4 listen socket on port 1883.
+1749533487: Opening ipv6 listen socket on port 1883.
+1749533487: mosquitto version 2.0.21 running
+1749533488: New connection from 192.168.65.1:18218 on port 1883.
+1749533488: New client connected from 192.168.65.1:18218 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749533493: New connection from ::1:41042 on port 1883.
+1749533493: Client auto-8CB12BD0-05C7-0128-73DD-71AC60139C53 disconnected, not authorised.
+1749533498: New connection from ::1:52142 on port 1883.
+1749533498: Client auto-9D00A985-EEC7-20AF-EE63-1EC863EED93C disconnected, not authorised.
+1749533519: Client mqtt-explorer-6daadf15 disconnected.
+1749533528: New connection from ::1:33368 on port 1883.
+1749533528: Client auto-3113BE54-3E78-9E32-4244-D0D13A369195 disconnected, not authorised.
+1749533536: New connection from 192.168.65.1:64552 on port 1883.
+1749533536: New client connected from 192.168.65.1:64552 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749533558: New connection from ::1:53788 on port 1883.
+1749533558: Client auto-5A01CCDF-F03D-B3F5-574A-32277788966A disconnected, not authorised.
+1749533588: New connection from ::1:56458 on port 1883.
+1749533588: Client auto-BEE806C5-BFC4-5D31-9214-D3D2FB7BBEA6 disconnected, not authorised.
+1749533618: New connection from ::1:38690 on port 1883.
+1749533618: Client auto-F07274D9-8937-EB9C-A3FB-13C3A577750F disconnected, not authorised.
+1749533648: New connection from ::1:55236 on port 1883.
+1749533648: Client auto-1C09C4C3-EDC0-9C32-791D-A2140A51E351 disconnected, not authorised.
+1749533678: New connection from ::1:34972 on port 1883.
+1749533678: Client auto-BB96E9EC-26D7-8248-63AC-2ABD3F4C5602 disconnected, not authorised.
+1749533708: New connection from ::1:35958 on port 1883.
+1749533708: Client auto-03310FFC-35CE-2CFB-DB6D-0B1A71FE3B54 disconnected, not authorised.
+1749533738: New connection from ::1:53104 on port 1883.
+1749533738: Client auto-26B4F569-62B3-C296-F451-F6F7EF7683B9 disconnected, not authorised.
+1749533768: New connection from ::1:55916 on port 1883.
+1749533768: Client auto-1779E4C6-9218-55F0-6153-AF6D656E4427 disconnected, not authorised.
+1749533775: mosquitto version 2.0.21 terminating
+1749533775: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749533814: mosquitto version 2.0.21 starting
+1749533814: Config loaded from /mosquitto/config/mosquitto.conf.
+1749533814: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749533814: Opening ipv4 listen socket on port 1883.
+1749533814: Opening ipv6 listen socket on port 1883.
+1749533814: mosquitto version 2.0.21 running
+1749533815: New connection from 192.168.65.1:37216 on port 1883.
+1749533815: New client connected from 192.168.65.1:37216 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749533819: New connection from ::1:36146 on port 1883.
+1749533819: Client auto-17DB221A-2712-84A0-84C6-83DFEDED1974 disconnected, not authorised.
+1749533825: New connection from ::1:53312 on port 1883.
+1749533825: Client auto-4EBDF8EF-107A-48DF-3F53-FD54FFE319A7 disconnected, not authorised.
+1749533855: New connection from ::1:41322 on port 1883.
+1749533855: Client auto-7EEF61F6-E374-4E70-CA0B-972C9C2EAB1E disconnected, not authorised.
+1749533885: New connection from ::1:37120 on port 1883.
+1749533885: Client auto-F5DA9AD8-82F5-514E-EB42-6C6186DF6FDC disconnected, not authorised.
+1749533915: New connection from ::1:39230 on port 1883.
+1749533915: Client auto-56B98750-2F57-CAB7-FD3C-389B5562399C disconnected, not authorised.
+1749533938: mosquitto version 2.0.21 terminating
+1749533938: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749533996: mosquitto version 2.0.21 starting
+1749533996: Config loaded from /mosquitto/config/mosquitto.conf.
+1749533996: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749533996: Opening ipv4 listen socket on port 1883.
+1749533996: Opening ipv6 listen socket on port 1883.
+1749533996: mosquitto version 2.0.21 running
+1749533996: New connection from 192.168.65.1:34439 on port 1883.
+1749533996: New client connected from 192.168.65.1:34439 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749534001: New connection from ::1:47838 on port 1883.
+1749534001: Client auto-AB240439-2C24-4053-E890-E4E31506367B disconnected, not authorised.
+1749534006: New connection from ::1:48442 on port 1883.
+1749534006: Client auto-A82CFB5A-780A-1D4F-A7EC-381EF25C60F8 disconnected, not authorised.
+1749534036: New connection from ::1:49150 on port 1883.
+1749534036: Client auto-FFB90CEA-04FA-A7B8-DB7F-92EB6904148D disconnected, not authorised.
+1749534064: mosquitto version 2.0.21 terminating
+1749534064: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749534080: mosquitto version 2.0.21 starting
+1749534080: Config loaded from /mosquitto/config/mosquitto.conf.
+1749534080: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749534080: Opening ipv4 listen socket on port 1883.
+1749534080: Opening ipv6 listen socket on port 1883.
+1749534080: mosquitto version 2.0.21 running
+1749534081: New connection from 192.168.65.1:45128 on port 1883.
+1749534081: New client connected from 192.168.65.1:45128 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749534085: New connection from ::1:50588 on port 1883.
+1749534085: Client auto-4CCD9A9A-AC89-C1DC-A63E-624EBF3B2B81 disconnected, not authorised.
+1749534090: New connection from 172.18.0.5:59068 on port 1883.
+1749534090: New client connected from 172.18.0.5:59068 as 069fec10a8204d9f83a3188d67fdfde4 (p2, c1, k15, u'ej').
+1749534090: Client 069fec10a8204d9f83a3188d67fdfde4 disconnected.
+1749534090: New connection from ::1:50592 on port 1883.
+1749534090: Client auto-86977791-8415-4A67-40AC-421B8A86DAA8 disconnected, not authorised.
+1749534121: New connection from ::1:54826 on port 1883.
+1749534121: Client auto-5990AB59-B502-7C7D-859A-129395E86CEF disconnected, not authorised.
+1749534151: New connection from ::1:44116 on port 1883.
+1749534151: Client auto-3CEF83AB-A2CD-8F10-A01C-C825C6FADB28 disconnected, not authorised.
+1749534181: New connection from ::1:54140 on port 1883.
+1749534181: Client auto-49E16C14-F13C-33C9-DEE2-09A63BE1416F disconnected, not authorised.
+1749534211: New connection from ::1:49964 on port 1883.
+1749534211: Client auto-68BDEC14-4735-88B7-6005-F6AC2AC6634D disconnected, not authorised.
+1749534241: New connection from ::1:42198 on port 1883.
+1749534241: Client auto-C758191F-CC2A-D038-2182-D32ECEA2AC26 disconnected, not authorised.
+1749534271: New connection from ::1:37056 on port 1883.
+1749534271: Client auto-8C9F767C-C16C-9A95-58E9-80C5687B0777 disconnected, not authorised.
+1749534301: New connection from ::1:35002 on port 1883.
+1749534301: Client auto-DD037031-58DB-71A8-CE7B-35BD916348B5 disconnected, not authorised.
+1749534331: New connection from ::1:44316 on port 1883.
+1749534331: Client auto-F050836E-2CD0-40DB-5124-58E57536C1D3 disconnected, not authorised.
+1749534361: New connection from ::1:53864 on port 1883.
+1749534361: Client auto-A03ECEDA-B15B-65AD-8D51-1042667B08F7 disconnected, not authorised.
+1749534391: New connection from ::1:41402 on port 1883.
+1749534391: Client auto-009F007E-7824-DBA2-F22C-D5D823D2B0B1 disconnected, not authorised.
+1749534421: New connection from ::1:52284 on port 1883.
+1749534421: Client auto-6C3FE533-C7AF-95EC-5692-80F54E08BDDA disconnected, not authorised.
+1749534451: New connection from ::1:42960 on port 1883.
+1749534451: Client auto-A1465D1D-2F1B-1D74-79CF-1AA6F2D770FE disconnected, not authorised.
+1749534481: New connection from ::1:54998 on port 1883.
+1749534481: Client auto-2AE209D0-74F2-7D9B-E65F-D633AC6F6952 disconnected, not authorised.
+1749534511: New connection from ::1:35772 on port 1883.
+1749534511: Client auto-BA167D0E-C643-24DD-E2BE-9EB4F4672191 disconnected, not authorised.
+1749534541: New connection from ::1:35924 on port 1883.
+1749534541: Client auto-68850D03-1417-D467-A8E1-072152610479 disconnected, not authorised.
+1749534571: New connection from ::1:50082 on port 1883.
+1749534571: Client auto-E55A32B7-14B6-16E4-CAB8-0561262375EE disconnected, not authorised.
+1749534601: New connection from ::1:54904 on port 1883.
+1749534601: Client auto-58A93EDB-6BB7-2FB9-C013-A04F3B5ABA64 disconnected, not authorised.
+1749534631: New connection from ::1:45408 on port 1883.
+1749534631: Client auto-EDA5C657-CA15-4526-6B76-E3D93110E3AB disconnected, not authorised.
+1749534661: New connection from ::1:52462 on port 1883.
+1749534661: Client auto-2066CCEA-F897-78E4-F821-CEA9A9048E2A disconnected, not authorised.
+1749534691: New connection from ::1:37418 on port 1883.
+1749534691: Client auto-7376A711-07F3-E7CC-1B1F-4F919DD6C756 disconnected, not authorised.
+1749534721: New connection from ::1:51632 on port 1883.
+1749534721: Client auto-18A84FE0-B627-99F4-3D52-9A1A54FD468D disconnected, not authorised.
+1749534751: New connection from ::1:43236 on port 1883.
+1749534751: Client auto-45E420B1-BC85-7633-B020-36217DF36B0C disconnected, not authorised.
+1749534781: New connection from ::1:53244 on port 1883.
+1749534781: Client auto-F4F8E37D-D30F-298A-E0AE-878C21707538 disconnected, not authorised.
+1749534812: New connection from ::1:51804 on port 1883.
+1749534812: Client auto-8B99DA93-19A0-2680-E165-3C451C335CBD disconnected, not authorised.
+1749534842: New connection from ::1:39332 on port 1883.
+1749534842: Client auto-4CC47B4A-8D39-A437-C106-58A6F401A300 disconnected, not authorised.
+1749534872: New connection from ::1:52088 on port 1883.
+1749534872: Client auto-9A690FBF-B68F-DEAB-3AAF-05D07FD33390 disconnected, not authorised.
+1749534902: New connection from ::1:43618 on port 1883.
+1749534902: Client auto-AF06E83D-4F52-1ACB-7C84-3F686C1FFC7A disconnected, not authorised.
+1749534932: New connection from ::1:59238 on port 1883.
+1749534932: Client auto-05094915-FBF0-EFC3-88B5-413007AA7D3A disconnected, not authorised.
+1749534943: mosquitto version 2.0.21 terminating
+1749534943: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749535749: mosquitto version 2.0.21 starting
+1749535749: Config loaded from /mosquitto/config/mosquitto.conf.
+1749535749: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749535749: Opening ipv4 listen socket on port 1883.
+1749535749: Opening ipv6 listen socket on port 1883.
+1749535749: mosquitto version 2.0.21 running
+1749535750: New connection from 192.168.65.1:52834 on port 1883.
+1749535750: New client connected from 192.168.65.1:52834 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749535754: New connection from ::1:50118 on port 1883.
+1749535754: Client auto-F47B852E-A623-1E6C-0A43-02B7ABBC8B24 disconnected, not authorised.
+1749535759: New connection from ::1:59106 on port 1883.
+1749535759: Client auto-8BB91626-3C10-C48B-7E7F-7C0D66E48770 disconnected, not authorised.
+1749535771: mosquitto version 2.0.21 terminating
+1749535771: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749535775: mosquitto version 2.0.21 starting
+1749535775: Config loaded from /mosquitto/config/mosquitto.conf.
+1749535775: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749535775: Opening ipv4 listen socket on port 1883.
+1749535775: Opening ipv6 listen socket on port 1883.
+1749535775: mosquitto version 2.0.21 running
+1749535776: New connection from 192.168.65.1:52543 on port 1883.
+1749535776: New client connected from 192.168.65.1:52543 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749535780: New connection from ::1:49550 on port 1883.
+1749535780: Client auto-0B19BEBE-A03F-D7DE-0F9E-6CCE6271BECE disconnected, not authorised.
+1749535785: New connection from ::1:49560 on port 1883.
+1749535785: Client auto-D7F5240A-32E2-1E44-F81D-D94FEE98D8F7 disconnected, not authorised.
+1749535787: Client mqtt-explorer-6daadf15 disconnected.
+1749535792: New connection from 192.168.65.1:46543 on port 1883.
+1749535792: New client connected from 192.168.65.1:46543 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749535815: New connection from ::1:57050 on port 1883.
+1749535815: Client auto-04D0753F-FBC2-A5D6-4FF1-CDA9B2E8E59A disconnected, not authorised.
+1749535845: New connection from ::1:39056 on port 1883.
+1749535845: Client auto-C431978F-ADD9-C02D-21DC-5D58000CB781 disconnected, not authorised.
+1749535875: New connection from ::1:37146 on port 1883.
+1749535875: Client auto-49792FE7-5BF9-B9B7-6842-6BE6A57793AD disconnected, not authorised.
+1749535876: Client mqtt-explorer-6daadf15 disconnected.
+1749535880: mosquitto version 2.0.21 terminating
+1749535880: Saving in-memory database to /mosquitto/data//mosquitto.db.
