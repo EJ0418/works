@@ -1,6 +1,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 using works.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -91,10 +92,11 @@ app.UseHttpsRedirection();
 
 app.MapHub<ChatHub>("/chathub", options =>
 {
-    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets | 
-                        Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling;
+    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets;
 });
 
-app.MapGet("/health", () => Results.Ok("後端服務Healthy"));
-
+// 健康檢查 API
+app.MapGet("/health", () => Results.Ok("後端服務Healthy"))
+    .WithTags("Health")
+    .WithMetadata(new SwaggerOperationAttribute(summary: "健康檢查", description: "檢查後端服務狀態"));
 app.Run();
