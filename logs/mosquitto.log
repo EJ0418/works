@@ -313,3 +313,67 @@ To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
 1749535876: Client mqtt-explorer-6daadf15 disconnected.
 1749535880: mosquitto version 2.0.21 terminating
 1749535880: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749603799: mosquitto version 2.0.21 starting
+1749603799: Config loaded from /mosquitto/config/mosquitto.conf.
+1749603799: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749603799: Opening ipv4 listen socket on port 1883.
+1749603799: Opening ipv6 listen socket on port 1883.
+1749603799: mosquitto version 2.0.21 running
+1749603804: New connection from ::1:47356 on port 1883.
+1749603804: Client auto-C378D5CD-BF83-1319-9094-91FC39A7387B disconnected, not authorised.
+1749603809: New connection from ::1:40982 on port 1883.
+1749603809: Client auto-8E36BA6F-8ED1-1B7B-4898-19CA260C9DF0 disconnected, not authorised.
+1749603824: mosquitto version 2.0.21 terminating
+1749603824: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749603831: mosquitto version 2.0.21 starting
+1749603831: Config loaded from /mosquitto/config/mosquitto.conf.
+1749603831: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749603831: Opening ipv4 listen socket on port 1883.
+1749603831: Opening ipv6 listen socket on port 1883.
+1749603831: mosquitto version 2.0.21 running
+1749603836: New connection from ::1:52432 on port 1883.
+1749603836: Client auto-CF0675E4-A732-A60E-4B07-A1ECD2B761DF disconnected, not authorised.
+1749603841: New connection from ::1:52438 on port 1883.
+1749603841: Client auto-8BD41207-DEE3-5EC8-92BA-FA755791DA24 disconnected, not authorised.
+1749603853: New connection from 192.168.65.1:34727 on port 1883.
+1749603853: New client connected from 192.168.65.1:34727 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749603871: New connection from ::1:45908 on port 1883.
+1749603871: Client auto-602E2421-F214-EB70-E149-511337CCBADA disconnected, not authorised.
+1749603901: New connection from ::1:41196 on port 1883.
+1749603901: Client auto-994FF24A-028C-70F2-AA38-29E52DF58877 disconnected, not authorised.
+1749603923: New connection from 192.168.65.1:56774 on port 1883.
+1749603923: New client connected from 192.168.65.1:56774 as mqttx_502fbe51 (p5, c1, k60, u'ej').
+1749603931: New connection from ::1:40070 on port 1883.
+1749603931: Client auto-E15C9398-CC99-AB99-1DCC-70656DEB2D76 disconnected, not authorised.
+1749603961: New connection from ::1:52408 on port 1883.
+1749603961: Client auto-D6287140-3354-A55D-A2DA-81E174091396 disconnected, not authorised.
+1749603991: New connection from ::1:41618 on port 1883.
+1749603991: Client auto-14EC1EC6-8143-7F16-C42A-F7E2EFB56962 disconnected, not authorised.
+1749604019: Client mqtt-explorer-6daadf15 disconnected.
+1749604021: New connection from ::1:39418 on port 1883.
+1749604021: Client auto-B3A6568B-1189-5445-1521-58F2E0728F4B disconnected, not authorised.
+1749604025: New connection from 192.168.65.1:61327 on port 1883.
+1749604025: New client connected from 192.168.65.1:61327 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749604051: New connection from ::1:36574 on port 1883.
+1749604051: Client auto-81F9BC62-F9EB-75B9-154A-B1BA5FFFF077 disconnected, not authorised.
+1749604056: Client mqtt-explorer-6daadf15 disconnected.
+1749604076: New connection from 192.168.65.1:45449 on port 1883.
+1749604076: New client connected from 192.168.65.1:45449 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749604081: New connection from ::1:37350 on port 1883.
+1749604081: Client auto-F86D0BE3-898E-BDEF-FD7B-97675AB9D1E8 disconnected, not authorised.
+1749604094: Client mqtt-explorer-6daadf15 disconnected.
+1749604098: New connection from 192.168.65.1:24073 on port 1883.
+1749604098: New client connected from 192.168.65.1:24073 as mqtt-explorer-6daadf15 (p2, c1, k60, u'ej').
+1749604111: New connection from ::1:48478 on port 1883.
+1749604111: Client auto-FD13768C-4607-94C4-DD38-E5D90B2635AE disconnected, not authorised.
+1749604131: Client mqtt-explorer-6daadf15 disconnected.
+1749604141: New connection from ::1:46254 on port 1883.
+1749604141: Client auto-E91B2630-A564-CFCC-4469-A0C6CC7EBCA8 disconnected, not authorised.
+1749604171: New connection from ::1:50988 on port 1883.
+1749604171: Client auto-625E911A-EEE3-F929-02B2-1F5C63E326A6 disconnected, not authorised.
+1749604201: New connection from ::1:44104 on port 1883.
+1749604201: Client auto-483E3000-C8A5-B463-4ABE-9B8A717B1DDF disconnected, not authorised.
+1749604231: New connection from ::1:42818 on port 1883.
+1749604231: Client auto-E37EEB97-4DDF-63D2-D389-42566652F7FF disconnected, not authorised.
