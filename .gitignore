@@ -1,7 +1,5 @@
 .DS_Store
-works/obj/
-works/bin/
+*/obj/
+*/bin/
 .gitignore
-works.NUnitTests/obj/
-works.NUnitTests/bin/
 mariadb_data
