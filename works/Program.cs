@@ -1,6 +1,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 using works.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,7 +38,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 .Replace("${DB_SERVER}", Environment.GetEnvironmentVariable("DB_SERVER"))
 .Replace("${DB_PORT}", Environment.GetEnvironmentVariable("DB_PORT"))
 .Replace("${DB_DB}", Environment.GetEnvironmentVariable("DB_DB"))
-    .Replace("${DB_USER}",Environment.GetEnvironmentVariable("DB_USER"))
+    .Replace("${DB_USER}", Environment.GetEnvironmentVariable("DB_USER"))
     .Replace("${DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD"));
 
 builder.Services.AddDbContext<TodoContext>(options =>
@@ -91,10 +92,11 @@ app.UseHttpsRedirection();
 
 app.MapHub<ChatHub>("/chathub", options =>
 {
-    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets | 
+    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets |
                         Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling;
 });
 
-app.MapGet("/health", () => Results.Ok("後端服務Healthy"));
-
+app.MapGet("/health", () => Results.Ok("後端服務Healthy"))
+.WithTags("Health")
+.WithMetadata(new SwaggerOperationAttribute(summary: "健康狀態", description: "檢查後端服務狀態"));
 app.Run();

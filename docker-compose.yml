@@ -1,10 +1,39 @@
 services:
-  work:
-    image: work_mqtt:1.0.7
-    container_name: work
+  work1:
+    image: work_nginx:1.0.2
+    container_name: work1
     restart: always
     ports:
       - "4000:5500"
+    environment:
+      - DB_SERVER=${DB_SERVER}
+      - DB_PORT=${DB_PORT}
+      - DB_DB=${DB_DB}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5500 
+      # Redis 服務所在的主機名稱(container 名稱)
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_USER=${REDIS_USER}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5500/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  work2:
+    image: work_nginx:1.0.2
+    container_name: work2
+    restart: always
+    ports:
+      - "4500:5500"
     environment:
       - DB_SERVER=${DB_SERVER}
       - DB_PORT=${DB_PORT}
@@ -79,6 +108,17 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./configs/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - work1
+      - work2
 
 volumes:
   mariadb_data:
