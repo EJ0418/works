@@ -61,13 +61,4 @@ public class MqttController : ControllerBase
         return Ok(serializableMessages);
     }
 
-    [HttpGet("clear")]
-    [SwaggerOperation(Summary = "清空訊息", Description = "清空歷史訊息")]
-    public IActionResult ClearMsg()
-    {
-        _mqtt.ReceivedMessages = null;
-
-        return Ok("已清空歷史訊息");
-    }
-
 }
