@@ -6,6 +6,8 @@ using System.Text;
 
 public class MqttService
 {
+    public List<(string Topic, string Payload)> ReceivedMessages { get; set; } = new();
+
     private IMqttClient _client;
     public MqttService()
     {
@@ -24,8 +26,9 @@ public class MqttService
 
         _client.ApplicationMessageReceivedAsync += e =>
         {
-            var topic = e.ApplicationMessage.Topic;
-            var payload = Encoding.UTF8.GetString(e.ApplicationMessage.Payload);
+            var topic = e.ApplicationMessage.Topic ??"It's Empty";
+            var payload = Encoding.UTF8.GetString(e.ApplicationMessage.PayloadSegment)??"It's Empty";
+            ReceivedMessages.Add((topic, payload));
             return Task.CompletedTask;
         };
 
@@ -36,6 +39,13 @@ public class MqttService
         await _client.SubscribeAsync(new MqttClientSubscribeOptionsBuilder()
             .WithTopicFilter(topic)
             .Build());
+    }
+
+    public async Task UnSubscribeTopicAsync(string topic)
+    {
+        await _client.UnsubscribeAsync(new MqttClientUnsubscribeOptionsBuilder()
+        .WithTopicFilter(topic)
+        .Build());
     }
 
     public async Task PublishAsync(string topic, string message)

@@ -1,6 +1,6 @@
 services:
   work:
-    image: work_mqtt:1.0.9
+    image: work_mqtt:1.0.0
     container_name: work
     restart: always
     ports:
