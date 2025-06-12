@@ -52,4 +52,11 @@ public class RedisService
         }
         return await _db.KeyDeleteAsync(key);
     }
+
+    public async Task SaveMessageAsync(string topic, string message)
+    {
+        Console.WriteLine($"儲存 Redis：{topic} - {message}");
+
+        await _db.ListRightPushAsync($"mqtt:{topic}", message);
+    }
 }

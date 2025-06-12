@@ -8,9 +8,12 @@ public class MqttService
 {
     public List<(string Topic, string Payload)> ReceivedMessages { get; set; } = new();
 
+    private IServiceScopeFactory _scopeFactory;
     private IMqttClient _client;
-    public MqttService()
+    private RedisService _redis;
+    public MqttService(IServiceScopeFactory scopeFactory)
     {
+        _scopeFactory = scopeFactory;
         var factory = new MqttFactory();
         _client = factory.CreateMqttClient();
 
@@ -24,12 +27,24 @@ public class MqttService
             .WithCredentials(mqttUser, mqttPw)
             .Build();
 
-        _client.ApplicationMessageReceivedAsync += e =>
+        _client.ApplicationMessageReceivedAsync += async e =>
         {
-            var topic = e.ApplicationMessage.Topic ??"It's Empty";
-            var payload = Encoding.UTF8.GetString(e.ApplicationMessage.PayloadSegment)??"It's Empty";
-            ReceivedMessages.Add((topic, payload));
-            return Task.CompletedTask;
+            try
+            {
+                var topic = e.ApplicationMessage.Topic ?? "It's Empty";
+                var payload = Encoding.UTF8.GetString(e.ApplicationMessage.PayloadSegment) ?? "It's Empty";
+
+                using var scope = _scopeFactory.CreateScope();
+                var redis = scope.ServiceProvider.GetRequiredService<RedisService>();
+                await redis.SaveMessageAsync(topic, payload);
+
+                ReceivedMessages.Add((topic, payload));
+                Console.WriteLine($"[MQTT] 收到訊息：{topic} - {payload}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[Redis] 儲存錯誤：{ex.Message}");
+            }
         };
 
         _client.ConnectAsync(options).Wait();
@@ -38,6 +53,13 @@ public class MqttService
     {
         await _client.SubscribeAsync(new MqttClientSubscribeOptionsBuilder()
             .WithTopicFilter(topic)
+            .Build());
+    }
+    public async Task SubscribeShareTopicAsync(string group, string topic)
+    {
+        var sharedTopic = $"$share/{group}/{topic}";
+        await _client.SubscribeAsync(new MqttClientSubscribeOptionsBuilder()
+            .WithTopicFilter(sharedTopic)
             .Build());
     }
 

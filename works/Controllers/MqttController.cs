@@ -25,6 +25,15 @@ public class MqttController : ControllerBase
         return Ok($"訂閱主題：{topic}");
     }
 
+    [HttpPost("subscribeShareTopic")]
+    [SwaggerOperation(Summary = "訂閱share主題", Description = "訂閱MQTT主題")]
+    public async Task<IActionResult> SubscribeShareTopic([SwaggerParameter("群組名稱")] string groupName, [SwaggerParameter("主題內容")] string topic)
+    {
+        
+        await _mqtt.SubscribeShareTopicAsync(groupName, topic);
+        return Ok($"訂閱Share主題：{topic}");
+    }
+
     [HttpPost("unsubscribe")]
     [SwaggerOperation(Summary = "取消訂閱主題", Description = "取消訂閱MQTT主題")]
     public async Task<IActionResult> UnSubscribe([SwaggerParameter("主題內容")] string topic)
