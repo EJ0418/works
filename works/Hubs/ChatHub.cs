@@ -4,6 +4,8 @@ namespace works.Hubs
 {
     public class ChatHub : Hub
     {
+        private readonly string _serverid = Environment.GetEnvironmentVariable("SERVER_ID");
+
         public async Task SendMessage(string user, string message)
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message, DateTime.Now);
@@ -28,13 +30,13 @@ namespace works.Hubs
 
         public override async Task OnConnectedAsync()
         {
-            await Clients.All.SendAsync("UserConnected", Context.ConnectionId);
+            await Clients.All.SendAsync("UserConnected", $"Server:{_serverid}");
             await base.OnConnectedAsync();
         }
 
         public override async Task OnDisconnectedAsync(Exception exception)
         {
-            await Clients.All.SendAsync("UserDisconnected", Context.ConnectionId);
+            await Clients.All.SendAsync("UserDisconnected", $"Server:{_serverid}");
             await base.OnDisconnectedAsync(exception);
         }
     }

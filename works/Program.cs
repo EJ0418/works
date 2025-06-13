@@ -88,12 +88,9 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
-app.UseHttpsRedirection();
-
 app.MapHub<ChatHub>("/chathub", options =>
 {
-    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets |
-                        Microsoft.AspNetCore.Http.Connections.HttpTransportType.LongPolling;
+    options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets;
 });
 
 app.MapGet("/health", () => Results.Ok("後端服務Healthy"))
