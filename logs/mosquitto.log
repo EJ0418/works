@@ -822,3 +822,1339 @@ To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
 1749788915: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1749788927: New connection from ::1:58416 on port 1883.
 1749788927: Client auto-93FB6406-FFBE-D84E-A06F-3D2BB0F1C412 disconnected, not authorised.
+1749788957: New connection from ::1:58694 on port 1883.
+1749788957: Client auto-815A53FA-26F6-826B-B18C-215869FBA99B disconnected, not authorised.
+1749788987: New connection from ::1:43958 on port 1883.
+1749788987: Client auto-B840FDF9-71EA-5755-6FEB-3F868E25BF18 disconnected, not authorised.
+1749789017: New connection from ::1:35790 on port 1883.
+1749789017: Client auto-56082242-4F4C-F2D2-D570-59CC227DD1DC disconnected, not authorised.
+1749789047: New connection from ::1:54530 on port 1883.
+1749789047: Client auto-26BF1D84-78A1-0AD7-D494-94B6C9A407CC disconnected, not authorised.
+1749789077: New connection from ::1:58764 on port 1883.
+1749789077: Client auto-0FEBDDBD-64DA-2942-DA85-0559CE692CB8 disconnected, not authorised.
+1749789107: New connection from ::1:56778 on port 1883.
+1749789107: Client auto-7C64D34A-AF75-F8D3-20A2-146E3CE419EE disconnected, not authorised.
+1749789137: New connection from ::1:53470 on port 1883.
+1749789137: Client auto-93CEA2F8-8381-0623-67B5-6511CFF3FB52 disconnected, not authorised.
+1749789167: New connection from ::1:53452 on port 1883.
+1749789167: Client auto-B81D5510-5ADA-2E1E-0687-1A70971B5D56 disconnected, not authorised.
+1749789197: New connection from ::1:52364 on port 1883.
+1749789197: Client auto-4569C357-DE86-BD58-CA4F-F22D2DB0928A disconnected, not authorised.
+1749789227: New connection from ::1:53314 on port 1883.
+1749789227: Client auto-EC542B35-3208-68B0-D892-3B5438108844 disconnected, not authorised.
+1749789257: New connection from ::1:52110 on port 1883.
+1749789257: Client auto-6530ADE2-0BA5-8987-23F6-B49FECAC46C2 disconnected, not authorised.
+1749789287: New connection from ::1:52194 on port 1883.
+1749789287: Client auto-19EBDD07-FFB0-E5C0-E34B-FC0B09D8B04D disconnected, not authorised.
+1749789317: New connection from ::1:36186 on port 1883.
+1749789317: Client auto-EA7C1338-3E02-44BB-D5B2-C43733ED1DEC disconnected, not authorised.
+1749789347: New connection from ::1:48444 on port 1883.
+1749789347: Client auto-8C37B318-884A-3F41-596C-482AB4B9E719 disconnected, not authorised.
+1749789377: New connection from ::1:59548 on port 1883.
+1749789377: Client auto-0A9F017D-86C9-C1F8-3CA9-46FE022011BA disconnected, not authorised.
+1749789408: New connection from ::1:40564 on port 1883.
+1749789408: Client auto-98BEAAE7-7265-47EE-CD33-6423B79CFCD0 disconnected, not authorised.
+1749789438: New connection from ::1:48548 on port 1883.
+1749789438: Client auto-A3C32352-2006-74D1-1035-89086F082209 disconnected, not authorised.
+1749789468: New connection from ::1:35026 on port 1883.
+1749789468: Client auto-8C307A34-1022-717B-F0AA-47876262D7C7 disconnected, not authorised.
+1749789498: New connection from ::1:46060 on port 1883.
+1749789498: Client auto-C3A9F7CF-4EDA-6E31-57DD-289B7E848EAC disconnected, not authorised.
+1749789528: New connection from ::1:49544 on port 1883.
+1749789528: Client auto-CD33C0CE-5036-2DC3-1613-F2DDFA6F1508 disconnected, not authorised.
+1749789558: New connection from ::1:53106 on port 1883.
+1749789558: Client auto-9AF84F6C-C531-E552-4E45-DD82250CB88C disconnected, not authorised.
+1749789588: New connection from ::1:47926 on port 1883.
+1749789588: Client auto-2589537D-41F8-65C6-EE19-4A71B2BB8D3C disconnected, not authorised.
+1749789618: New connection from ::1:39848 on port 1883.
+1749789618: Client auto-993B8EA9-FF38-BECD-2216-32C8B9D06562 disconnected, not authorised.
+1749789648: New connection from ::1:56608 on port 1883.
+1749789648: Client auto-1E2BF01E-9D19-0BAD-5BF2-694F7E927958 disconnected, not authorised.
+1749789678: New connection from ::1:33402 on port 1883.
+1749789678: Client auto-330F6EF8-0D6B-2C9B-6128-970003DF8593 disconnected, not authorised.
+1749789708: New connection from ::1:58192 on port 1883.
+1749789708: Client auto-A0E42955-ACEB-0971-2764-3BB0069848E8 disconnected, not authorised.
+1749789738: New connection from ::1:56844 on port 1883.
+1749789738: Client auto-89B4E73B-2F79-F8DF-4B3D-943AB3A49EC5 disconnected, not authorised.
+1749789768: New connection from ::1:54022 on port 1883.
+1749789768: Client auto-35B1B599-CDDB-24C1-5752-CA8E3247072B disconnected, not authorised.
+1749789798: New connection from ::1:57358 on port 1883.
+1749789798: Client auto-56573CC2-04D8-FD2D-41B2-F30AB44EB785 disconnected, not authorised.
+1749789828: New connection from ::1:43650 on port 1883.
+1749789828: Client auto-C20EBC0A-6556-712E-FB26-C5FA562D0870 disconnected, not authorised.
+1749789858: New connection from ::1:51366 on port 1883.
+1749789858: Client auto-E5ADFB9F-F265-6382-960E-83C436E8D9CF disconnected, not authorised.
+1749789888: New connection from ::1:60000 on port 1883.
+1749789888: Client auto-09C0528F-940B-5BB8-7495-472491139E3F disconnected, not authorised.
+1749789918: New connection from ::1:57886 on port 1883.
+1749789918: Client auto-5D55F1C9-868A-7E96-D37A-1F57CC452390 disconnected, not authorised.
+1749789948: New connection from ::1:35378 on port 1883.
+1749789948: Client auto-F921D991-F053-592C-3451-2954C95DE9BA disconnected, not authorised.
+1749789978: New connection from ::1:37642 on port 1883.
+1749789978: Client auto-0397FA3F-F320-71FE-767A-5430355B52F6 disconnected, not authorised.
+1749790009: New connection from ::1:59682 on port 1883.
+1749790009: Client auto-F4317448-8B91-BBFE-A624-174E7BC6EF10 disconnected, not authorised.
+1749790039: New connection from ::1:44160 on port 1883.
+1749790039: Client auto-73552438-F20C-FEE7-8E01-988C2883B880 disconnected, not authorised.
+1749790069: New connection from ::1:45528 on port 1883.
+1749790069: Client auto-1B8DDA50-8F6F-1E1F-0F99-18B723544900 disconnected, not authorised.
+1749790099: New connection from ::1:47068 on port 1883.
+1749790099: Client auto-F8028F7D-1820-F6DB-CDBF-A045E7D2FDE0 disconnected, not authorised.
+1749790129: New connection from ::1:32976 on port 1883.
+1749790129: Client auto-E484DB48-98D4-A2B5-8FE9-D9E4BC32B0B2 disconnected, not authorised.
+1749790159: New connection from ::1:34026 on port 1883.
+1749790159: Client auto-1378DC99-659F-A0A1-0F1B-B577E8A16B3D disconnected, not authorised.
+1749790189: New connection from ::1:33784 on port 1883.
+1749790189: Client auto-1D0693C8-7D58-6E4A-58C7-41C12DF7D05C disconnected, not authorised.
+1749790219: New connection from ::1:57514 on port 1883.
+1749790219: Client auto-7F9C2318-381F-498E-4FC8-62146F8AB7FA disconnected, not authorised.
+1749790249: New connection from ::1:34958 on port 1883.
+1749790249: Client auto-5CE732B0-F58C-2EB4-BE1F-8750DA3F6FD6 disconnected, not authorised.
+1749790279: New connection from ::1:42848 on port 1883.
+1749790279: Client auto-85201E21-E59A-FC07-5359-55D574A07CE1 disconnected, not authorised.
+1749790309: New connection from ::1:55258 on port 1883.
+1749790309: Client auto-521D7ED5-A4F7-C225-63E9-F965D2362D2B disconnected, not authorised.
+1749790339: New connection from ::1:41880 on port 1883.
+1749790339: Client auto-E63E59D4-C964-3EA1-CC88-64C1A76C8891 disconnected, not authorised.
+1749790369: New connection from ::1:43036 on port 1883.
+1749790369: Client auto-70CB555F-7363-9D91-C683-DE1BEACA57A2 disconnected, not authorised.
+1749790399: New connection from ::1:48412 on port 1883.
+1749790399: Client auto-CA33B213-0D09-F28A-1C8F-3D5F00DC16EB disconnected, not authorised.
+1749790429: New connection from ::1:49258 on port 1883.
+1749790429: Client auto-61C0A276-26A5-36DE-3908-EB663EB0DC13 disconnected, not authorised.
+1749790459: New connection from ::1:37414 on port 1883.
+1749790459: Client auto-9B39ACC5-CE37-57BB-126C-EBF0896EE085 disconnected, not authorised.
+1749790489: New connection from ::1:38620 on port 1883.
+1749790489: Client auto-2DCC1DB0-376B-FA7E-C053-D96D6F10E68F disconnected, not authorised.
+1749790519: New connection from ::1:48020 on port 1883.
+1749790519: Client auto-AB576246-EF73-B27C-C527-ED3FA3F545BA disconnected, not authorised.
+1749790549: New connection from ::1:49226 on port 1883.
+1749790549: Client auto-22A31DB6-9648-4797-A343-2F43B64EB7FB disconnected, not authorised.
+1749790580: New connection from ::1:35434 on port 1883.
+1749790580: Client auto-1AC3E63A-57BE-E57A-AA91-31B2F7B45B66 disconnected, not authorised.
+1749790610: New connection from ::1:44828 on port 1883.
+1749790610: Client auto-F81D72E7-B1CF-3BEF-98E8-D29CB6F9EEA5 disconnected, not authorised.
+1749790640: New connection from ::1:40198 on port 1883.
+1749790640: Client auto-9EEA435C-4524-CABC-F5F8-3F44B335A5ED disconnected, not authorised.
+1749790670: New connection from ::1:45162 on port 1883.
+1749790670: Client auto-CAB4B9D0-F94E-0D94-127A-3C824871D599 disconnected, not authorised.
+1749790700: New connection from ::1:37356 on port 1883.
+1749790700: Client auto-156DDC2E-30CF-2894-F199-CB91D556755B disconnected, not authorised.
+1749790716: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749790730: New connection from ::1:56902 on port 1883.
+1749790730: Client auto-EA357A8E-D78D-C58E-F676-B6685F2977D7 disconnected, not authorised.
+1749790760: New connection from ::1:46716 on port 1883.
+1749790760: Client auto-3AE489B5-2B41-9E85-709D-670B03482139 disconnected, not authorised.
+1749790790: New connection from ::1:47028 on port 1883.
+1749790790: Client auto-6DFA5B2A-3A21-6E4C-0F65-70B8E33B8637 disconnected, not authorised.
+1749790820: New connection from ::1:43838 on port 1883.
+1749790820: Client auto-106BC7AD-86E5-AEF4-C0E4-37973E622AF0 disconnected, not authorised.
+1749790850: New connection from ::1:50166 on port 1883.
+1749790850: Client auto-3D9A61B5-9A05-EC77-CCD4-DCF7CA4148EC disconnected, not authorised.
+1749790880: New connection from ::1:44682 on port 1883.
+1749790880: Client auto-982D448F-5AE3-8699-1AC4-C3630E5DBDB4 disconnected, not authorised.
+1749790910: New connection from ::1:60782 on port 1883.
+1749790910: Client auto-23E41DC1-85B5-67BA-616E-3736F0848170 disconnected, not authorised.
+1749790940: New connection from ::1:48906 on port 1883.
+1749790940: Client auto-5C82C7C0-B53A-8DDB-CEE6-E99A558AF930 disconnected, not authorised.
+1749790970: New connection from ::1:42554 on port 1883.
+1749790970: Client auto-1D2E0B5E-E3CC-CFBE-CF40-B56223550F83 disconnected, not authorised.
+1749791000: New connection from ::1:55366 on port 1883.
+1749791000: Client auto-CCCEB905-E716-F06C-9E31-DB0B48975271 disconnected, not authorised.
+1749791094: New connection from ::1:43090 on port 1883.
+1749791094: Client auto-1EFBD417-3583-0F62-BAE5-069FC192AEBD disconnected, not authorised.
+1749792044: New connection from ::1:56786 on port 1883.
+1749792044: Client auto-CB02B9BD-A0BD-5332-1575-66E9FF943755 disconnected, not authorised.
+1749792075: New connection from ::1:39006 on port 1883.
+1749792075: Client auto-A20EC9C6-9963-29F8-9E1F-904E6F5B58A3 disconnected, not authorised.
+1749792632: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749792658: New connection from ::1:59630 on port 1883.
+1749792658: Client auto-70529D3E-804C-4C97-DC41-3EC126A69BF7 disconnected, not authorised.
+1749792689: New connection from ::1:37818 on port 1883.
+1749792689: Client auto-09A9F401-9AF7-7942-8837-720237E745E7 disconnected, not authorised.
+1749792719: New connection from ::1:44266 on port 1883.
+1749792719: Client auto-61CCF5BB-5F11-2E73-74B3-2FD179AF488C disconnected, not authorised.
+1749792749: New connection from ::1:39326 on port 1883.
+1749792749: Client auto-E6EC3A5A-1322-BCBB-EFCD-BC4F19AD5A5A disconnected, not authorised.
+1749792779: New connection from ::1:38454 on port 1883.
+1749792779: Client auto-15B3E43E-0795-2DA0-054A-1A2DF1AC9009 disconnected, not authorised.
+1749792809: New connection from ::1:40724 on port 1883.
+1749792809: Client auto-A1EDCC1F-02B1-E77E-73FA-422191830DA6 disconnected, not authorised.
+1749792839: New connection from ::1:36942 on port 1883.
+1749792839: Client auto-5303B114-A8C7-6A9F-82ED-2CA622B1C71D disconnected, not authorised.
+1749792869: New connection from ::1:34386 on port 1883.
+1749792869: Client auto-C46C70B5-32DE-2B56-81F0-D1C8403AD691 disconnected, not authorised.
+1749792899: New connection from ::1:34536 on port 1883.
+1749792899: Client auto-39395960-F5C4-CE85-E06D-AA2E51EE875C disconnected, not authorised.
+1749792929: New connection from ::1:55912 on port 1883.
+1749792929: Client auto-0FE2141E-02FC-CF2E-611C-298015FE5D28 disconnected, not authorised.
+1749792959: New connection from ::1:40206 on port 1883.
+1749792959: Client auto-DEB5627E-02DC-DAB7-18A2-D1ED7B47D492 disconnected, not authorised.
+1749792989: New connection from ::1:43376 on port 1883.
+1749792989: Client auto-465FB0C9-0974-7BE2-01A0-237D46A453BD disconnected, not authorised.
+1749793019: New connection from ::1:57612 on port 1883.
+1749793019: Client auto-42EC96F5-C71D-E1E1-86ED-F6F0F66B8F3B disconnected, not authorised.
+1749793049: New connection from ::1:43564 on port 1883.
+1749793049: Client auto-1B914A29-E937-4C42-A649-E7E030326225 disconnected, not authorised.
+1749793079: New connection from ::1:34038 on port 1883.
+1749793079: Client auto-23628586-B31A-9F79-FEA5-167AF83C3210 disconnected, not authorised.
+1749793109: New connection from ::1:54482 on port 1883.
+1749793109: Client auto-9DD64D85-A339-D561-541F-5F0EF0834692 disconnected, not authorised.
+1749793139: New connection from ::1:35146 on port 1883.
+1749793139: Client auto-948AF5A2-4647-937A-1E27-88BD12F58324 disconnected, not authorised.
+1749793169: New connection from ::1:51814 on port 1883.
+1749793169: Client auto-A29DEA12-FB04-52B2-7CC1-687F9846A33B disconnected, not authorised.
+1749793199: New connection from ::1:38342 on port 1883.
+1749793199: Client auto-6BC0162E-AB98-BC1C-0EEE-5083FCCBCA31 disconnected, not authorised.
+1749793230: New connection from ::1:34294 on port 1883.
+1749793230: Client auto-72E6B287-956B-15AB-A967-FDD839901167 disconnected, not authorised.
+1749793260: New connection from ::1:57754 on port 1883.
+1749793260: Client auto-9306918A-EA66-9FA0-81CE-E10CDFF5A18D disconnected, not authorised.
+1749793290: New connection from ::1:56790 on port 1883.
+1749793290: Client auto-64741B1B-1F6B-9F5D-8559-40825494C711 disconnected, not authorised.
+1749793320: New connection from ::1:48646 on port 1883.
+1749793320: Client auto-43C72BE4-D4FB-B61F-BC09-62C6AD971471 disconnected, not authorised.
+1749793350: New connection from ::1:44036 on port 1883.
+1749793350: Client auto-C7676998-0672-6B2B-038F-9AEAF416E779 disconnected, not authorised.
+1749793380: New connection from ::1:39498 on port 1883.
+1749793380: Client auto-F6B05799-938D-8E27-6B8E-781C6E923E1A disconnected, not authorised.
+1749793410: New connection from ::1:57660 on port 1883.
+1749793410: Client auto-3CBEC88F-0B55-CD92-F380-5ADA36D301BB disconnected, not authorised.
+1749793440: New connection from ::1:36650 on port 1883.
+1749793440: Client auto-C76C7987-F345-B3A6-7F95-2858F63867FE disconnected, not authorised.
+1749793470: New connection from ::1:42546 on port 1883.
+1749793470: Client auto-3B48B26A-8D71-DE31-DE8F-E2F6E28972F4 disconnected, not authorised.
+1749793500: New connection from ::1:44766 on port 1883.
+1749793500: Client auto-944FC6D9-A330-1A12-AD80-85971ECB0B0B disconnected, not authorised.
+1749793530: New connection from ::1:38218 on port 1883.
+1749793530: Client auto-6E9A9117-455E-92E8-B53C-F04465B8F941 disconnected, not authorised.
+1749793560: New connection from ::1:50940 on port 1883.
+1749793560: Client auto-9ABD2C11-9766-47A3-782A-5131C9C4C0B3 disconnected, not authorised.
+1749793590: New connection from ::1:51756 on port 1883.
+1749793590: Client auto-81542632-C347-422F-A116-2806A0AB95BE disconnected, not authorised.
+1749793620: New connection from ::1:52190 on port 1883.
+1749793620: Client auto-75D0B0A7-69EA-D7A9-84E3-66C38BBC25DA disconnected, not authorised.
+1749793650: New connection from ::1:36202 on port 1883.
+1749793650: Client auto-F205D06C-95F6-5A7A-7DD2-4A159D7B7107 disconnected, not authorised.
+1749793680: New connection from ::1:47454 on port 1883.
+1749793680: Client auto-F6849EFD-6655-5BF6-16B8-211C227FBE74 disconnected, not authorised.
+1749793710: New connection from ::1:35118 on port 1883.
+1749793710: Client auto-4DDB5EB7-D669-907E-6919-720B827FEC3D disconnected, not authorised.
+1749793740: New connection from ::1:44724 on port 1883.
+1749793740: Client auto-E1E6F952-3DBB-31D2-F964-0B3D641A0C0E disconnected, not authorised.
+1749793770: New connection from ::1:58214 on port 1883.
+1749793770: Client auto-B0B25859-C7DC-567E-BF75-46077AE6BBF3 disconnected, not authorised.
+1749793800: New connection from ::1:42354 on port 1883.
+1749793800: Client auto-7FCFE45C-9F0A-A37B-D59F-3D3DEE43C544 disconnected, not authorised.
+1749793830: New connection from ::1:51204 on port 1883.
+1749793830: Client auto-92D04D41-A737-ED0A-FBDC-E0168F0A71BE disconnected, not authorised.
+1749793860: New connection from ::1:58788 on port 1883.
+1749793860: Client auto-924CF16C-2DA4-4165-F85B-AE5A09E2D053 disconnected, not authorised.
+1749793891: New connection from ::1:54140 on port 1883.
+1749793891: Client auto-FF5F14FD-0028-524B-3E3D-5EE832306B20 disconnected, not authorised.
+1749793921: New connection from ::1:55434 on port 1883.
+1749793921: Client auto-01BEBB80-8485-C62B-B552-17B3D0759505 disconnected, not authorised.
+1749793951: New connection from ::1:58400 on port 1883.
+1749793951: Client auto-05380C29-48B0-040A-98AB-8978E559E802 disconnected, not authorised.
+1749793981: New connection from ::1:34858 on port 1883.
+1749793981: Client auto-ECD8CA51-E54B-C856-E32A-6EB5C20E5980 disconnected, not authorised.
+1749794011: New connection from ::1:37170 on port 1883.
+1749794011: Client auto-3FBEF6E4-4EF6-18CC-4E36-7D964DB526FA disconnected, not authorised.
+1749794041: New connection from ::1:53860 on port 1883.
+1749794041: Client auto-D9250656-B68E-BAF9-ED2E-3CEE72EB3355 disconnected, not authorised.
+1749794071: New connection from ::1:58470 on port 1883.
+1749794071: Client auto-157ADB88-BB9D-CD93-D21C-C32766DB4490 disconnected, not authorised.
+1749794101: New connection from ::1:51764 on port 1883.
+1749794101: Client auto-DE6F18AD-4B3F-E9E5-4607-AE08805E5C4B disconnected, not authorised.
+1749794131: New connection from ::1:58554 on port 1883.
+1749794131: Client auto-2B0F3ABF-87D4-9194-A288-2494AAB3FB77 disconnected, not authorised.
+1749794161: New connection from ::1:46276 on port 1883.
+1749794161: Client auto-DC9500EC-D6F9-1CD7-AA5E-22F14E5DE38B disconnected, not authorised.
+1749794191: New connection from ::1:34196 on port 1883.
+1749794191: Client auto-9AC1C7DA-B47C-ED2A-E05B-C44ACD844E63 disconnected, not authorised.
+1749794221: New connection from ::1:55886 on port 1883.
+1749794221: Client auto-D3EE6ED1-2453-2A27-FF8E-31509C27E203 disconnected, not authorised.
+1749794251: New connection from ::1:51392 on port 1883.
+1749794251: Client auto-A233CDFB-926E-0AD9-BC6C-DE6072AFEB72 disconnected, not authorised.
+1749794281: New connection from ::1:59018 on port 1883.
+1749794281: Client auto-8D7A3FE2-77AF-3F5D-8C61-6015BB01F62C disconnected, not authorised.
+1749794311: New connection from ::1:48160 on port 1883.
+1749794311: Client auto-A04C6050-B01B-DAAF-12F6-02F008B106C9 disconnected, not authorised.
+1749794341: New connection from ::1:50542 on port 1883.
+1749794341: Client auto-478C686C-3577-8A56-BDC9-C5A249FB09B4 disconnected, not authorised.
+1749794371: New connection from ::1:59720 on port 1883.
+1749794371: Client auto-4D57190F-821F-EF0C-8E3F-C347E20EF7AC disconnected, not authorised.
+1749794401: New connection from ::1:37598 on port 1883.
+1749794401: Client auto-9512CF17-BC06-7A9A-E152-60B0421E83D0 disconnected, not authorised.
+1749794431: New connection from ::1:43984 on port 1883.
+1749794431: Client auto-179505AA-2DB2-4CDB-7509-C94C8015A19D disconnected, not authorised.
+1749794433: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749794462: New connection from ::1:32956 on port 1883.
+1749794462: Client auto-3B4352A9-9A7A-368D-69B4-77FA2B578BE8 disconnected, not authorised.
+1749794492: New connection from ::1:35356 on port 1883.
+1749794492: Client auto-F8C318A0-5986-4327-B87B-3D8A8D779159 disconnected, not authorised.
+1749794522: New connection from ::1:49988 on port 1883.
+1749794522: Client auto-985912C2-456A-365B-31C3-6D3EA500F04A disconnected, not authorised.
+1749794552: New connection from ::1:53938 on port 1883.
+1749794552: Client auto-94EE38E6-FD51-85C1-2442-DAEF0366E9C6 disconnected, not authorised.
+1749794582: New connection from ::1:53934 on port 1883.
+1749794582: Client auto-B434BFDF-CD66-ED01-5007-51892649ED9A disconnected, not authorised.
+1749794612: New connection from ::1:58188 on port 1883.
+1749794612: Client auto-1F41C067-A27D-99F4-BF26-E48E082F2BD3 disconnected, not authorised.
+1749794642: New connection from ::1:59450 on port 1883.
+1749794642: Client auto-54F2873C-9735-68F2-B170-F24C014C4AAA disconnected, not authorised.
+1749794672: New connection from ::1:50294 on port 1883.
+1749794672: Client auto-B1077565-7339-A716-7CFE-EC7F417355E9 disconnected, not authorised.
+1749794702: New connection from ::1:46766 on port 1883.
+1749794702: Client auto-53A6F7A8-A673-0850-1A3C-4EC857B0A71F disconnected, not authorised.
+1749794732: New connection from ::1:53030 on port 1883.
+1749794732: Client auto-70F3E4F0-D4DF-0DA5-E473-6B15EC6F050D disconnected, not authorised.
+1749794762: New connection from ::1:44860 on port 1883.
+1749794762: Client auto-C24DF6CC-B869-2A6A-1805-A4120271DAFE disconnected, not authorised.
+1749794792: New connection from ::1:41508 on port 1883.
+1749794792: Client auto-FD1D2788-F31D-4309-70D9-1E8077D283E7 disconnected, not authorised.
+1749794822: New connection from ::1:43260 on port 1883.
+1749794822: Client auto-EA7337B8-83CE-2DEB-C96E-69E852EC7168 disconnected, not authorised.
+1749794852: New connection from ::1:41494 on port 1883.
+1749794852: Client auto-DF4AFFDA-AC76-0B80-48F8-7D00D9CE35C1 disconnected, not authorised.
+1749794882: New connection from ::1:59614 on port 1883.
+1749794882: Client auto-D2A2AC66-C1BE-BEF8-AC59-6C3619E3A7DA disconnected, not authorised.
+1749794912: New connection from ::1:51900 on port 1883.
+1749794912: Client auto-D8A0E355-BBF9-2825-FBC5-9E458546EC13 disconnected, not authorised.
+1749794942: New connection from ::1:52224 on port 1883.
+1749794942: Client auto-2FA22C63-07ED-53C3-4DA2-25B57089F446 disconnected, not authorised.
+1749794972: New connection from ::1:59410 on port 1883.
+1749794972: Client auto-2BAE13C5-BB9A-BD45-64AD-E4EF6210B2C0 disconnected, not authorised.
+1749795002: New connection from ::1:45398 on port 1883.
+1749795002: Client auto-3D573125-5ADC-DEF3-1508-C2F2827EF1C1 disconnected, not authorised.
+1749795032: New connection from ::1:60376 on port 1883.
+1749795032: Client auto-ED752160-BFB0-1BCB-25C0-1EDC230DD6EE disconnected, not authorised.
+1749795063: New connection from ::1:42672 on port 1883.
+1749795063: Client auto-80A63EE7-C7DD-691D-933B-D449D6994A01 disconnected, not authorised.
+1749795093: New connection from ::1:54258 on port 1883.
+1749795093: Client auto-7BDA012A-EDFF-CEDB-DE78-D83F287C4B24 disconnected, not authorised.
+1749795123: New connection from ::1:33792 on port 1883.
+1749795123: Client auto-E29EB5A0-180D-FD4A-CAC7-1CF76BEAACCB disconnected, not authorised.
+1749795153: New connection from ::1:38140 on port 1883.
+1749795153: Client auto-5E883F74-E042-4B6C-10A1-1CEF0F6D9CE1 disconnected, not authorised.
+1749795183: New connection from ::1:48792 on port 1883.
+1749795183: Client auto-65402F98-0520-C370-7BBD-A3912D7D4A0E disconnected, not authorised.
+1749795213: New connection from ::1:46842 on port 1883.
+1749795213: Client auto-6F313139-6AD4-3633-9473-A8E668FA7692 disconnected, not authorised.
+1749795243: New connection from ::1:48538 on port 1883.
+1749795243: Client auto-50434F7D-31E6-5872-CD25-D68E02AE515F disconnected, not authorised.
+1749795273: New connection from ::1:55092 on port 1883.
+1749795273: Client auto-A7D49AAD-B510-2C5D-A493-73EC18BA4277 disconnected, not authorised.
+1749795303: New connection from ::1:55028 on port 1883.
+1749795303: Client auto-5C8FE103-9EC5-5975-9F61-09D85CC269F7 disconnected, not authorised.
+1749795333: New connection from ::1:50214 on port 1883.
+1749795333: Client auto-B9359F3D-2E80-17EE-2E69-86F9F9FAD6EF disconnected, not authorised.
+1749795363: New connection from ::1:50086 on port 1883.
+1749795363: Client auto-68D5A5C4-ECCC-E4A4-3231-05EDA30DB32C disconnected, not authorised.
+1749795393: New connection from ::1:47274 on port 1883.
+1749795393: Client auto-138F823F-C34F-41C8-7D8E-987F7E283579 disconnected, not authorised.
+1749795423: New connection from ::1:52150 on port 1883.
+1749795423: Client auto-032FEBAA-2348-0342-DB14-9DDD7DE0FFEC disconnected, not authorised.
+1749795453: New connection from ::1:37612 on port 1883.
+1749795453: Client auto-3AB57667-D864-77E3-78EB-8601806A3CA5 disconnected, not authorised.
+1749795483: New connection from ::1:43526 on port 1883.
+1749795483: Client auto-A2C2C202-3177-CCF9-AF8A-31B2532AE6A9 disconnected, not authorised.
+1749795513: New connection from ::1:44890 on port 1883.
+1749795513: Client auto-D92C1756-53AD-E41D-9918-773C65B2A91F disconnected, not authorised.
+1749795543: New connection from ::1:37546 on port 1883.
+1749795543: Client auto-6288701B-2743-0F2D-37E6-9BD1B8BF8481 disconnected, not authorised.
+1749795573: New connection from ::1:40704 on port 1883.
+1749795573: Client auto-71CDB2EA-A7AA-C555-14B4-080B0EDFFE8E disconnected, not authorised.
+1749795603: New connection from ::1:48086 on port 1883.
+1749795603: Client auto-8A6D62E3-7BDF-C0C0-B162-74C28F50960A disconnected, not authorised.
+1749795633: New connection from ::1:33598 on port 1883.
+1749795633: Client auto-097F9DF4-68CD-63FC-FDAF-B32483D82586 disconnected, not authorised.
+1749795663: New connection from ::1:34190 on port 1883.
+1749795663: Client auto-684F8ABD-BE60-25BA-7525-020738377B67 disconnected, not authorised.
+1749795692: mosquitto version 2.0.21 terminating
+1749795692: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749795717: mosquitto version 2.0.21 starting
+1749795717: Config loaded from /mosquitto/config/mosquitto.conf.
+1749795717: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749795717: Opening ipv4 listen socket on port 1883.
+1749795717: Opening ipv6 listen socket on port 1883.
+1749795717: mosquitto version 2.0.21 running
+1749795722: New connection from ::1:50442 on port 1883.
+1749795722: Client auto-05FE7811-B9D9-9718-2925-3CD586B54F00 disconnected, not authorised.
+1749795727: New connection from ::1:49538 on port 1883.
+1749795727: Client auto-7F157B83-1DA3-CF52-DDB3-656E91AD8847 disconnected, not authorised.
+1749795757: New connection from ::1:49038 on port 1883.
+1749795757: Client auto-774DFD1C-B194-7761-489B-9CE29807D6F5 disconnected, not authorised.
+1749795787: New connection from ::1:36958 on port 1883.
+1749795787: Client auto-D7C10777-F794-4A8C-8A32-364A192E8FBC disconnected, not authorised.
+1749795817: New connection from ::1:47328 on port 1883.
+1749795817: Client auto-C6F6C66F-97E1-3FE3-8738-2938AEB4F0E5 disconnected, not authorised.
+1749795847: New connection from ::1:55146 on port 1883.
+1749795847: Client auto-4F27207A-8822-BCCC-6536-F42AD98693D7 disconnected, not authorised.
+1749795877: New connection from ::1:38544 on port 1883.
+1749795877: Client auto-4018350E-AA95-1D7B-D45D-F6309C949439 disconnected, not authorised.
+1749795907: New connection from ::1:51280 on port 1883.
+1749795907: Client auto-3EA80ADA-B3AA-F60E-DCD9-181C067A23B4 disconnected, not authorised.
+1749795937: New connection from ::1:33630 on port 1883.
+1749795937: Client auto-2330235B-A874-74E6-565C-B5833EC628A9 disconnected, not authorised.
+1749795967: New connection from ::1:59734 on port 1883.
+1749795967: Client auto-7FA4F9E6-ED7C-11F9-AE43-B77CB31C1736 disconnected, not authorised.
+1749795997: New connection from ::1:46406 on port 1883.
+1749795997: Client auto-E5593997-9578-1BF6-69C7-E1912D37785E disconnected, not authorised.
+1749796028: New connection from ::1:52004 on port 1883.
+1749796028: Client auto-009821E9-94F7-0EBF-3757-1301A44B2539 disconnected, not authorised.
+1749796058: New connection from ::1:35180 on port 1883.
+1749796058: Client auto-BC3283F9-3B2D-DBF4-24EC-AA693D45EFAC disconnected, not authorised.
+1749796088: New connection from ::1:49124 on port 1883.
+1749796088: Client auto-6A072A84-C5C9-86BA-411A-AF39E5610B7C disconnected, not authorised.
+1749796118: New connection from ::1:57074 on port 1883.
+1749796118: Client auto-383ED6DA-15EF-53A2-B8B4-61E61D66FD34 disconnected, not authorised.
+1749796148: New connection from ::1:33040 on port 1883.
+1749796148: Client auto-F3394FB2-01B4-1ECC-DD00-C94644D9FE82 disconnected, not authorised.
+1749796178: New connection from ::1:54350 on port 1883.
+1749796178: Client auto-F24EC25C-7E94-7D03-2948-864AEE41AEDF disconnected, not authorised.
+1749796208: New connection from ::1:54404 on port 1883.
+1749796208: Client auto-C5D83850-9FC8-C009-9F48-C485E4FE5C12 disconnected, not authorised.
+1749796238: New connection from ::1:45546 on port 1883.
+1749796238: Client auto-FBAC9869-234A-C717-EEFB-497255B93968 disconnected, not authorised.
+1749796268: New connection from ::1:40892 on port 1883.
+1749796268: Client auto-186DEBA0-ADE9-8DED-784B-37C8CB4DEEF5 disconnected, not authorised.
+1749796298: New connection from ::1:40232 on port 1883.
+1749796298: Client auto-A0143636-A3C6-B262-EA36-3FB5291413F8 disconnected, not authorised.
+1749796328: New connection from ::1:46964 on port 1883.
+1749796328: Client auto-8F064E43-2A2D-B7CF-9D8C-7A8557F6D51B disconnected, not authorised.
+1749796358: New connection from ::1:42510 on port 1883.
+1749796358: Client auto-D7DA380A-E99B-2751-FBC4-3A85DDEB9DD3 disconnected, not authorised.
+1749796388: New connection from ::1:60254 on port 1883.
+1749796388: Client auto-9BA51D48-41C4-5C96-7848-F6528495EFDD disconnected, not authorised.
+1749796418: New connection from ::1:36130 on port 1883.
+1749796418: Client auto-A45DC530-76B2-537F-4670-16440A56EC43 disconnected, not authorised.
+1749796448: New connection from ::1:40422 on port 1883.
+1749796448: Client auto-DFF64CCC-7F64-D9DA-9958-906109890488 disconnected, not authorised.
+1749796478: New connection from ::1:48556 on port 1883.
+1749796478: Client auto-4CA7037A-C598-AB82-AD58-32B0AF4F2744 disconnected, not authorised.
+1749796508: New connection from ::1:50110 on port 1883.
+1749796508: Client auto-5C5476F0-E3C5-C183-521B-B0C8E329EC5A disconnected, not authorised.
+1749796539: New connection from ::1:51470 on port 1883.
+1749796539: Client auto-59C6F484-D195-95D2-BADC-39162A34A632 disconnected, not authorised.
+1749796567: mosquitto version 2.0.21 terminating
+1749796567: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749796593: mosquitto version 2.0.21 starting
+1749796593: Config loaded from /mosquitto/config/mosquitto.conf.
+1749796593: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749796593: Opening ipv4 listen socket on port 1883.
+1749796593: Opening ipv6 listen socket on port 1883.
+1749796593: mosquitto version 2.0.21 running
+1749796598: New connection from ::1:55944 on port 1883.
+1749796598: Client auto-5398FCB8-D7F3-87D2-7437-512836D199D1 disconnected, not authorised.
+1749796603: New connection from ::1:55948 on port 1883.
+1749796603: Client auto-04920B5E-5D84-CECB-9641-6FD934CF9ED1 disconnected, not authorised.
+1749796633: New connection from ::1:40350 on port 1883.
+1749796633: Client auto-95905A0C-D0DE-E175-519F-2B5EC78B892C disconnected, not authorised.
+1749796664: New connection from ::1:59028 on port 1883.
+1749796664: Client auto-5D24F442-95AB-B447-A34B-B3670D036116 disconnected, not authorised.
+1749796694: New connection from ::1:38626 on port 1883.
+1749796694: Client auto-8BB29576-3DEA-5946-B4BC-64F6D97ABB6F disconnected, not authorised.
+1749796724: New connection from ::1:57638 on port 1883.
+1749796724: Client auto-07FB9276-4CE1-6643-86F9-74DA45429642 disconnected, not authorised.
+1749796754: New connection from ::1:46430 on port 1883.
+1749796754: Client auto-E366DCCA-A71A-E269-1840-9B08F90AF51E disconnected, not authorised.
+1749796784: New connection from ::1:50528 on port 1883.
+1749796784: Client auto-934FC232-4FA0-167A-A550-A9DCB9EF5449 disconnected, not authorised.
+1749796814: New connection from ::1:50218 on port 1883.
+1749796814: Client auto-2EF298CD-EEA8-D812-BC1A-E73AD7CCFB42 disconnected, not authorised.
+1749796844: New connection from ::1:45692 on port 1883.
+1749796844: Client auto-1641423D-7C19-C655-2D5F-4E4BB9D04693 disconnected, not authorised.
+1749796874: New connection from ::1:35240 on port 1883.
+1749796874: Client auto-140F2936-7F24-AEA6-EBA3-DE9D5F217CAE disconnected, not authorised.
+1749796904: New connection from ::1:47532 on port 1883.
+1749796904: Client auto-9F5B19F0-95A1-C69E-AFDF-ED23AF8CB856 disconnected, not authorised.
+1749796934: New connection from ::1:50094 on port 1883.
+1749796934: Client auto-56D2269E-0F0F-BBF2-A16D-8158C920FEA3 disconnected, not authorised.
+1749796964: New connection from ::1:41926 on port 1883.
+1749796964: Client auto-C6481BA9-4F23-5D7F-2D43-0D10471EEF19 disconnected, not authorised.
+1749796994: New connection from ::1:41032 on port 1883.
+1749796994: Client auto-9D90CC58-404B-99BA-C206-39A950C09F1C disconnected, not authorised.
+1749797024: New connection from ::1:57546 on port 1883.
+1749797024: Client auto-62373A02-68BB-3673-E78E-F55AC87ECD52 disconnected, not authorised.
+1749797054: New connection from ::1:36058 on port 1883.
+1749797054: Client auto-6933E5BC-2F6D-C314-E844-BDCB29300D7E disconnected, not authorised.
+1749797084: New connection from ::1:49652 on port 1883.
+1749797084: Client auto-9FAE1F6C-736E-430C-C6C1-83E77880C730 disconnected, not authorised.
+1749797114: New connection from ::1:35992 on port 1883.
+1749797114: Client auto-CA8B5888-1B6F-156C-A151-C638E8E057BA disconnected, not authorised.
+1749797144: New connection from ::1:49246 on port 1883.
+1749797144: Client auto-28B70BC9-A8E7-5B01-9E3B-9DB97D70FDDB disconnected, not authorised.
+1749797174: New connection from ::1:38458 on port 1883.
+1749797174: Client auto-0B003CD2-E8E7-4F69-7FBA-FA677624EA37 disconnected, not authorised.
+1749797204: New connection from ::1:40118 on port 1883.
+1749797204: Client auto-18088A01-2827-82C3-D36A-210EF7B46279 disconnected, not authorised.
+1749797234: New connection from ::1:39374 on port 1883.
+1749797234: Client auto-DF4BB64A-4EF8-9B1D-A5E4-BC7E129FFDF2 disconnected, not authorised.
+1749797264: New connection from ::1:48164 on port 1883.
+1749797264: Client auto-F36B79BD-5276-5250-9DDF-8F9E21B5CF5D disconnected, not authorised.
+1749797295: New connection from ::1:42246 on port 1883.
+1749797295: Client auto-E1A5E30D-E0D0-6C75-9943-84CE82AD2043 disconnected, not authorised.
+1749797325: New connection from ::1:35776 on port 1883.
+1749797325: Client auto-65E32EDA-01C6-A642-B5A5-195F123F5B30 disconnected, not authorised.
+1749797332: mosquitto version 2.0.21 terminating
+1749797332: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749797364: mosquitto version 2.0.21 starting
+1749797364: Config loaded from /mosquitto/config/mosquitto.conf.
+1749797364: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749797364: Opening ipv4 listen socket on port 1883.
+1749797364: Opening ipv6 listen socket on port 1883.
+1749797364: mosquitto version 2.0.21 running
+1749797369: New connection from ::1:40986 on port 1883.
+1749797369: Client auto-B7FA340D-29C0-9537-3DF0-FB70240D1FC1 disconnected, not authorised.
+1749797374: New connection from ::1:45432 on port 1883.
+1749797374: Client auto-870960AB-2D1D-3120-CAA7-92D49E1B5A58 disconnected, not authorised.
+1749797404: New connection from ::1:39640 on port 1883.
+1749797404: Client auto-566F9E7A-4368-D7ED-F269-EA4A773EC724 disconnected, not authorised.
+1749797434: New connection from ::1:48246 on port 1883.
+1749797434: Client auto-83D99D32-6A3C-F1C3-629F-FA476F40318D disconnected, not authorised.
+1749797464: New connection from ::1:45734 on port 1883.
+1749797464: Client auto-B3DC900A-B79B-8B26-5744-FDEB072B3239 disconnected, not authorised.
+1749797494: New connection from ::1:57262 on port 1883.
+1749797494: Client auto-E41FC138-ADF0-1531-1746-D394864FB43E disconnected, not authorised.
+1749797524: New connection from ::1:35338 on port 1883.
+1749797524: Client auto-2B485D9D-C68B-3E30-F5A5-48DB4CB2C6DA disconnected, not authorised.
+1749797554: New connection from ::1:55670 on port 1883.
+1749797554: Client auto-85E415E7-3E9B-C0E8-D08F-2A32B8073B53 disconnected, not authorised.
+1749797584: New connection from ::1:48088 on port 1883.
+1749797584: Client auto-9E78BAFE-F04F-5483-2660-75D37FAFC9ED disconnected, not authorised.
+1749797614: New connection from ::1:53822 on port 1883.
+1749797614: Client auto-A6F60AA9-FBE0-8B29-1EF5-61CC28518157 disconnected, not authorised.
+1749797644: New connection from ::1:50032 on port 1883.
+1749797644: Client auto-71EB72D6-15C0-7944-4762-D9FB59D2BADF disconnected, not authorised.
+1749797674: New connection from ::1:35830 on port 1883.
+1749797674: Client auto-C2D7C035-5C0A-8760-2F8B-DA73AA45CB86 disconnected, not authorised.
+1749797705: New connection from ::1:37962 on port 1883.
+1749797705: Client auto-02DCBE4B-3A98-602E-8991-9BC4B6A54EC6 disconnected, not authorised.
+1749797735: New connection from ::1:48272 on port 1883.
+1749797735: Client auto-76CCC147-CFE3-FE7A-996D-449AB68A81E5 disconnected, not authorised.
+1749797765: New connection from ::1:49102 on port 1883.
+1749797765: Client auto-073A76E3-FA1F-D86B-5B54-27579B050011 disconnected, not authorised.
+1749797795: New connection from ::1:56460 on port 1883.
+1749797795: Client auto-1FD0826C-1F1F-749E-E471-DF59A7767AD2 disconnected, not authorised.
+1749797825: New connection from ::1:46832 on port 1883.
+1749797825: Client auto-22C9085A-AF6C-2F88-3C78-614F6AE08B0F disconnected, not authorised.
+1749797855: New connection from ::1:59084 on port 1883.
+1749797855: Client auto-4A4A64F9-B02F-B22E-DC18-E0A229F6D01C disconnected, not authorised.
+1749797885: New connection from ::1:53624 on port 1883.
+1749797885: Client auto-4CDB14BF-5991-3EEF-D0E5-477EC5199B1F disconnected, not authorised.
+1749797915: New connection from ::1:46764 on port 1883.
+1749797915: Client auto-7C301469-17D9-7105-FF0B-C99062FF8EE5 disconnected, not authorised.
+1749797945: New connection from ::1:49804 on port 1883.
+1749797945: Client auto-D31AB3C0-4680-61BF-7CC4-B87084C11348 disconnected, not authorised.
+1749797975: New connection from ::1:51754 on port 1883.
+1749797975: Client auto-A1064DE4-B726-3C1E-2048-B14D8AF1ADBE disconnected, not authorised.
+1749798005: New connection from ::1:39222 on port 1883.
+1749798005: Client auto-287F8024-1A53-EE32-C1BC-36F0C73D8368 disconnected, not authorised.
+1749798035: New connection from ::1:46616 on port 1883.
+1749798035: Client auto-EB24E58F-ABD7-0127-DB5A-81186584790B disconnected, not authorised.
+1749798065: New connection from ::1:55736 on port 1883.
+1749798065: Client auto-48CAD4FE-965B-778F-E85F-CA7808950DEB disconnected, not authorised.
+1749798095: New connection from ::1:53012 on port 1883.
+1749798095: Client auto-80B46169-0B8E-4AEF-5AEF-F3558A21B548 disconnected, not authorised.
+1749798125: New connection from ::1:52556 on port 1883.
+1749798125: Client auto-BD1717F1-719A-1F60-BC66-3889A46D0ED5 disconnected, not authorised.
+1749798155: New connection from ::1:54828 on port 1883.
+1749798155: Client auto-EDD859E9-BACD-E4F4-5E3C-5CC90DC98894 disconnected, not authorised.
+1749798185: New connection from ::1:46388 on port 1883.
+1749798185: Client auto-D01838F0-D779-2322-EF8B-C17396320A22 disconnected, not authorised.
+1749798215: New connection from ::1:48206 on port 1883.
+1749798215: Client auto-33B5EEF0-63A8-5299-BBB4-AC96C1625432 disconnected, not authorised.
+1749798245: New connection from ::1:51486 on port 1883.
+1749798245: Client auto-8780B458-8C9E-2A53-7E1C-4813D504ED79 disconnected, not authorised.
+1749798275: New connection from ::1:45450 on port 1883.
+1749798275: Client auto-67A24A88-AB48-0D92-77F4-D33BC7395BDE disconnected, not authorised.
+1749798306: New connection from ::1:42898 on port 1883.
+1749798306: Client auto-14B393C4-FE5E-5686-AB95-862717179CDB disconnected, not authorised.
+1749798335: mosquitto version 2.0.21 terminating
+1749798335: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749798341: mosquitto version 2.0.21 starting
+1749798341: Config loaded from /mosquitto/config/mosquitto.conf.
+1749798341: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749798341: Opening ipv4 listen socket on port 1883.
+1749798341: Opening ipv6 listen socket on port 1883.
+1749798341: mosquitto version 2.0.21 running
+1749798346: New connection from ::1:37048 on port 1883.
+1749798346: Client auto-22FF6F50-A33D-7F4F-7C44-238F9F92FB63 disconnected, not authorised.
+1749798351: New connection from ::1:37052 on port 1883.
+1749798351: Client auto-5ACC2E5F-8E56-B38B-6F78-29DEE011D17B disconnected, not authorised.
+1749798381: New connection from ::1:43362 on port 1883.
+1749798381: Client auto-5439D759-5390-B3F3-D526-881F61E21D35 disconnected, not authorised.
+1749798411: New connection from ::1:41372 on port 1883.
+1749798411: Client auto-123E9FBB-1E05-0502-E0C2-9C6F09D0297F disconnected, not authorised.
+1749798441: New connection from ::1:41234 on port 1883.
+1749798441: Client auto-06E86FF9-8A5C-6BA9-7293-9EC2DD7AC446 disconnected, not authorised.
+1749798471: New connection from ::1:54554 on port 1883.
+1749798471: Client auto-39F28E47-797A-77CD-B64F-C590CE9B04C0 disconnected, not authorised.
+1749798501: New connection from ::1:35724 on port 1883.
+1749798501: Client auto-1D5BDA93-B204-0726-63D6-A0A72EA073C2 disconnected, not authorised.
+1749798531: New connection from ::1:44784 on port 1883.
+1749798531: Client auto-E4FB2F5C-BCF8-16F1-B070-84A4BD66E00B disconnected, not authorised.
+1749798561: New connection from ::1:52974 on port 1883.
+1749798561: Client auto-480875B7-0FDE-3A79-2BC1-AAC1084634F9 disconnected, not authorised.
+1749798591: New connection from ::1:57858 on port 1883.
+1749798591: Client auto-FA567186-0583-38C3-6E0E-DE88C9EFAA0F disconnected, not authorised.
+1749798621: New connection from ::1:50688 on port 1883.
+1749798621: Client auto-0F674A38-1BA5-BB89-1551-08F06689531F disconnected, not authorised.
+1749798651: New connection from ::1:35104 on port 1883.
+1749798651: Client auto-6601A35B-3EA9-ADC5-22F0-8454CFE0E6D9 disconnected, not authorised.
+1749798681: New connection from ::1:57716 on port 1883.
+1749798681: Client auto-9A5FA74C-38DB-E562-7F14-C022260E323C disconnected, not authorised.
+1749798711: New connection from ::1:34402 on port 1883.
+1749798711: Client auto-98D9639E-E378-CDC5-68DA-F0BE3E4113D1 disconnected, not authorised.
+1749798741: New connection from ::1:37174 on port 1883.
+1749798741: Client auto-4971EDB1-27C3-3C0C-2E1E-A44B585E973F disconnected, not authorised.
+1749798771: New connection from ::1:39580 on port 1883.
+1749798771: Client auto-01B7B961-5854-1270-45AE-E4C3EFDF407D disconnected, not authorised.
+1749798802: New connection from ::1:43342 on port 1883.
+1749798802: Client auto-A38116F1-30A7-DD15-FD65-4F4BD419EFC7 disconnected, not authorised.
+1749798832: New connection from ::1:46174 on port 1883.
+1749798832: Client auto-0C241FE8-C936-6EFD-AFA4-69994C597E73 disconnected, not authorised.
+1749798862: New connection from ::1:39020 on port 1883.
+1749798862: Client auto-06237276-BA54-C99E-CDD7-F5E13239A475 disconnected, not authorised.
+1749798892: New connection from ::1:54366 on port 1883.
+1749798892: Client auto-E42CEB50-193E-053F-B9CA-D735DBD95569 disconnected, not authorised.
+1749798922: New connection from ::1:44716 on port 1883.
+1749798922: Client auto-7E26BA4C-E720-A6CC-28A3-088A06B6C47C disconnected, not authorised.
+1749798952: New connection from ::1:38200 on port 1883.
+1749798952: Client auto-D11104D6-BAAE-F9C1-DA19-15680BCDAF0D disconnected, not authorised.
+1749798982: New connection from ::1:55610 on port 1883.
+1749798982: Client auto-9DE360D8-B6E3-56B1-D345-72634ED51ECC disconnected, not authorised.
+1749799012: New connection from ::1:53594 on port 1883.
+1749799012: Client auto-9BFF07BD-7F52-3C5C-8FE1-D8D9B59615D6 disconnected, not authorised.
+1749799042: New connection from ::1:48686 on port 1883.
+1749799042: Client auto-13F5CCBB-00A7-87D0-F7D7-E631D87F39F7 disconnected, not authorised.
+1749799072: New connection from ::1:49184 on port 1883.
+1749799072: Client auto-891B437E-AA26-C0B2-DA57-AC3BFA020156 disconnected, not authorised.
+1749799084: mosquitto version 2.0.21 terminating
+1749799084: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749799086: mosquitto version 2.0.21 starting
+1749799086: Config loaded from /mosquitto/config/mosquitto.conf.
+1749799086: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749799086: Opening ipv4 listen socket on port 1883.
+1749799086: Opening ipv6 listen socket on port 1883.
+1749799086: mosquitto version 2.0.21 running
+1749799090: New connection from ::1:50522 on port 1883.
+1749799090: Client auto-CE423DAB-A88D-7B1C-A6D7-6574A21E5C58 disconnected, not authorised.
+1749799095: New connection from ::1:33174 on port 1883.
+1749799095: Client auto-856CD1EB-E0ED-3A4B-CD40-FF23FED345BB disconnected, not authorised.
+1749799125: New connection from ::1:57064 on port 1883.
+1749799125: Client auto-2368809A-DE02-1B85-27AD-155F4EC76CBA disconnected, not authorised.
+1749799156: New connection from ::1:50508 on port 1883.
+1749799156: Client auto-F7A06917-67AC-DF7E-C555-57EF41675DB2 disconnected, not authorised.
+1749799186: New connection from ::1:33658 on port 1883.
+1749799186: Client auto-488C5259-F26B-57A2-2783-16F8EA18E93F disconnected, not authorised.
+1749799216: New connection from ::1:35248 on port 1883.
+1749799216: Client auto-FCA3B20C-A19B-11EF-20E6-2D43693D5F90 disconnected, not authorised.
+1749799226: mosquitto version 2.0.21 terminating
+1749799226: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749799311: mosquitto version 2.0.21 starting
+1749799311: Config loaded from /mosquitto/config/mosquitto.conf.
+1749799311: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749799311: Opening ipv4 listen socket on port 1883.
+1749799311: Opening ipv6 listen socket on port 1883.
+1749799311: mosquitto version 2.0.21 running
+1749799316: New connection from ::1:49096 on port 1883.
+1749799316: Client auto-0FB3392C-DA3F-1632-9E9F-754742371351 disconnected, not authorised.
+1749799321: New connection from ::1:49102 on port 1883.
+1749799321: Client auto-0873CD83-39D0-80FB-BEEC-5E63722EE14B disconnected, not authorised.
+1749799351: New connection from ::1:42094 on port 1883.
+1749799351: Client auto-1434927F-23BF-2EC4-2655-C54AD7F1FC4D disconnected, not authorised.
+1749799381: New connection from ::1:33710 on port 1883.
+1749799381: Client auto-CEB8643F-6311-D14B-867F-C55BA9BDD5E1 disconnected, not authorised.
+1749799411: New connection from ::1:44958 on port 1883.
+1749799411: Client auto-7CD794DE-D401-C4FE-041C-ADBC5AF71A93 disconnected, not authorised.
+1749799441: New connection from ::1:40334 on port 1883.
+1749799441: Client auto-14AA22C9-BFB7-424D-ACF1-0835C65DE525 disconnected, not authorised.
+1749799471: New connection from ::1:56738 on port 1883.
+1749799471: Client auto-B49E798E-4337-695F-22A0-F2A2D8A8D155 disconnected, not authorised.
+1749799501: New connection from ::1:32958 on port 1883.
+1749799501: Client auto-F4126859-2F4E-904C-50A2-0B9AE3BED6F0 disconnected, not authorised.
+1749799531: New connection from ::1:53300 on port 1883.
+1749799531: Client auto-AF990889-3BB7-BBB5-8EDB-A60698CDC493 disconnected, not authorised.
+1749799561: New connection from ::1:45968 on port 1883.
+1749799561: Client auto-DB7BA9D6-E4AF-38C9-D93C-CD88166DA4A2 disconnected, not authorised.
+1749799568: mosquitto version 2.0.21 terminating
+1749799568: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749799591: mosquitto version 2.0.21 starting
+1749799591: Config loaded from /mosquitto/config/mosquitto.conf.
+1749799591: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749799591: Opening ipv4 listen socket on port 1883.
+1749799591: Opening ipv6 listen socket on port 1883.
+1749799591: mosquitto version 2.0.21 running
+1749799596: New connection from ::1:40270 on port 1883.
+1749799596: Client auto-46563C9F-12EB-28BF-F33A-0C43B812157D disconnected, not authorised.
+1749799601: New connection from ::1:40284 on port 1883.
+1749799601: Client auto-CA7D9CB4-BA54-7629-6B6F-2071DCF04D47 disconnected, not authorised.
+1749799631: New connection from ::1:44762 on port 1883.
+1749799631: Client auto-F200D671-9A9E-FEA4-01EC-15E2C314C520 disconnected, not authorised.
+1749799661: New connection from ::1:35442 on port 1883.
+1749799661: Client auto-DA0676D0-79D9-4D69-A76A-E15C98A7C72C disconnected, not authorised.
+1749799691: New connection from ::1:44202 on port 1883.
+1749799691: Client auto-E6AC5734-39FB-5CC6-0C14-03EE0EBA818E disconnected, not authorised.
+1749799721: New connection from ::1:49388 on port 1883.
+1749799721: Client auto-B10635EE-3697-D4BA-E4CF-9FFF1BD6355F disconnected, not authorised.
+1749799751: New connection from ::1:37940 on port 1883.
+1749799751: Client auto-9E8751B4-C515-72C3-D22C-50377C67BCFC disconnected, not authorised.
+1749799781: New connection from ::1:56076 on port 1883.
+1749799781: Client auto-66B43F7A-807E-741B-684C-4B1B211F5ED6 disconnected, not authorised.
+1749799811: New connection from ::1:34948 on port 1883.
+1749799811: Client auto-06D8D5A8-81F4-C5EB-4085-2978BD92C445 disconnected, not authorised.
+1749799841: New connection from ::1:57228 on port 1883.
+1749799841: Client auto-1A980D85-C127-50DF-6C48-2EED09ACB046 disconnected, not authorised.
+1749799871: New connection from ::1:50088 on port 1883.
+1749799871: Client auto-3E0F7134-AE22-88BA-0484-6686765323E1 disconnected, not authorised.
+1749799901: New connection from ::1:58090 on port 1883.
+1749799901: Client auto-8B6E872A-46F0-372C-6432-0E1A494BAEB9 disconnected, not authorised.
+1749799931: New connection from ::1:49382 on port 1883.
+1749799931: Client auto-7912EC75-2F77-B4DA-51CE-74745A1C1D5E disconnected, not authorised.
+1749799961: New connection from ::1:35910 on port 1883.
+1749799961: Client auto-08C40ABF-7467-CBCF-4C98-7EBF63A0B919 disconnected, not authorised.
+1749799991: New connection from ::1:33772 on port 1883.
+1749799991: Client auto-0754F007-6BAF-04F6-C481-EB5AB68A08C9 disconnected, not authorised.
+1749800021: New connection from ::1:50704 on port 1883.
+1749800021: Client auto-7A67E153-3563-992A-04E3-DA0634722A0F disconnected, not authorised.
+1749800051: New connection from ::1:47926 on port 1883.
+1749800051: Client auto-0900A829-BEF5-9626-0CDD-1842CAF860BA disconnected, not authorised.
+1749800082: New connection from ::1:47226 on port 1883.
+1749800082: Client auto-70852BCE-2026-EE40-58AD-7D4037817A53 disconnected, not authorised.
+1749800112: New connection from ::1:55836 on port 1883.
+1749800112: Client auto-AE750471-FBD2-E14D-40BA-8D32BD772F22 disconnected, not authorised.
+1749800142: New connection from ::1:45940 on port 1883.
+1749800142: Client auto-69E04510-C3C9-3ABC-9384-78947176D883 disconnected, not authorised.
+1749800172: New connection from ::1:37082 on port 1883.
+1749800172: Client auto-7D892697-731F-5F8C-A4AA-3E4A8098DD38 disconnected, not authorised.
+1749800202: New connection from ::1:39072 on port 1883.
+1749800202: Client auto-3853C4CE-8E8D-0A84-F04B-7D98BD9A914C disconnected, not authorised.
+1749800232: New connection from ::1:52252 on port 1883.
+1749800232: Client auto-4AC795B3-E7EB-C443-3C95-2793700E2020 disconnected, not authorised.
+1749800262: New connection from ::1:48528 on port 1883.
+1749800262: Client auto-CC70A88C-A4BC-4F45-C082-A8EF022BCF1E disconnected, not authorised.
+1749800292: New connection from ::1:52654 on port 1883.
+1749800292: Client auto-5129A2DB-6C85-3A76-0ADE-E080E57464DF disconnected, not authorised.
+1749800322: New connection from ::1:38816 on port 1883.
+1749800322: Client auto-CD26135F-4777-E59A-25B2-42D62301D4F6 disconnected, not authorised.
+1749800352: New connection from ::1:44202 on port 1883.
+1749800352: Client auto-B2131593-D66B-2F67-57DC-EA6F254D72C4 disconnected, not authorised.
+1749800382: New connection from ::1:33522 on port 1883.
+1749800382: Client auto-E6CD0476-2733-E4D2-24A8-963617317AFF disconnected, not authorised.
+1749800412: New connection from ::1:37520 on port 1883.
+1749800412: Client auto-B731E836-C350-0F42-80E4-92E32B57D18B disconnected, not authorised.
+1749800442: New connection from ::1:45580 on port 1883.
+1749800442: Client auto-CBBE9CB0-3F88-08C1-955A-415D2762C2BA disconnected, not authorised.
+1749800472: New connection from ::1:42992 on port 1883.
+1749800472: Client auto-9530E5F6-C96E-12DA-8584-D4B3EF6D9605 disconnected, not authorised.
+1749800502: New connection from ::1:34436 on port 1883.
+1749800502: Client auto-1EC46722-C64C-2D00-635B-6E6C71A35931 disconnected, not authorised.
+1749800532: New connection from ::1:44604 on port 1883.
+1749800532: Client auto-7C2C7553-8536-C7B3-47F8-9ED6E1CB223A disconnected, not authorised.
+1749800562: New connection from ::1:39110 on port 1883.
+1749800562: Client auto-175DDE00-E36D-C3F0-95E4-8B114856CC48 disconnected, not authorised.
+1749800592: New connection from ::1:51494 on port 1883.
+1749800592: Client auto-6CF228D3-98B4-DBE8-B236-597F0BF399E9 disconnected, not authorised.
+1749800622: New connection from ::1:60396 on port 1883.
+1749800622: Client auto-A657FA32-46DC-EB91-9D36-B5F98DFE7E2D disconnected, not authorised.
+1749800652: New connection from ::1:37072 on port 1883.
+1749800652: Client auto-CC9F7732-B41E-8F07-0F11-62503E5A45E4 disconnected, not authorised.
+1749800683: New connection from ::1:40062 on port 1883.
+1749800683: Client auto-B6689A36-FCD8-24D1-DB5B-6A67D524673C disconnected, not authorised.
+1749800713: New connection from ::1:45066 on port 1883.
+1749800713: Client auto-6B4E4EFD-56EA-3534-99D1-43518976D132 disconnected, not authorised.
+1749800743: New connection from ::1:57342 on port 1883.
+1749800743: Client auto-BE486986-FE81-D840-4939-19E9150F3DAD disconnected, not authorised.
+1749800773: New connection from ::1:34432 on port 1883.
+1749800773: Client auto-F69E9989-CCC2-DA50-873B-6BAFA1C9DC9D disconnected, not authorised.
+1749800803: New connection from ::1:59306 on port 1883.
+1749800803: Client auto-F5C2F886-C09D-B48F-4BEB-E0B03E642FE6 disconnected, not authorised.
+1749800833: New connection from ::1:45590 on port 1883.
+1749800833: Client auto-3F657C71-39F4-6800-3045-3F807A5520E0 disconnected, not authorised.
+1749800863: New connection from ::1:46022 on port 1883.
+1749800863: Client auto-494168C7-200C-95C8-D0DD-2DABA7A8231D disconnected, not authorised.
+1749800893: New connection from ::1:34528 on port 1883.
+1749800893: Client auto-8C981F17-F7F8-0225-2E74-76E236267B63 disconnected, not authorised.
+1749800923: New connection from ::1:52502 on port 1883.
+1749800923: Client auto-229CC8F1-144C-67CF-DCC2-032DBBEC23D4 disconnected, not authorised.
+1749800953: New connection from ::1:51508 on port 1883.
+1749800953: Client auto-67153ECA-8B7B-7A0C-79A1-B73E6E5EC21E disconnected, not authorised.
+1749800983: New connection from ::1:45136 on port 1883.
+1749800983: Client auto-4EF0C571-EB8B-E6D3-0E57-FA43467B064A disconnected, not authorised.
+1749801013: New connection from ::1:60564 on port 1883.
+1749801013: Client auto-F9296DE7-55C6-60C2-CA81-536F7C925A8E disconnected, not authorised.
+1749801043: New connection from ::1:39792 on port 1883.
+1749801043: Client auto-09BAB677-B619-363D-CC22-768A511F8C7F disconnected, not authorised.
+1749801073: New connection from ::1:46222 on port 1883.
+1749801073: Client auto-302FD3E9-A687-9F59-909F-B6A88B22585B disconnected, not authorised.
+1749801103: New connection from ::1:56952 on port 1883.
+1749801103: Client auto-1B96255E-0210-2C52-7880-F1F8D1C022DE disconnected, not authorised.
+1749801133: New connection from ::1:56286 on port 1883.
+1749801133: Client auto-1BCED6D8-9338-C14E-763F-F79BCF3062FA disconnected, not authorised.
+1749801163: New connection from ::1:35824 on port 1883.
+1749801163: Client auto-9557909D-B874-CE55-B969-AC61A92A98E7 disconnected, not authorised.
+1749801193: New connection from ::1:36032 on port 1883.
+1749801193: Client auto-30804376-8E10-16F5-DD5E-EA55B113BC16 disconnected, not authorised.
+1749801223: New connection from ::1:60370 on port 1883.
+1749801223: Client auto-FF91A202-E7DD-F3FC-F6CA-D3AA133DA683 disconnected, not authorised.
+1749801253: New connection from ::1:59734 on port 1883.
+1749801253: Client auto-99BCF7B1-A415-A2B9-51C7-EB8B4C683CD5 disconnected, not authorised.
+1749801283: New connection from ::1:54736 on port 1883.
+1749801283: Client auto-B0A2C05C-58FB-CB9C-41D4-D4EF0B9D023A disconnected, not authorised.
+1749801314: New connection from ::1:46534 on port 1883.
+1749801314: Client auto-B579EE33-69D4-FF78-DEDF-A8DF95076DB9 disconnected, not authorised.
+1749801344: New connection from ::1:52178 on port 1883.
+1749801344: Client auto-E583967A-0354-04C4-F804-21D8C8012012 disconnected, not authorised.
+1749801374: New connection from ::1:47660 on port 1883.
+1749801374: Client auto-62F22F4B-4204-C0A3-4B51-825BB21A2FE9 disconnected, not authorised.
+1749801392: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749801404: New connection from ::1:39648 on port 1883.
+1749801404: Client auto-E987D084-CF41-CE2A-07A0-FF6DEDF0761C disconnected, not authorised.
+1749801434: New connection from ::1:59794 on port 1883.
+1749801434: Client auto-13AEC497-C402-CFB4-19F3-92ACBC828033 disconnected, not authorised.
+1749801464: New connection from ::1:57606 on port 1883.
+1749801464: Client auto-303DE4F0-FC58-7F5E-91F6-149A9CE658D3 disconnected, not authorised.
+1749801494: New connection from ::1:38280 on port 1883.
+1749801494: Client auto-848F67AC-43B7-E572-80F9-8D9EF4B88E92 disconnected, not authorised.
+1749801524: New connection from ::1:56824 on port 1883.
+1749801524: Client auto-8059740E-B644-0C6B-1A0B-AFC4C69B5E3A disconnected, not authorised.
+1749801554: New connection from ::1:40836 on port 1883.
+1749801554: Client auto-A81C66E4-4EFC-18C9-0911-D9E880BA7F30 disconnected, not authorised.
+1749801584: New connection from ::1:55454 on port 1883.
+1749801584: Client auto-BA5093CA-B934-7208-2E03-61E974B2A4EE disconnected, not authorised.
+1749801614: New connection from ::1:51266 on port 1883.
+1749801614: Client auto-14AF81E8-5B89-E046-1A60-389FBC44E34A disconnected, not authorised.
+1749801644: New connection from ::1:37792 on port 1883.
+1749801644: Client auto-EF60F787-EA2B-1F99-E487-6A56BD0E1FE7 disconnected, not authorised.
+1749801674: New connection from ::1:56414 on port 1883.
+1749801674: Client auto-E1884D6B-C9D6-74DF-29F0-344B7C6413AA disconnected, not authorised.
+1749801704: New connection from ::1:48656 on port 1883.
+1749801704: Client auto-007AE8F4-804C-C4F1-6BAF-5D2182DD3825 disconnected, not authorised.
+1749801734: New connection from ::1:56416 on port 1883.
+1749801734: Client auto-98D6B6A6-0D9A-D601-383D-0CC64E6BDBAC disconnected, not authorised.
+1749801764: New connection from ::1:37426 on port 1883.
+1749801764: Client auto-69860E1C-3D33-E881-ACB3-7F428E6E5172 disconnected, not authorised.
+1749801794: New connection from ::1:50878 on port 1883.
+1749801794: Client auto-B594A6BF-179B-0EE0-58CC-9DB35C918D37 disconnected, not authorised.
+1749801824: New connection from ::1:60296 on port 1883.
+1749801824: Client auto-072E9E63-ECB3-652A-EE34-DA7E4628CC70 disconnected, not authorised.
+1749801854: New connection from ::1:45648 on port 1883.
+1749801854: Client auto-C4AE1DD1-E2DF-7FF8-0F2D-6F9424B47193 disconnected, not authorised.
+1749801884: New connection from ::1:39972 on port 1883.
+1749801884: Client auto-0FABD0EA-BC40-2969-4952-6E365A2FB496 disconnected, not authorised.
+1749801914: New connection from ::1:50940 on port 1883.
+1749801914: Client auto-A01A3946-4D01-402A-AA0D-BF5116CF995B disconnected, not authorised.
+1749801945: New connection from ::1:41226 on port 1883.
+1749801945: Client auto-B2731DB9-DCB9-4BB4-2DDB-341C421B222D disconnected, not authorised.
+1749801975: New connection from ::1:51256 on port 1883.
+1749801975: Client auto-D6BBAF25-17AF-4728-440E-CDE604EF1EEB disconnected, not authorised.
+1749802005: New connection from ::1:40468 on port 1883.
+1749802005: Client auto-B1BBE8CD-06BA-8074-04FF-D7482808BB36 disconnected, not authorised.
+1749802035: New connection from ::1:52092 on port 1883.
+1749802035: Client auto-A5FE8A3C-53F6-97C5-FC98-509D9F0B996F disconnected, not authorised.
+1749802065: New connection from ::1:51730 on port 1883.
+1749802065: Client auto-C6C92F13-E032-6CD5-A862-040D3E5DA9B3 disconnected, not authorised.
+1749802095: New connection from ::1:51096 on port 1883.
+1749802095: Client auto-F1780140-92CD-87EE-B7EE-0391DE4E6E9E disconnected, not authorised.
+1749802125: New connection from ::1:45114 on port 1883.
+1749802125: Client auto-246F772E-8BAB-5197-1173-32A4D1F14CDE disconnected, not authorised.
+1749802155: New connection from ::1:54288 on port 1883.
+1749802155: Client auto-C278D29B-1A16-4F6D-E9BD-32DBAB3323D1 disconnected, not authorised.
+1749802185: New connection from ::1:38586 on port 1883.
+1749802185: Client auto-227CBACB-FDC5-C4A7-6205-4997AC3D56DB disconnected, not authorised.
+1749802215: New connection from ::1:50078 on port 1883.
+1749802215: Client auto-3BEC05CF-3CDD-CC72-D0F3-CA0DDBF78A9B disconnected, not authorised.
+1749802245: New connection from ::1:41908 on port 1883.
+1749802245: Client auto-70318E0D-1316-EB3C-C351-5E5993F7A847 disconnected, not authorised.
+1749802275: New connection from ::1:49940 on port 1883.
+1749802275: Client auto-7DF35FD5-DE02-28F5-5A20-7E6660C2B90E disconnected, not authorised.
+1749802305: New connection from ::1:53106 on port 1883.
+1749802305: Client auto-D6AE0C75-7CDF-EB4C-7C7E-CDA2C8440BDE disconnected, not authorised.
+1749802335: New connection from ::1:39342 on port 1883.
+1749802335: Client auto-069053CA-3D61-142C-AFBF-08DCC995C4A1 disconnected, not authorised.
+1749802365: New connection from ::1:57974 on port 1883.
+1749802365: Client auto-B1243354-D5BC-CAA0-D258-4F5FB4A2FD65 disconnected, not authorised.
+1749802395: New connection from ::1:41456 on port 1883.
+1749802395: Client auto-7FD39014-1903-6DE8-EC85-F49048135DD9 disconnected, not authorised.
+1749802412: mosquitto version 2.0.21 terminating
+1749802412: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749802425: mosquitto version 2.0.21 starting
+1749802425: Config loaded from /mosquitto/config/mosquitto.conf.
+1749802425: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749802425: Opening ipv4 listen socket on port 1883.
+1749802425: Opening ipv6 listen socket on port 1883.
+1749802425: mosquitto version 2.0.21 running
+1749802430: New connection from ::1:52120 on port 1883.
+1749802430: Client auto-710E76C2-502E-311C-3F07-FB105B342921 disconnected, not authorised.
+1749802435: New connection from ::1:47616 on port 1883.
+1749802435: Client auto-20D6E60E-DE30-A2AC-3388-2F885900F9AE disconnected, not authorised.
+1749802465: New connection from ::1:42352 on port 1883.
+1749802465: Client auto-10BFD182-B33C-8AC6-EE36-999AE15243A6 disconnected, not authorised.
+1749802495: New connection from ::1:45970 on port 1883.
+1749802495: Client auto-1E52A164-BC76-F7CF-3D1A-0AF424FA0909 disconnected, not authorised.
+1749802525: New connection from ::1:38918 on port 1883.
+1749802525: Client auto-6744E521-C73F-09E2-06B0-1B8D376C5E88 disconnected, not authorised.
+1749802555: New connection from ::1:42366 on port 1883.
+1749802555: Client auto-A7881A41-8400-BE46-3035-A9A7F2B05C8E disconnected, not authorised.
+1749802585: New connection from ::1:39876 on port 1883.
+1749802585: Client auto-943BCA9E-D873-C73C-A152-E86518A11D26 disconnected, not authorised.
+1749802615: New connection from ::1:55492 on port 1883.
+1749802615: Client auto-8AB6803D-5AAE-D12A-FCEF-5818DBB8CB22 disconnected, not authorised.
+1749802646: New connection from ::1:50520 on port 1883.
+1749802646: Client auto-B84976C5-AAF8-40AB-19F4-0265B8812807 disconnected, not authorised.
+1749802676: New connection from ::1:60546 on port 1883.
+1749802676: Client auto-F8FD7742-80D2-0479-267F-54BC9A98F44D disconnected, not authorised.
+1749802701: mosquitto version 2.0.21 terminating
+1749802701: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749802751: mosquitto version 2.0.21 starting
+1749802751: Config loaded from /mosquitto/config/mosquitto.conf.
+1749802751: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749802751: Opening ipv4 listen socket on port 1883.
+1749802751: Opening ipv6 listen socket on port 1883.
+1749802751: mosquitto version 2.0.21 running
+1749802756: New connection from ::1:53868 on port 1883.
+1749802756: Client auto-864BCA3B-4FD1-5E5B-DF25-B8A9F49EAB7D disconnected, not authorised.
+1749802761: New connection from ::1:53870 on port 1883.
+1749802761: Client auto-05121024-E8C4-EFCC-CA9A-E6BA1F8AED8B disconnected, not authorised.
+1749802791: New connection from ::1:46058 on port 1883.
+1749802791: Client auto-311E70BA-A373-3A5B-166E-30E20FE7DABC disconnected, not authorised.
+1749802821: New connection from ::1:33430 on port 1883.
+1749802821: Client auto-B7631B2B-FD0C-95E9-D12C-DC357DBB3B32 disconnected, not authorised.
+1749802851: New connection from ::1:52430 on port 1883.
+1749802851: Client auto-79CC6FEF-745B-C041-492C-F2BD3844A860 disconnected, not authorised.
+1749802881: New connection from ::1:36982 on port 1883.
+1749802881: Client auto-44E24795-7835-CAA8-CA2F-25E282188AA7 disconnected, not authorised.
+1749802912: New connection from ::1:49862 on port 1883.
+1749802912: Client auto-6D0B0C7F-5ECD-7DA3-D09A-41071C51B275 disconnected, not authorised.
+1749802942: New connection from ::1:47948 on port 1883.
+1749802942: Client auto-2F3B78D6-1893-ABC5-F2C7-A6AF5042DFE1 disconnected, not authorised.
+1749802972: New connection from ::1:43220 on port 1883.
+1749802972: Client auto-50BB12E0-2B64-C7EC-4E20-1D1841EB256A disconnected, not authorised.
+1749803002: New connection from ::1:50834 on port 1883.
+1749803002: Client auto-7DBF3A73-F21B-5F18-885D-757B020FC1AC disconnected, not authorised.
+1749803032: New connection from ::1:40372 on port 1883.
+1749803032: Client auto-2FDA8890-A627-C58C-2026-07D05C504952 disconnected, not authorised.
+1749803062: New connection from ::1:39242 on port 1883.
+1749803062: Client auto-D9C65B06-7C77-40E5-0F37-E48C992CF1ED disconnected, not authorised.
+1749803092: New connection from ::1:38210 on port 1883.
+1749803092: Client auto-2C74D1B3-7F38-C6EF-66DC-65926A77C797 disconnected, not authorised.
+1749803122: New connection from ::1:47636 on port 1883.
+1749803122: Client auto-C9D852E3-B779-3C5B-1300-803D14AE5A13 disconnected, not authorised.
+1749803152: New connection from ::1:49316 on port 1883.
+1749803152: Client auto-BE918D91-ED8A-A01A-6A61-28161C7D52CA disconnected, not authorised.
+1749803182: New connection from ::1:35944 on port 1883.
+1749803182: Client auto-4CE1C1F2-4B86-5DD3-734F-BB8B1467F144 disconnected, not authorised.
+1749803212: New connection from ::1:34714 on port 1883.
+1749803212: Client auto-14B69702-7B3A-8268-888D-51EC696F5C16 disconnected, not authorised.
+1749803242: New connection from ::1:35148 on port 1883.
+1749803242: Client auto-5A4FF5D8-ECAE-22B0-599C-34C9F12ED91F disconnected, not authorised.
+1749803272: New connection from ::1:35646 on port 1883.
+1749803272: Client auto-17BEA1DE-BFAA-13BE-4EFA-37BCAAC658D8 disconnected, not authorised.
+1749803302: New connection from ::1:41370 on port 1883.
+1749803302: Client auto-069433D6-403A-2638-32CA-7B3DF0A87AB5 disconnected, not authorised.
+1749803332: New connection from ::1:42998 on port 1883.
+1749803332: Client auto-97AC8AD9-187A-9443-862F-5ABF0454621A disconnected, not authorised.
+1749803362: New connection from ::1:38760 on port 1883.
+1749803362: Client auto-896DA45E-58F7-E490-1047-509CF1488104 disconnected, not authorised.
+1749803392: New connection from ::1:33022 on port 1883.
+1749803392: Client auto-57232C15-E588-91B3-04F1-B680C4077968 disconnected, not authorised.
+1749803422: New connection from ::1:58644 on port 1883.
+1749803422: Client auto-15000B2A-9412-E56E-8C54-A4691274FA4F disconnected, not authorised.
+1749803452: New connection from ::1:43736 on port 1883.
+1749803452: Client auto-19C3A625-319C-9919-D495-60149CC34CE3 disconnected, not authorised.
+1749803483: New connection from ::1:49298 on port 1883.
+1749803483: Client auto-7210D7CF-F702-CBC2-7EAE-9A1743C7DAAD disconnected, not authorised.
+1749803513: New connection from ::1:56780 on port 1883.
+1749803513: Client auto-FC4A8F6A-2874-322D-15FB-FF01246417F1 disconnected, not authorised.
+1749803543: New connection from ::1:49074 on port 1883.
+1749803543: Client auto-68AE28FA-0D8B-E24D-F750-6064584E4B36 disconnected, not authorised.
+1749803573: New connection from ::1:40206 on port 1883.
+1749803573: Client auto-CB756676-228E-1832-BCD4-D1EA02FD5FFA disconnected, not authorised.
+1749803603: New connection from ::1:45414 on port 1883.
+1749803603: Client auto-CFC9D08A-A78D-8414-E2A6-516AB63BC907 disconnected, not authorised.
+1749803633: New connection from ::1:34034 on port 1883.
+1749803633: Client auto-62AEBA8F-8841-A0BC-C8B4-4753F5737779 disconnected, not authorised.
+1749803663: New connection from ::1:47218 on port 1883.
+1749803663: Client auto-E9AE9569-3603-4B18-0EE0-E67AEF32955E disconnected, not authorised.
+1749803693: New connection from ::1:48576 on port 1883.
+1749803693: Client auto-0CDF51CD-049B-1E24-B31B-737F01C36964 disconnected, not authorised.
+1749803723: New connection from ::1:52492 on port 1883.
+1749803723: Client auto-5CD57B73-F202-CB16-85AF-D90966972A00 disconnected, not authorised.
+1749803753: New connection from ::1:45688 on port 1883.
+1749803753: Client auto-960B34F1-9CA2-873B-7C48-5302F1BC2ECC disconnected, not authorised.
+1749803783: New connection from ::1:35606 on port 1883.
+1749803783: Client auto-94178FB5-B30F-31DE-7ED7-9E541CB7A020 disconnected, not authorised.
+1749803813: New connection from ::1:37510 on port 1883.
+1749803813: Client auto-EDFC6063-A2B0-9774-B66E-C36F46FE1A6B disconnected, not authorised.
+1749803843: New connection from ::1:41302 on port 1883.
+1749803843: Client auto-813FDEEF-591A-8CF5-C1B7-7F39ED8E3D7B disconnected, not authorised.
+1749803873: New connection from ::1:32910 on port 1883.
+1749803873: Client auto-E92648AC-CE4B-87AC-ECE8-0CF7BECB6FD3 disconnected, not authorised.
+1749803903: New connection from ::1:48244 on port 1883.
+1749803903: Client auto-047B8116-5A55-3DA8-41C6-B94CD0759AB2 disconnected, not authorised.
+1749803933: New connection from ::1:50278 on port 1883.
+1749803933: Client auto-374E5A42-58AA-453A-466A-71F45FCC7824 disconnected, not authorised.
+1749803963: New connection from ::1:35090 on port 1883.
+1749803963: Client auto-39CFAA2D-A8AA-E19A-8713-9F480EADE5D5 disconnected, not authorised.
+1749803993: New connection from ::1:55118 on port 1883.
+1749803993: Client auto-22B9AAE9-FF21-3615-99E5-EEDD76E9FEB8 disconnected, not authorised.
+1749804023: New connection from ::1:50456 on port 1883.
+1749804023: Client auto-B4165CBF-F7B4-474E-2F6E-C3833CFC0DA5 disconnected, not authorised.
+1749804053: New connection from ::1:51762 on port 1883.
+1749804053: Client auto-D48B5AE0-504F-4B8F-F892-8ACCC1944320 disconnected, not authorised.
+1749804084: New connection from ::1:48622 on port 1883.
+1749804084: Client auto-CBA5FDD0-6E35-3531-9876-9271F0A24156 disconnected, not authorised.
+1749804114: New connection from ::1:35642 on port 1883.
+1749804114: Client auto-905F9D87-3AEC-7981-7C81-C269CEDCE78D disconnected, not authorised.
+1749804144: New connection from ::1:42958 on port 1883.
+1749804144: Client auto-E317E889-E247-F98C-CD83-B71BFFC22FD2 disconnected, not authorised.
+1749804154: mosquitto version 2.0.21 terminating
+1749804154: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749965036: mosquitto version 2.0.21 starting
+1749965036: Config loaded from /mosquitto/config/mosquitto.conf.
+1749965036: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749965036: Opening ipv4 listen socket on port 1883.
+1749965036: Opening ipv6 listen socket on port 1883.
+1749965036: mosquitto version 2.0.21 running
+1749965041: New connection from ::1:41980 on port 1883.
+1749965041: Client auto-6B99F173-2B4A-1ACE-B877-6B908DF3E513 disconnected, not authorised.
+1749965046: New connection from ::1:49850 on port 1883.
+1749965046: Client auto-4DC1438B-2D1C-6755-F58F-9B85ADE91B81 disconnected, not authorised.
+1749965076: New connection from ::1:38918 on port 1883.
+1749965076: Client auto-D5777CF6-FB57-D324-FE6E-B02F5979A037 disconnected, not authorised.
+1749965106: New connection from ::1:59842 on port 1883.
+1749965106: Client auto-11462264-A7E2-F49E-0D0F-7D6B374016A2 disconnected, not authorised.
+1749965135: mosquitto version 2.0.21 terminating
+1749965135: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749965143: mosquitto version 2.0.21 starting
+1749965143: Config loaded from /mosquitto/config/mosquitto.conf.
+1749965143: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749965143: Opening ipv4 listen socket on port 1883.
+1749965143: Opening ipv6 listen socket on port 1883.
+1749965143: mosquitto version 2.0.21 running
+1749965148: New connection from ::1:38094 on port 1883.
+1749965148: Client auto-D65B5438-01FE-8B00-A2B5-EE9779DB71DE disconnected, not authorised.
+1749965153: New connection from ::1:42832 on port 1883.
+1749965153: Client auto-999AC9AF-2B25-6401-C86F-AAA137447ECC disconnected, not authorised.
+1749965183: New connection from ::1:60108 on port 1883.
+1749965183: Client auto-B97425DB-1238-43F3-8F14-44B6E2919FBA disconnected, not authorised.
+1749965213: New connection from ::1:50888 on port 1883.
+1749965213: Client auto-0B9104CA-FA31-FF91-CB71-994DFB867204 disconnected, not authorised.
+1749965243: New connection from ::1:38208 on port 1883.
+1749965243: Client auto-C50233A4-5C7F-0173-C5CF-E8417BA28388 disconnected, not authorised.
+1749965273: New connection from ::1:43878 on port 1883.
+1749965273: Client auto-5E172789-EE10-AE23-6B05-15A4DBDBF270 disconnected, not authorised.
+1749965303: New connection from ::1:33058 on port 1883.
+1749965303: Client auto-A5DBF0C3-272D-1385-22DF-0FCE19E41D5F disconnected, not authorised.
+1749965333: New connection from ::1:48446 on port 1883.
+1749965333: Client auto-7B5739B9-F1D7-F1C4-05FF-00CF5F08D557 disconnected, not authorised.
+1749965363: New connection from ::1:54426 on port 1883.
+1749965363: Client auto-771D2B38-2A7F-BCC6-E5F7-7BA27298A08F disconnected, not authorised.
+1749965393: New connection from ::1:38078 on port 1883.
+1749965393: Client auto-230D81E3-27EE-EDEF-A969-463C335E24F6 disconnected, not authorised.
+1749965423: New connection from ::1:37632 on port 1883.
+1749965423: Client auto-400DCDE1-E0CC-CF4C-6BA5-CE1D38BD4E57 disconnected, not authorised.
+1749965454: New connection from ::1:50280 on port 1883.
+1749965454: Client auto-6EBEC5A4-E0AE-65DE-6527-835973FA2D29 disconnected, not authorised.
+1749965484: New connection from ::1:58612 on port 1883.
+1749965484: Client auto-CA0ADA50-7513-B5A4-2E54-C88D63441064 disconnected, not authorised.
+1749965514: New connection from ::1:60062 on port 1883.
+1749965514: Client auto-4F513B38-881B-911F-11FF-B95014874333 disconnected, not authorised.
+1749965544: New connection from ::1:34260 on port 1883.
+1749965544: Client auto-BCF70978-3CFE-8595-DD3F-F245A599E7D7 disconnected, not authorised.
+1749965574: New connection from ::1:54438 on port 1883.
+1749965574: Client auto-D0A41C3B-443A-3FA0-EA5E-21CA7E08C6E0 disconnected, not authorised.
+1749965604: New connection from ::1:34054 on port 1883.
+1749965604: Client auto-26036263-B333-6D7D-F948-FAA46161BAF1 disconnected, not authorised.
+1749965634: New connection from ::1:33744 on port 1883.
+1749965634: Client auto-2B6B38E3-EF2C-503D-708F-700DC9854B14 disconnected, not authorised.
+1749965661: New connection from ::1:47068 on port 1883.
+1749965661: Client auto-053E1D9E-1ABA-DF5A-DB63-79C856127944 disconnected, not authorised.
+1749965691: New connection from ::1:48288 on port 1883.
+1749965691: Client auto-FD515D12-5109-9D4A-AE04-724C82ABBBF8 disconnected, not authorised.
+1749965721: New connection from ::1:58396 on port 1883.
+1749965721: Client auto-D4054D34-BCC4-5226-26F2-2BE836285401 disconnected, not authorised.
+1749965751: New connection from ::1:44150 on port 1883.
+1749965751: Client auto-7496B99B-0EC5-79BA-C41D-682F5099BEA3 disconnected, not authorised.
+1749965781: New connection from ::1:36476 on port 1883.
+1749965781: Client auto-5306802A-E192-2314-8DCE-B9B41AAEA2CC disconnected, not authorised.
+1749965811: New connection from ::1:49430 on port 1883.
+1749965811: Client auto-EECF65D5-E67D-0556-7E2F-80698544F173 disconnected, not authorised.
+1749965841: New connection from ::1:39568 on port 1883.
+1749965841: Client auto-F92EB7B9-7619-040F-0653-7E89796C7446 disconnected, not authorised.
+1749965871: New connection from ::1:35162 on port 1883.
+1749965871: Client auto-BF8AB3A8-1F11-13B0-95EE-A8C406E9957A disconnected, not authorised.
+1749965901: New connection from ::1:49626 on port 1883.
+1749965901: Client auto-7AFA5D81-CC43-B2F7-6860-0B201AC280EF disconnected, not authorised.
+1749965931: New connection from ::1:47930 on port 1883.
+1749965931: Client auto-06366910-C72A-100E-3B02-C2EF87C1714D disconnected, not authorised.
+1749965961: New connection from ::1:45620 on port 1883.
+1749965961: Client auto-B1414958-CCBC-8BF7-4F2C-9528069D1C64 disconnected, not authorised.
+1749965991: New connection from ::1:46990 on port 1883.
+1749965991: Client auto-A3A306FE-D803-4504-B5A9-D9C5A4B797A7 disconnected, not authorised.
+1749966021: New connection from ::1:54992 on port 1883.
+1749966021: Client auto-6585F591-75E7-C7C5-F4B7-94FFBE9F63F5 disconnected, not authorised.
+1749966051: New connection from ::1:49880 on port 1883.
+1749966051: Client auto-62C24E20-E511-31D2-D443-83339330A28A disconnected, not authorised.
+1749966081: New connection from ::1:58702 on port 1883.
+1749966081: Client auto-C629EB96-171E-2AF4-72E1-FECD81E97A6F disconnected, not authorised.
+1749966111: New connection from ::1:46592 on port 1883.
+1749966111: Client auto-5CEC2C8C-50BB-A1CA-A45A-7CFCF19855C1 disconnected, not authorised.
+1749966141: New connection from ::1:38072 on port 1883.
+1749966141: Client auto-4BACC786-9FDB-ED93-F578-055F77989F8C disconnected, not authorised.
+1749966171: New connection from ::1:44368 on port 1883.
+1749966171: Client auto-77CC1C77-94D0-00D0-6071-2D47E8CC0BDF disconnected, not authorised.
+1749966176: mosquitto version 2.0.21 terminating
+1749966176: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749966223: mosquitto version 2.0.21 starting
+1749966223: Config loaded from /mosquitto/config/mosquitto.conf.
+1749966223: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749966223: Opening ipv4 listen socket on port 1883.
+1749966223: Opening ipv6 listen socket on port 1883.
+1749966223: mosquitto version 2.0.21 running
+1749966228: New connection from ::1:52316 on port 1883.
+1749966228: Client auto-D386D039-F66F-FD74-BB8E-555686C209A2 disconnected, not authorised.
+1749966233: New connection from ::1:46536 on port 1883.
+1749966233: Client auto-0AC57E1F-7E24-E7BC-F541-DB9BC3AD8590 disconnected, not authorised.
+1749966263: New connection from ::1:42818 on port 1883.
+1749966263: Client auto-F16D2B9E-288D-1B12-C694-EB1912F5F70A disconnected, not authorised.
+1749966293: New connection from ::1:60066 on port 1883.
+1749966293: Client auto-200E92F8-80D0-65F2-7A14-7AFBD7687497 disconnected, not authorised.
+1749966323: New connection from ::1:47310 on port 1883.
+1749966323: Client auto-5BE97D0B-4F1F-2582-D8F1-24F10E1409CA disconnected, not authorised.
+1749966347: mosquitto version 2.0.21 terminating
+1749966347: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749966571: mosquitto version 2.0.21 starting
+1749966571: Config loaded from /mosquitto/config/mosquitto.conf.
+1749966571: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749966571: Opening ipv4 listen socket on port 1883.
+1749966571: Opening ipv6 listen socket on port 1883.
+1749966571: mosquitto version 2.0.21 running
+1749966576: New connection from ::1:40402 on port 1883.
+1749966576: Client auto-088E5417-A373-600C-B367-A0C416F4DD32 disconnected, not authorised.
+1749966581: New connection from ::1:43966 on port 1883.
+1749966581: Client auto-BB1F20B6-5E8E-34A6-A9B9-D955B595B225 disconnected, not authorised.
+1749966611: New connection from ::1:36550 on port 1883.
+1749966611: Client auto-C5353159-38BD-C794-E5C7-5BED8BD47A54 disconnected, not authorised.
+1749966641: New connection from ::1:33536 on port 1883.
+1749966641: Client auto-5836AA29-2248-9189-17D9-F49B1AB0ACED disconnected, not authorised.
+1749966671: New connection from ::1:49660 on port 1883.
+1749966671: Client auto-3853DFCE-9471-626E-1949-328188759CD1 disconnected, not authorised.
+1749966701: New connection from ::1:35012 on port 1883.
+1749966701: Client auto-BA1C5C22-C48B-6801-9E8E-72E0A55979A8 disconnected, not authorised.
+1749966731: New connection from ::1:55104 on port 1883.
+1749966731: Client auto-1926FBF1-9939-ACC0-92C2-CA5B0479DA17 disconnected, not authorised.
+1749966761: New connection from ::1:59726 on port 1883.
+1749966761: Client auto-C37AB8AA-A76A-7777-BB8B-7BA4EA8B0C38 disconnected, not authorised.
+1749966791: New connection from ::1:40162 on port 1883.
+1749966791: Client auto-D995A7B6-871F-924F-F69F-F27D7E2CAF35 disconnected, not authorised.
+1749966821: New connection from ::1:58794 on port 1883.
+1749966821: Client auto-311EED79-B670-4CD2-4E47-CD3E8317B728 disconnected, not authorised.
+1749966851: New connection from ::1:33704 on port 1883.
+1749966851: Client auto-3E37829F-D4D3-ECB2-4522-91CBC729F69A disconnected, not authorised.
+1749966882: New connection from ::1:51258 on port 1883.
+1749966882: Client auto-04147472-C88A-8A96-4D79-97E76ECF3D08 disconnected, not authorised.
+1749966912: New connection from ::1:36924 on port 1883.
+1749966912: Client auto-B9B26325-24D2-2700-D797-966CEFEDB0A1 disconnected, not authorised.
+1749966942: New connection from ::1:55240 on port 1883.
+1749966942: Client auto-255FB918-6DAD-CE8E-49C4-A77DB75D4722 disconnected, not authorised.
+1749966972: New connection from ::1:53334 on port 1883.
+1749966972: Client auto-8A8E258A-A140-697B-D311-94812A58F884 disconnected, not authorised.
+1749967002: New connection from ::1:38870 on port 1883.
+1749967002: Client auto-ECD9D150-BB59-A41F-7279-80D2E61C936F disconnected, not authorised.
+1749967032: New connection from ::1:48034 on port 1883.
+1749967032: Client auto-C5591B93-701C-7B3D-FD34-18E560F25088 disconnected, not authorised.
+1749967062: New connection from ::1:33520 on port 1883.
+1749967062: Client auto-D7ED7098-F7E9-9445-B58C-48AD85DA260C disconnected, not authorised.
+1749967092: New connection from ::1:38936 on port 1883.
+1749967092: Client auto-A98772DF-983F-1A33-077C-621B011E8F72 disconnected, not authorised.
+1749967122: New connection from ::1:34184 on port 1883.
+1749967122: Client auto-2F093380-32B1-A102-B217-5B21CF37B186 disconnected, not authorised.
+1749967152: New connection from ::1:57592 on port 1883.
+1749967152: Client auto-83FA36F0-3336-7639-CABC-4EDA090FAAAC disconnected, not authorised.
+1749967182: New connection from ::1:56170 on port 1883.
+1749967182: Client auto-4BDBBE32-6C5A-782B-EC06-174621D442C2 disconnected, not authorised.
+1749967212: New connection from ::1:39096 on port 1883.
+1749967212: Client auto-C8E1EB7C-A831-258D-2042-B70B24B7D2C6 disconnected, not authorised.
+1749967242: New connection from ::1:44898 on port 1883.
+1749967242: Client auto-964FAA93-C711-DCBF-0ACE-14AE09278215 disconnected, not authorised.
+1749967272: New connection from ::1:38840 on port 1883.
+1749967272: Client auto-93E6B334-6B34-C827-CF3B-825FFBB2CD96 disconnected, not authorised.
+1749967302: New connection from ::1:49528 on port 1883.
+1749967302: Client auto-BB575278-968F-3626-BDC1-53529D435680 disconnected, not authorised.
+1749967332: New connection from ::1:53338 on port 1883.
+1749967332: Client auto-9EF8B94E-18F3-71D1-A8A5-888145F96743 disconnected, not authorised.
+1749967362: New connection from ::1:34060 on port 1883.
+1749967362: Client auto-ABBDF51B-40F9-A7A9-C83F-CA39D8A90D60 disconnected, not authorised.
+1749967392: New connection from ::1:46334 on port 1883.
+1749967392: Client auto-ADC86C29-5661-8677-E28E-56E7E601F2D6 disconnected, not authorised.
+1749967422: New connection from ::1:52260 on port 1883.
+1749967422: Client auto-D9095831-67EE-1FDF-9729-1EFBB0EC3B52 disconnected, not authorised.
+1749967452: New connection from ::1:46112 on port 1883.
+1749967452: Client auto-52C2A40A-437F-D384-0604-7A4D97599C21 disconnected, not authorised.
+1749967482: New connection from ::1:43760 on port 1883.
+1749967482: Client auto-D0B0BC14-DA0D-51B4-3052-C40391F9B338 disconnected, not authorised.
+1749967512: New connection from ::1:43534 on port 1883.
+1749967512: Client auto-FF5015C9-1186-A8B6-5D2F-962EFAFFAB08 disconnected, not authorised.
+1749967513: mosquitto version 2.0.21 terminating
+1749967513: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749967687: mosquitto version 2.0.21 starting
+1749967687: Config loaded from /mosquitto/config/mosquitto.conf.
+1749967687: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749967687: Opening ipv4 listen socket on port 1883.
+1749967687: Opening ipv6 listen socket on port 1883.
+1749967687: mosquitto version 2.0.21 running
+1749967692: New connection from ::1:41452 on port 1883.
+1749967692: Client auto-9209479C-A391-EE9D-EDD4-287289AE4A18 disconnected, not authorised.
+1749967697: New connection from ::1:41454 on port 1883.
+1749967697: Client auto-BAC95073-DD1C-2ADF-3CC5-6F330A8A5327 disconnected, not authorised.
+1749967727: New connection from ::1:49564 on port 1883.
+1749967727: Client auto-2BA81320-0A6B-2B53-CE6E-3052B6202A27 disconnected, not authorised.
+1749967757: New connection from ::1:40808 on port 1883.
+1749967757: Client auto-E844B46B-BEF1-CBA0-4886-B545A57776B4 disconnected, not authorised.
+1749967787: New connection from ::1:51880 on port 1883.
+1749967787: Client auto-EA122004-BC5D-E655-AC10-AAD69AEB257E disconnected, not authorised.
+1749967818: New connection from ::1:41134 on port 1883.
+1749967818: Client auto-3BD74E10-618B-F7FB-6695-38001ADD85F6 disconnected, not authorised.
+1749967848: New connection from ::1:60926 on port 1883.
+1749967848: Client auto-BCB6FAAB-6E68-AAA3-C20C-0145FD68DC8E disconnected, not authorised.
+1749967878: New connection from ::1:58988 on port 1883.
+1749967878: Client auto-1DE2B818-C27A-996B-1376-642F66DD515C disconnected, not authorised.
+1749967908: New connection from ::1:56892 on port 1883.
+1749967908: Client auto-6CF397C1-6078-78EC-3A52-18DB868B363F disconnected, not authorised.
+1749967938: New connection from ::1:55264 on port 1883.
+1749967938: Client auto-21682F72-B091-8F41-13AB-385F6D08EA7E disconnected, not authorised.
+1749967968: New connection from ::1:57682 on port 1883.
+1749967968: Client auto-EA92657E-1932-205B-9349-7BDF0B4424BA disconnected, not authorised.
+1749967998: New connection from ::1:47240 on port 1883.
+1749967998: Client auto-EDC243E6-3BBD-10E8-E62B-F4BB830AB153 disconnected, not authorised.
+1749968028: New connection from ::1:39744 on port 1883.
+1749968028: Client auto-D464F122-8789-C116-0646-E569C436429E disconnected, not authorised.
+1749968060: New connection from ::1:60314 on port 1883.
+1749968060: Client auto-B6244402-EC90-2846-FC97-7F18C48CC259 disconnected, not authorised.
+1749968090: New connection from ::1:34104 on port 1883.
+1749968090: Client auto-EBB22DAB-E6D8-1578-AE94-127A36FD337F disconnected, not authorised.
+1749968120: New connection from ::1:42392 on port 1883.
+1749968120: Client auto-F9401704-9E38-0F2A-5DBF-4C8FA9138E93 disconnected, not authorised.
+1749968150: New connection from ::1:53338 on port 1883.
+1749968150: Client auto-971E1D07-FB2C-F815-7436-B25FBA55DE8C disconnected, not authorised.
+1749968180: New connection from ::1:44642 on port 1883.
+1749968180: Client auto-C976EDE1-7142-81E2-DFF0-67D55694A6B2 disconnected, not authorised.
+1749968210: New connection from ::1:44712 on port 1883.
+1749968210: Client auto-8FEFFAA5-F8B1-CFEE-F872-F3EDA3A02B25 disconnected, not authorised.
+1749968241: New connection from ::1:38878 on port 1883.
+1749968241: Client auto-4D454845-F85F-CA03-1B7D-BCF44BE1C165 disconnected, not authorised.
+1749968271: New connection from ::1:35410 on port 1883.
+1749968271: Client auto-201325DC-843D-28C7-F69B-3C81CB2D20FB disconnected, not authorised.
+1749968301: New connection from ::1:40584 on port 1883.
+1749968301: Client auto-00E76B9D-EA88-0FBF-9B5E-620A6356A9FE disconnected, not authorised.
+1749968331: New connection from ::1:58414 on port 1883.
+1749968331: Client auto-901CB121-1EEF-6F37-760C-77D9CC6E0DAD disconnected, not authorised.
+1749968361: New connection from ::1:38932 on port 1883.
+1749968361: Client auto-6766EFA9-A0A1-FEFC-DA1F-83E2B9C58D1B disconnected, not authorised.
+1749968391: New connection from ::1:59768 on port 1883.
+1749968391: Client auto-5CD4DCE9-69BF-0F67-CCE1-9903DE7D2E83 disconnected, not authorised.
+1749968421: New connection from ::1:54832 on port 1883.
+1749968421: Client auto-740209B6-039B-C957-951E-836EDD94C6AC disconnected, not authorised.
+1749968451: New connection from ::1:34044 on port 1883.
+1749968451: Client auto-855E29C7-027F-32A1-D294-EB4D70FF815C disconnected, not authorised.
+1749968481: New connection from ::1:32804 on port 1883.
+1749968481: Client auto-5DBCA1D1-17DF-03B0-E03C-61231E6F3517 disconnected, not authorised.
+1749968511: New connection from ::1:46788 on port 1883.
+1749968511: Client auto-8C3CBBF3-CE3B-0175-2435-B7596A20FC0F disconnected, not authorised.
+1749968541: New connection from ::1:56340 on port 1883.
+1749968541: Client auto-2891D26A-EEA3-6556-22EC-163DC35322E5 disconnected, not authorised.
+1749968571: New connection from ::1:44074 on port 1883.
+1749968571: Client auto-D45BA8E8-A9D7-BB76-16A3-EDF71499FE91 disconnected, not authorised.
+1749968601: New connection from ::1:48574 on port 1883.
+1749968601: Client auto-50586372-BCCA-2A3D-EE08-BDAAC48531AB disconnected, not authorised.
+1749968625: mosquitto version 2.0.21 terminating
+1749968625: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749968625: mosquitto version 2.0.21 starting
+1749968625: Config loaded from /mosquitto/config/mosquitto.conf.
+1749968625: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749968625: Opening ipv4 listen socket on port 1883.
+1749968625: Opening ipv6 listen socket on port 1883.
+1749968625: mosquitto version 2.0.21 running
+1749968713: mosquitto version 2.0.21 terminating
+1749968713: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749968714: mosquitto version 2.0.21 starting
+1749968714: Config loaded from /mosquitto/config/mosquitto.conf.
+1749968714: Warning: File /mosquitto/config/password.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/password.txt`.
+1749968714: Opening ipv4 listen socket on port 1883.
+1749968714: Opening ipv6 listen socket on port 1883.
+1749968714: mosquitto version 2.0.21 running
+1749968719: New connection from ::1:60118 on port 1883.
+1749968719: Client auto-FB359C29-38A3-3039-0D8E-51DEBAAABB37 disconnected, not authorised.
+1749968724: New connection from ::1:35178 on port 1883.
+1749968724: Client auto-209E49BB-0C44-4E2A-696E-29471DF5F78C disconnected, not authorised.
+1749968754: New connection from ::1:57674 on port 1883.
+1749968754: Client auto-439BAD23-683D-D10E-EE07-563EB16F2B17 disconnected, not authorised.
+1749968784: New connection from ::1:36628 on port 1883.
+1749968784: Client auto-80A52556-B04E-FD1C-F7D8-9BFBB4BDD6E2 disconnected, not authorised.
+1749968814: New connection from ::1:52056 on port 1883.
+1749968814: Client auto-170D0D8E-27FE-3657-6B79-83BF5A8A11E8 disconnected, not authorised.
+1749968844: New connection from ::1:51346 on port 1883.
+1749968844: Client auto-93182A5C-3DF5-3ABA-B6A1-55E6CA8AD0E1 disconnected, not authorised.
+1749968874: New connection from ::1:45232 on port 1883.
+1749968874: Client auto-2929032C-7CA9-DEAF-AFBC-4BAE51BCA036 disconnected, not authorised.
+1749968904: New connection from ::1:38312 on port 1883.
+1749968904: Client auto-8CE120F3-358B-8308-F7CF-B2D34BFDFD5A disconnected, not authorised.
+1749968934: New connection from ::1:47550 on port 1883.
+1749968934: Client auto-1CD91D24-F964-D6DD-7E7B-273F40AB9316 disconnected, not authorised.
+1749968964: New connection from ::1:47574 on port 1883.
+1749968964: Client auto-82764BA7-C222-EB35-8AD7-07896967D54D disconnected, not authorised.
+1749968994: New connection from ::1:45732 on port 1883.
+1749968994: Client auto-71AEFC0B-56A8-A508-527B-4BAD7762548B disconnected, not authorised.
+1749969024: New connection from ::1:51702 on port 1883.
+1749969024: Client auto-60BFA919-D538-ED58-9691-3CA7792EACFA disconnected, not authorised.
+1749969054: New connection from ::1:53210 on port 1883.
+1749969054: Client auto-1EA303F5-8573-6462-052B-BB64B43E7704 disconnected, not authorised.
+1749969084: New connection from ::1:35728 on port 1883.
+1749969084: Client auto-8902E3AD-000E-1EB6-FD2E-6E7D5C3F6507 disconnected, not authorised.
+1749969114: New connection from ::1:41462 on port 1883.
+1749969114: Client auto-7C9B158A-0FBD-6AEE-C73C-10600859CC86 disconnected, not authorised.
+1749969144: New connection from ::1:52326 on port 1883.
+1749969144: Client auto-638958E7-5250-2398-4A78-47F3CA4502BF disconnected, not authorised.
+1749969174: New connection from ::1:51936 on port 1883.
+1749969174: Client auto-A3B71A29-BE87-F617-480D-C9FE75376AAB disconnected, not authorised.
+1749969204: New connection from ::1:39172 on port 1883.
+1749969204: Client auto-875D5D01-680E-86D2-96FF-235DAF9B35DF disconnected, not authorised.
+1749969235: New connection from ::1:53848 on port 1883.
+1749969235: Client auto-12EE6A93-71D4-C051-2C58-6B2A6B773051 disconnected, not authorised.
+1749969265: New connection from ::1:54878 on port 1883.
+1749969265: Client auto-E0C63083-6AEE-795D-59C7-2188EC10F244 disconnected, not authorised.
+1749969295: New connection from ::1:46436 on port 1883.
+1749969295: Client auto-CE9FAF50-8601-E136-61BB-66CFACD90994 disconnected, not authorised.
+1749969325: New connection from ::1:38756 on port 1883.
+1749969325: Client auto-15D2A2A3-AAFA-54E0-7EE7-9313E6E6E06B disconnected, not authorised.
+1749969355: New connection from ::1:38820 on port 1883.
+1749969355: Client auto-BB4A2E2C-D14F-E09D-F36A-98235AA093BC disconnected, not authorised.
+1749969385: New connection from ::1:56590 on port 1883.
+1749969385: Client auto-3AAD21BF-6C1D-6D96-B07A-4192E9507C61 disconnected, not authorised.
+1749969415: New connection from ::1:40454 on port 1883.
+1749969415: Client auto-FD891315-5929-2652-8122-F1F93BE4E128 disconnected, not authorised.
+1749969445: New connection from ::1:58146 on port 1883.
+1749969445: Client auto-9B9C9A54-D434-CB7D-6FFC-C5BB921AB1B0 disconnected, not authorised.
+1749969475: New connection from ::1:55400 on port 1883.
+1749969475: Client auto-0B0D6D33-B8EB-0F74-686A-EE2534C521D4 disconnected, not authorised.
+1749969505: New connection from ::1:36612 on port 1883.
+1749969505: Client auto-ECDA687E-E6C0-847E-CEF2-9E4328F24F97 disconnected, not authorised.

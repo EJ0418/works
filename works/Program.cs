@@ -34,15 +34,16 @@ builder.Services.AddScoped<RedisService>();
 
 DotNetEnv.Env.Load();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
-.Replace("${DB_SERVER}", Environment.GetEnvironmentVariable("DB_SERVER"))
-.Replace("${DB_PORT}", Environment.GetEnvironmentVariable("DB_PORT"))
-.Replace("${DB_DB}", Environment.GetEnvironmentVariable("DB_DB"))
-    .Replace("${DB_USER}", Environment.GetEnvironmentVariable("DB_USER"))
-    .Replace("${DB_PASSWORD}", Environment.GetEnvironmentVariable("DB_PASSWORD"));
+var dbServer = Environment.GetEnvironmentVariable("DB_SERVER");
+var dbPort = Environment.GetEnvironmentVariable("DB_PORT");
+var dbName = Environment.GetEnvironmentVariable("DB_DB");
+var dbUser = Environment.GetEnvironmentVariable("DB_USER");
+var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
+
+var sqlConnStr = $"server={dbServer};port={dbPort};database={dbName};user={dbUser};password={dbPassword};";
 
 builder.Services.AddDbContext<TodoContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    options.UseMySql(sqlConnStr, ServerVersion.AutoDetect(sqlConnStr)));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -55,8 +56,9 @@ builder.Services.AddSwaggerGen(options =>
 var redis_host = Environment.GetEnvironmentVariable("REDIS_HOST");
 var redis_port = Environment.GetEnvironmentVariable("REDIS_PORT");
 var redis_pw = Environment.GetEnvironmentVariable("REDIS_PASSWORD");
+var redisConnStr = $"{redis_host}:{redis_port},password={redis_pw}";
 builder.Services.AddSignalR()
-    .AddStackExchangeRedis($"{redis_host}:{redis_port},password={redis_pw}");
+    .AddStackExchangeRedis(redisConnStr);
 
 var app = builder.Build();
 
@@ -88,12 +90,13 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
+
+
 app.MapHub<ChatHub>("/chathub", options =>
 {
     options.Transports = Microsoft.AspNetCore.Http.Connections.HttpTransportType.WebSockets;
 });
 
-app.MapGet("/health", () => Results.Ok("後端服務Healthy"))
-.WithTags("Health")
-.WithMetadata(new SwaggerOperationAttribute(summary: "健康狀態", description: "檢查後端服務狀態"));
+app.MapHealthChecks("/health");
+
 app.Run();

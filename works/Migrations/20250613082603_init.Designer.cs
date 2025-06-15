@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace works.Migrations
 {
     [DbContext(typeof(TodoContext))]
-    [Migration("20250605075710_addCommentCol3")]
-    partial class addCommentCol3
+    [Migration("20250613082603_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
